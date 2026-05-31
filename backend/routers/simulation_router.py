@@ -79,3 +79,28 @@ def submit_sim(sim_id: int, req: SubmitSimReq, user=Depends(require_auth), db: S
         db.commit()
 
     return {"ok": True, "data": {"total_score": total, "passed": sim.passed}}
+
+@router.get("/{sim_id}")
+def get_sim(sim_id: int, user=Depends(require_auth), db: Session = Depends(get_db)):
+    if not user: return {"ok": False, "error": "Unauthorized"}
+    sim = db.query(Simulation).filter(Simulation.id == sim_id, Simulation.user_id == user.id).first()
+    if not sim: return {"ok": False, "error": "Simulasi tidak ditemukan"}
+    
+    # Get ranking
+    total_participants = db.query(Simulation).filter(Simulation.sim_type == sim.sim_type, Simulation.total_score.isnot(None)).count()
+    better_count = db.query(Simulation).filter(
+        Simulation.sim_type == sim.sim_type,
+        Simulation.total_score.isnot(None),
+        Simulation.total_score > sim.total_score
+    ).count()
+    ranking = better_count + 1 if sim.total_score else total_participants
+    
+    return {"ok": True, "data": {
+        "id": sim.id, "sim_type": sim.sim_type,
+        "twk_score": sim.twk_score, "tiu_score": sim.tiu_score, "tkp_score": sim.tkp_score,
+        "total_score": sim.total_score, "passed": sim.passed,
+        "duration_seconds": sim.duration_seconds,
+        "questions_data": sim.questions_data,
+        "created_at": str(sim.created_at),
+        "ranking": ranking, "total_participants": total_participants
+    }}

@@ -40,8 +40,8 @@ import {
 
 const nav = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/dashboard/questions", label: "Bank Soal", icon: BookOpen },
-  { href: "/dashboard/simulations", label: "Simulasi CAT", icon: Brain },
+  { href: "/dashboard/simulations", label: "Try Out", icon: Brain },
+  { href: "/dashboard/questions", label: "Latihan", icon: BookOpen },
   { href: "/dashboard/leaderboard", label: "Leaderboard", icon: Trophy },
   { href: "/dashboard/settings", label: "Pengaturan", icon: Settings },
 ];
