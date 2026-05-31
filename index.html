@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPNS 2026 Learning Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        :root {
+            --bg: #ffffff;
+            --fg: #111111;
+            --primary: #111111;
+            --secondary: #f5f5f5;
+            --border: #e5e5e5;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --muted: #6b7280;
+        }
+
+        body {
+            background: var(--secondary);
+            color: var(--fg);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        .donate-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #ef4444;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .donate-btn:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        .badge-gratis {
+            background: #22c55e;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .countdown {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .countdown h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .countdown .days {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-success {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .badge-warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-danger {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 100px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 100px;
+            transition: width 0.3s ease;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .checklist-item label {
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .checklist-item.checked label {
+            text-decoration: line-through;
+            color: var(--muted);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .schedule-table th {
+            text-align: left;
+            padding: 0.75rem;
+            background: var(--secondary);
+            font-weight: 600;
+        }
+
+        .schedule-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tab {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .chart-container {
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .bar-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .bar {
+            width: 100%;
+            max-width: 60px;
+            border-radius: 4px 4px 0 0;
+            transition: height 0.5s ease;
+        }
+
+        .bar-label {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        .trend-arrow {
+            font-size: 1.2rem;
+        }
+
+        .trend-up {
+            color: var(--success);
+        }
+
+        .trend-down {
+            color: var(--danger);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.75rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="donate-btn" onclick="showDonateModal()">
+                ❤️ Donasi
+            </button>
+            <span class="badge-gratis">100% GRATIS</span>
+            <h1>CPNS 2026</h1>
+            <p>Platform Belajar CPNS Gratis — Siap SKD & SKB</p>
+        </div>
+
+        <div class="countdown">
+            <h3>Estimasi Ujian SKD</h3>
+            <div class="days" id="countdown">--</div>
+            <p>hari lagi</p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="card full-width" style="margin-bottom: 2rem;">
+            <h2>Kenapa Pakai Platform Ini?</h2>
+            <div class="grid" style="margin-bottom: 0;">
+                <div style="text-align: center; padding: 1rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                    <h3 style="margin-bottom: 0.5rem;">100% Gratis</h3>
+                    <p style="color: var(--muted); font-size: 0.9rem;">Tidak ada biaya apapun. Belajar sepuasnya tanpa batasan.</p>
+                </div>
+                <div style="text-align: center; padding: 1rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📱</div>
+                    <h3 style="margin-bottom: 0.5rem;">Registrasi Mudah</h3>
+                    <p style="color: var(--muted); font-size: 0.9rem;">Daftar dengan email/WhatsApp + OTP. Tidak perlu password.</p>
+                </div>
+                <div style="text-align: center; padding: 1rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                    <h3 style="margin-bottom: 0.5rem;">Dashboard Lengkap</h3>
+                    <p style="color: var(--muted); font-size: 0.9rem;">Progress tracker, simulasi CAT, jadwal belajar, analisis soal.</p>
+                </div>
+                <div style="text-align: center; padding: 1rem;">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏆</div>
+                    <h3 style="margin-bottom: 0.5rem;">Tren Soal 2020-2025</h3>
+                    <p style="color: var(--muted); font-size: 0.9rem;">Analisis tren soal + prediksi 2026 + contoh soal pembahasan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Passing Grade Reference -->
+            <div class="card">
+                <h2>Passing Grade SKD</h2>
+                <div class="stat-row">
+                    <span class="stat-label">TWK (Tes Wawasan Kebangsaan)</span>
+                    <span class="stat-value">≥ 65</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">TIU (Tes Intelegensi Umum)</span>
+                    <span class="stat-value">≥ 80</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">TKP (Tes Karakteristik Pribadi)</span>
+                    <span class="stat-value">≥ 143</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Format</span>
+                    <span class="stat-value">100 soal / 90 menit</span>
+                </div>
+            </div>
+
+            <!-- Progress Overview -->
+            <div class="card">
+                <h2>Progress Belajar</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Minggu ke</span>
+                    <span class="stat-value" id="current-week">1 / 12</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Hari belajar</span>
+                    <span class="stat-value" id="study-days">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Total jam</span>
+                    <span class="stat-value" id="study-hours">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Simulasi selesai</span>
+                    <span class="stat-value" id="sim-count">0</span>
+                </div>
+            </div>
+
+            <!-- Today's Checklist -->
+            <div class="card">
+                <h2>Checklist Hari Ini</h2>
+                <div id="checklist">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="chk1" onchange="saveChecklist()">
+                        <label for="chk1">TWK: Baca materi 30-60 menit</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="chk2" onchange="saveChecklist()">
+                        <label for="chk2">TIU: Latihan soal 15-20 soal</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="chk3" onchange="saveChecklist()">
+                        <label for="chk3">TKP: Review skenario 10 soal</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="chk4" onchange="saveChecklist()">
+                        <label for="chk4">Review kesalahan kemarin</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="chk5" onchange="saveChecklist()">
+                        <label for="chk5">Update progress tracker</label>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <button class="btn" onclick="resetChecklist()">Reset Checklist</button>
+                </div>
+            </div>
+
+            <!-- Score Target -->
+            <div class="card">
+                <h2>Target Skor Simulasi</h2>
+                <div class="stat-row">
+                    <span class="stat-label">Minggu 4 (Baseline)</span>
+                    <span class="stat-value">55 / 65 / 120</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Minggu 6</span>
+                    <span class="stat-value">60 / 72 / 130</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Minggu 8</span>
+                    <span class="stat-value">63 / 77 / 138</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Minggu 10 (PASSING)</span>
+                    <span class="stat-value" style="color: var(--success)">65 / 80 / 143</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Minggu 12 (Buffer)</span>
+                    <span class="stat-value" style="color: var(--success)">68 / 83 / 150</span>
+                </div>
+            </div>
+
+            <!-- Weekly Schedule -->
+            <div class="card full-width">
+                <h2>Jadwal Minggu Ini</h2>
+                <div class="tabs">
+                    <div class="tab active" onclick="showWeek(1)">Minggu 1</div>
+                    <div class="tab" onclick="showWeek(2)">Minggu 2</div>
+                    <div class="tab" onclick="showWeek(3)">Minggu 3</div>
+                    <div class="tab" onclick="showWeek(4)">Minggu 4</div>
+                </div>
+                <div id="schedule-content">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Hari</th>
+                                <th>Pagi (1 jam)</th>
+                                <th>Siang (1 jam)</th>
+                                <th>Malam (30-60 mnt)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="schedule-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tren Soal 2020-2025 -->
+            <div class="card full-width">
+                <h2>Tren Soal CPNS 2020-2025</h2>
+                <div class="grid" style="margin-bottom: 0;">
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">TWK — Dari Hafalan ke Analisis</h3>
+                        <div class="stat-row">
+                            <span class="stat-label">2020-2022</span>
+                            <span>Fokus hafalan Pancasila & UUD</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">2023-2025</span>
+                            <span>Studi kasus & analisis multi-konteks</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">2026 Prediksi</span>
+                            <span class="badge badge-warning">Lebih kompleks + anti-radikalisme</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">TIU — Speed Test</h3>
+                        <div class="stat-row">
+                            <span class="stat-label">2020-2022</span>
+                            <span>Soal straightforward, waktu cukup</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">2023-2025</span>
+                            <span>Figural kompleks, waktu ketat</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">2026 Prediksi</span>
+                            <span class="badge badge-warning">1.5 soal/menit minimum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Log Simulasi -->
+            <div class="card full-width">
+                <h2>Log Simulasi CAT</h2>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                    <div>
+                        <label style="display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem;">TWK</label>
+                        <input type="number" id="sim-twk" placeholder="0" style="width: 80px; padding: 0.5rem; border: 1px solid var(--border); border-radius: 6px;">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem;">TIU</label>
+                        <input type="number" id="sim-tiu" placeholder="0" style="width: 80px; padding: 0.5rem; border: 1px solid var(--border); border-radius: 6px;">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem;">TKP</label>
+                        <input type="number" id="sim-tkp" placeholder="0" style="width: 80px; padding: 0.5rem; border: 1px solid var(--border); border-radius: 6px;">
+                    </div>
+                    <div style="display: flex; align-items: flex-end;">
+                        <button class="btn" onclick="logSimulation()">Simpan Simulasi</button>
+                    </div>
+                </div>
+                <div id="sim-log" style="max-height: 200px; overflow-y: auto;">
+                </div>
+            </div>
+
+            <!-- Contoh Soal -->
+            <div class="card full-width">
+                <h2>Contoh Soal + Analisis</h2>
+                <div class="tabs" id="question-tabs">
+                    <div class="tab active" onclick="showQuestions('twk')">TWK</div>
+                    <div class="tab" onclick="showQuestions('tiu')">TIU</div>
+                    <div class="tab" onclick="showQuestions('tkp')">TKP</div>
+                </div>
+                <div id="questions-content">
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div class="card full-width">
+                <h2>Resources</h2>
+                <div class="grid" style="margin-bottom: 0;">
+                    <div>
+                        <h3 style="margin-bottom: 0.75rem;">Website & Apps</h3>
+                        <div class="stat-row">
+                            <span class="stat-label">Simulasi CAT</span>
+                            <a href="https://catpns.com" target="_blank">catpns.com</a>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Info CPNS</span>
+                            <a href="https://sscasn.bkn.go.id" target="_blank">sscasn.bkn.go.id</a>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Latihan Soal</span>
+                            <span>CPNS Pro / Cat CPNS app</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 0.75rem;">YouTube Channels</h3>
+                        <div class="stat-row">
+                            <span class="stat-label">CPNS TETAP BELAJAR</span>
+                            <span>Full materi + trik</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Ambis CPNS</span>
+                            <span>Speed drill + simulasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donate Modal -->
+    <div id="donate-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+        <div style="background: white; border-radius: 16px; padding: 2rem; max-width: 400px; width: 90%; text-align: center;">
+            <h2 style="margin-bottom: 1rem;">❤️ Donasi Sukarela</h2>
+            <p style="color: var(--muted); margin-bottom: 1.5rem; font-size: 0.9rem;">
+                Platform ini <strong>100% GRATIS</strong>. Jika Anda merasa terbantu, donasi sukarela untuk maintenance server & pengembangan platform.
+            </p>
+            <div style="background: var(--secondary); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">QRIS</p>
+                <div style="background: white; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                    <p style="font-size: 0.85rem; color: var(--muted);">[QR Code QRIS]</p>
+                </div>
+                <p style="font-weight: 600; margin-bottom: 0.5rem;">Transfer Bank</p>
+                <p style="font-size: 0.9rem;">BCA: 1234567890</p>
+                <p style="font-size: 0.9rem;">a/n CPNS Learning Platform</p>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--muted); margin-bottom: 1.5rem;">
+                Donasi akan digunakan untuk: server, domain, maintenance, dan pengembangan fitur baru.
+            </p>
+            <button class="btn" onclick="closeDonateModal()" style="width: 100%;">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Countdown to estimated SKD exam (July 2026)
+        function updateCountdown() {
+            const examDate = new Date('2026-07-15');
+            const today = new Date();
+            const diff = examDate - today;
+            const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+            document.getElementById('countdown').textContent = days > 0 ? days : 'SUDAH LEWAT';
+        }
+        updateCountdown();
+
+        // Schedule data
+        const schedules = {
+            1: [
+                { day: 'Senin', pagi: 'Sila 1-2 Pancasila', siang: 'Sinonim/antonim (TIU)', malam: 'Review catatan' },
+                { day: 'Selasa', pagi: 'Sila 3-4 Pancasila', siang: 'Analogi verbal (TIU)', malam: 'Latihan soal TWK 10' },
+                { day: 'Rabu', pagi: 'Sila 5 Pancasila', siang: 'Aritmatika dasar (TIU)', malam: 'Review catatan' },
+                { day: 'Kamis', pagi: 'UUD 1945 Pasal 1-15', siang: 'Persentase & pecahan', malam: 'Latihan soal TWK 10' },
+                { day: 'Jumat', pagi: 'UUD 1945 Pasal 16-37', siang: 'Barisan bilangan', malam: 'Review catatan' },
+                { day: 'Sabtu', pagi: 'Simulasi mini TWK 15 soal', siang: '—', malam: '—' },
+                { day: 'Minggu', pagi: 'REST DAY', siang: '—', malam: '—' }
+            ],
+            2: [
+                { day: 'Senin', pagi: '4 Amendemen UUD 1945', siang: 'Soal cerita (TIU)', malam: 'Latihan soal TWK 15' },
+                { day: 'Selasa', pagi: 'Sistem pemerintahan', siang: 'Rotasi & refleksi (TIU)', malam: 'Review catatan' },
+                { day: 'Rabu', pagi: 'Sejarah pergerakan', siang: 'Analogi figural', malam: 'Latihan soal TWK 15' },
+                { day: 'Kamis', pagi: 'BPUPKI & PPKI', siang: 'Serialisasi gambar', malam: 'Review catatan' },
+                { day: 'Jumat', pagi: 'Bhinneka Tunggal Ika', siang: 'Speed drill TIU 10 soal', malam: 'Latihan soal TWK 15' },
+                { day: 'Sabtu', pagi: 'Simulasi mini TWK 20 soal', siang: '—', malam: '—' },
+                { day: 'Minggu', pagi: 'REST DAY', siang: '—', malam: '—' }
+            ],
+            3: [
+                { day: 'Senin', pagi: 'Anti-radikalisme', siang: 'Verbal reasoning panjang', malam: 'TKP: pelayanan publik' },
+                { day: 'Selasa', pagi: 'Bela negara', siang: 'Numerik campuran', malam: 'TKP: jejaring kerja' },
+                { day: 'Rabu', pagi: 'Kasus Pancasila 1-10', siang: 'Figural kompleks', malam: 'TKP: sosial budaya' },
+                { day: 'Kamis', pagi: 'Kasus Pancasila 11-20', siang: 'Speed drill TIU 15 soal', malam: 'TKP: teknologi informasi' },
+                { day: 'Jumat', pagi: 'Kasus Pancasila 21-30', siang: 'Review TIU lemah', malam: 'TKP: profetik' },
+                { day: 'Sabtu', pagi: 'Simulasi TWK 30 soal', siang: 'Simulasi TIU 20 soal', malam: '—' },
+                { day: 'Minggu', pagi: 'REST DAY', siang: '—', malam: '—' }
+            ],
+            4: [
+                { day: 'Senin', pagi: 'Review TWK lemah', siang: 'Review TIU lemah', malam: 'Review TKP' },
+                { day: 'Selasa', pagi: 'Latihan soal TWK 30', siang: 'Latihan soal TIU 30', malam: 'Latihan soal TKP 30' },
+                { day: 'Rabu', pagi: 'Mind map TWK', siang: 'Rumus cepat TIU', malam: 'Tips TKP' },
+                { day: 'Kamis', pagi: 'TWK drill', siang: 'TIU speed drill', malam: 'TKP drill' },
+                { day: 'Jumat', pagi: 'Persiapan simulasi', siang: 'Persiapan simulasi', malam: 'Persiapan simulasi' },
+                { day: 'Sabtu', pagi: 'SIMULASI CAT PENUH #1', siang: '—', malam: 'Analisis hasil' },
+                { day: 'Minggu', pagi: 'REST DAY', siang: '—', malam: '—' }
+            ]
+        };
+
+        function showWeek(week) {
+            // Update tabs
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab')[week-1].classList.add('active');
+
+            // Update table
+            const tbody = document.getElementById('schedule-body');
+            tbody.innerHTML = schedules[week].map(s => `
+                <tr>
+                    <td><strong>${s.day}</strong></td>
+                    <td>${s.pagi}</td>
+                    <td>${s.siang}</td>
+                    <td>${s.malam}</td>
+                </tr>
+            `).join('');
+        }
+        showWeek(1);
+
+        // Checklist persistence
+        function saveChecklist() {
+            const checks = {};
+            for (let i = 1; i <= 5; i++) {
+                const el = document.getElementById('chk' + i);
+                checks['chk' + i] = el.checked;
+                el.parentElement.classList.toggle('checked', el.checked);
+            }
+            localStorage.setItem('cpns-checklist-' + new Date().toDateString(), JSON.stringify(checks));
+        }
+
+        function loadChecklist() {
+            const saved = localStorage.getItem('cpns-checklist-' + new Date().toDateString());
+            if (saved) {
+                const checks = JSON.parse(saved);
+                for (let i = 1; i <= 5; i++) {
+                    const el = document.getElementById('chk' + i);
+                    el.checked = checks['chk' + i] || false;
+                    el.parentElement.classList.toggle('checked', el.checked);
+                }
+            }
+        }
+
+        function resetChecklist() {
+            for (let i = 1; i <= 5; i++) {
+                const el = document.getElementById('chk' + i);
+                el.checked = false;
+                el.parentElement.classList.remove('checked');
+            }
+            localStorage.removeItem('cpns-checklist-' + new Date().toDateString());
+        }
+
+        // Simulation log
+        function logSimulation() {
+            const twk = parseInt(document.getElementById('sim-twk').value) || 0;
+            const tiu = parseInt(document.getElementById('sim-tiu').value) || 0;
+            const tkp = parseInt(document.getElementById('sim-tkp').value) || 0;
+
+            if (!twk && !tiu && !tkp) return;
+
+            const log = JSON.parse(localStorage.getItem('cpns-sim-log') || '[]');
+            log.unshift({
+                date: new Date().toLocaleDateString('id-ID'),
+                twk, tiu, tkp,
+                pass: twk >= 65 && tiu >= 80 && tkp >= 143
+            });
+            localStorage.setItem('cpns-sim-log', JSON.stringify(log));
+
+            document.getElementById('sim-twk').value = '';
+            document.getElementById('sim-tiu').value = '';
+            document.getElementById('sim-tkp').value = '';
+
+            renderSimLog();
+        }
+
+        function renderSimLog() {
+            const log = JSON.parse(localStorage.getItem('cpns-sim-log') || '[]');
+            const container = document.getElementById('sim-log');
+
+            if (log.length === 0) {
+                container.innerHTML = '<p style="color: var(--muted); text-align: center; padding: 2rem;">Belum ada simulasi tercatat</p>';
+                return;
+            }
+
+            container.innerHTML = `
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>TWK</th>
+                            <th>TIU</th>
+                            <th>TKP</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${log.map(l => `
+                            <tr>
+                                <td>${l.date}</td>
+                                <td style="color: ${l.twk >= 65 ? 'var(--success)' : 'var(--danger)'}">${l.twk}</td>
+                                <td style="color: ${l.tiu >= 80 ? 'var(--success)' : 'var(--danger)'}">${l.tiu}</td>
+                                <td style="color: ${l.tkp >= 143 ? 'var(--success)' : 'var(--danger)'}">${l.tkp}</td>
+                                <td><span class="badge ${l.pass ? 'badge-success' : 'badge-danger'}">${l.pass ? 'PASS' : 'BELUM'}</span></td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+        }
+
+        // Init
+        loadChecklist();
+        renderSimLog();
+
+        // Questions data
+        const questions = {
+            twk: [
+                {
+                    q: "Sila keempat Pancasila berbunyi...",
+                    options: ["Ketuhanan Yang Maha Esa", "Kemanusiaan yang adil dan beradab", "Persatuan Indonesia", "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan ✓", "Keadilan sosial bagi seluruh rakyat Indonesia"],
+                    answer: 3,
+                    explanation: "Sila keempat: Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan"
+                },
+                {
+                    q: "Amandemen UUD 1945 yang mengatur tentang pemilihan presiden secara langsung adalah amandemen ke...",
+                    options: ["Amandemen I", "Amandemen II", "Amandemen III", "Amandemen IV ✓", "Belum diamandemen"],
+                    answer: 3,
+                    explanation: "Amandemen IV (2002) mengatur presiden & wakil dipilih langsung oleh rakyat"
+                },
+                {
+                    q: "Seorang PNS menolak upacara bendera dengan alasan keyakinannya. Sikap yang tepat adalah...",
+                    options: ["Membiarkan karena itu hak pribadi", "Melaporkan langsung ke atasan", "Memahami keyakinannya tapi menjelaskan kewajiban sebagai PNS ✓", "Memaksa untuk ikut upacara", "Mengabaikan dan melanjutkan upacara"],
+                    answer: 2,
+                    explanation: "Pahami keyakinan + edukasi kewajiban sebagai PNS = empati + profesional"
+                }
+            ],
+            tiu: [
+                {
+                    q: "ABSTRAK memiliki persamaan makna dengan...",
+                    options: ["Konkret", "Nyata", "Teoritis ✓", "Praktis", "Fisik"],
+                    answer: 2,
+                    explanation: "Abstrak = teoritis (bukan konkret/nyata/fisik)"
+                },
+                {
+                    q: "TANGAN : SARUNG TANGAN = KAKI : ...",
+                    options: ["Kaos kaki", "Sepatu ✓", "Sandal", "Celana", "Topi"],
+                    answer: 1,
+                    explanation: "Tangan dilindungi sarung tangan, kaki dilindungi sepatu"
+                },
+                {
+                    q: "2, 6, 18, 54, ... → Angka berikutnya?",
+                    options: ["108", "162 ✓", "216", "180", "144"],
+                    answer: 1,
+                    explanation: "Pola: ×3. 54 × 3 = 162"
+                },
+                {
+                    q: "Jika A berusia 2× B, dan jumlah usia mereka 60 tahun. Usia A adalah...",
+                    options: ["20", "30", "40 ✓", "50", "60"],
+                    answer: 2,
+                    explanation: "2B + B = 60 → B = 20 → A = 40"
+                }
+            ],
+            tkp: [
+                {
+                    q: "Anda petugas pelayanan. Warga datang dengan berkas TIDAK LENGKAP, sudah bolak-balik, dan marah. Apa yang Anda lakukan?",
+                    options: [
+                        "Tolak berkas, suruh lengkapi (Skor 1)",
+                        "Terima & proses walau tidak lengkap (Skor 2)",
+                        "Jelaskan kekurangan & minta lengkapi (Skor 3)",
+                        "Jelaskan sabar + berikan daftar lengkap (Skor 4)",
+                        "Jelaskan sabar + daftar + tawarkan bantuan supaya tidak bolak-balik (Skor 5) ✓"
+                    ],
+                    answer: 4,
+                    explanation: "Skor 5: Inisiatif + empati + solusi preventif"
+                },
+                {
+                    q: "Tetangga Anda sering ikut kelompok yang sebar kebencian di medsos. Apa tindakan Anda?",
+                    options: [
+                        "Biarkan, urusan pribadi (Skor 1)",
+                        "Langsung lapor polisi (Skor 2)",
+                        "Tegur langsung (Skor 3)",
+                        "Lapor ke RT/RW (Skor 4)",
+                        "Pendekatan persuasif + lapor ke RT/RW/BNPT untuk preventif (Skor 5) ✓"
+                    ],
+                    answer: 4,
+                    explanation: "Skor 5: Bijak + tegas + preventif"
+                },
+                {
+                    q: "Anda diminta atasan selesaikan laporan 2 hari. Rekan minta bantuan untuk pekerjaan mendesak. Apa yang Anda lakukan?",
+                    options: [
+                        "Tolak bantu rekan, fokus kerjaan sendiri (Skor 1)",
+                        "Bantu rekan duluan karena kasihan (Skor 2)",
+                        "Bantu rekan setelah kerjaan selesai (Skor 3)",
+                        "Atur waktu agar keduanya selesai (Skor 4)",
+                        "Atur prioritas + selesaikan laporan duluan + arahkan rekan untuk selesaikan sendiri (Skor 5) ✓"
+                    ],
+                    answer: 4,
+                    explanation: "Skor 5: Proaktif + solutif + mandiri"
+                }
+            ]
+        };
+
+        function showQuestions(type) {
+            // Update tabs
+            document.querySelectorAll('#question-tabs .tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const container = document.getElementById('questions-content');
+            container.innerHTML = questions[type].map((q, i) => `
+                <div style="margin-bottom: 1.5rem; padding: 1rem; background: var(--secondary); border-radius: 8px;">
+                    <p style="font-weight: 600; margin-bottom: 0.75rem;">${i+1}. ${q.q}</p>
+                    ${q.options.map((opt, j) => `
+                        <div style="padding: 0.5rem 0.75rem; margin: 0.25rem 0; border-radius: 6px; cursor: pointer; background: ${j === q.answer ? '#dcfce7' : 'transparent'}; border: 1px solid ${j === q.answer ? '#22c55e' : 'var(--border)'};">
+                            ${String.fromCharCode(65+j)}. ${opt}
+                        </div>
+                    `).join('')}
+                    <p style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--muted);">💡 ${q.explanation}</p>
+                </div>
+            `).join('');
+        }
+        showQuestions('twk');
+
+        // Donate modal functions
+        function showDonateModal() {
+            document.getElementById('donate-modal').style.display = 'flex';
+        }
+
+        function closeDonateModal() {
+            document.getElementById('donate-modal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('donate-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeDonateModal();
+            }
+        });
+    </script>
+</body>
+</html>

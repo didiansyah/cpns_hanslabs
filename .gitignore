@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Next.js
+.next/
+out/
+.turbo/
+
+# Production
+dist/
+build/
+
+# Database
+*.db
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# PM2
+.pm2/
+
+# Extracted data (too large for repo)
+extracted_questions.json
+new_extracted.json
+scraped_tkp.json
+bank-soal/
+
+# Python temp files
+__pycache__/
+*.egg-info/
