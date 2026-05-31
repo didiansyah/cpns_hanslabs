@@ -23,12 +23,23 @@ def list_questions(section: str = None, topic: str = None, year: int = None, dif
         "options": q.options
     } for q in questions]}
 
+@router.get("/topics")
+def list_topics(section: str = None, db: Session = Depends(get_db)):
+    from sqlalchemy import func
+    q = db.query(Question.topic, func.count(Question.id).label("count"))
+    if section:
+        q = q.filter(Question.section == section.upper())
+    q = q.group_by(Question.topic).order_by(func.count(Question.id).desc())
+    return {"ok": True, "data": [{"topic": r.topic, "count": r.count} for r in q.all()]}
+
 @router.get("/random")
-def random_questions(section: str = None, count: int = Query(10, le=50), db: Session = Depends(get_db)):
+def random_questions(section: str = None, topic: str = None, count: int = Query(10, le=50), db: Session = Depends(get_db)):
     from sqlalchemy import func
     q = db.query(Question).order_by(func.rand())
     if section:
         q = q.filter(Question.section == section.upper())
+    if topic:
+        q = q.filter(Question.topic == topic)
     questions = q.limit(count).all()
     return {"ok": True, "data": [{
         "id": q.id, "section": q.section, "topic": q.topic, "year": q.year,
