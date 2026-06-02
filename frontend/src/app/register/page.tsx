@@ -81,7 +81,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-background">
+    <div className="min-h-screen flex items-center justify-center px-4 bg-card">
       <div className="absolute top-4 right-4"><ThemeToggle /></div>
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
@@ -89,7 +89,7 @@ export default function RegisterPage() {
           <p className="text-sm text-muted-foreground mt-1">Belajar CPNS 2026</p>
           <div className="flex justify-center gap-2 mt-4">
             {["data", "otp", "done"].map((s, i) => (
-              <div key={s} className={`h-1.5 w-16 rounded-full ${["data", "otp", "done"].indexOf(step) >= i ? "bg-foreground" : "bg-muted"}`} />
+              <div key={s} className={`h-1.5 w-16 rounded-full ${["data", "otp", "done"].indexOf(step) >= i ? "bg-primary" : "bg-muted"}`} />
             ))}
           </div>
         </CardHeader>
@@ -101,30 +101,30 @@ export default function RegisterPage() {
                 <label className="text-sm font-medium">Nama Lengkap</label>
                 <div className="relative mt-1">
                   <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                  <input type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Nama kamu" className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-background text-foreground" />
+                  <input type="text" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Nama kamu" className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-card text-card-foreground" />
                 </div>
               </div>
               <div>
                 <label className="text-sm font-medium">Email</label>
                 <div className="relative mt-1">
                   <Mail className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                  <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="nama@email.com" className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-background text-foreground" />
+                  <input type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="nama@email.com" className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-card text-card-foreground" />
                 </div>
               </div>
               <div>
                 <label className="text-sm font-medium">Password</label>
                 <div className="relative mt-1">
                   <Lock className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                  <input type="password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} placeholder="Minimal 6 karakter" className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-background text-foreground" />
+                  <input type="password" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} placeholder="Minimal 6 karakter" className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-card text-card-foreground" />
                 </div>
               </div>
               <div>
                 <label className="text-sm font-medium">No. WhatsApp <span className="text-muted-foreground">(opsional)</span></label>
-                <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="08xxxxxxxxxx" className="w-full px-4 py-2 border border-border rounded-xl bg-background text-foreground mt-1" />
+                <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="08xxxxxxxxxx" className="w-full px-4 py-2 border border-border rounded-xl bg-card text-card-foreground mt-1" />
               </div>
               <div>
                 <label className="text-sm font-medium">Pendidikan Terakhir</label>
-                <select value={form.education} onChange={(e) => setForm({ ...form, education: e.target.value })} className="w-full px-4 py-2 border border-border rounded-xl bg-background text-foreground mt-1">
+                <select value={form.education} onChange={(e) => setForm({ ...form, education: e.target.value })} className="w-full px-4 py-2 border border-border rounded-xl bg-card text-card-foreground mt-1">
                   <option value="">Pilih</option>
                   <option value="SMA">SMA/SMK</option>
                   <option value="D3">D3</option>
@@ -135,7 +135,7 @@ export default function RegisterPage() {
               </div>
               <div>
                 <label className="text-sm font-medium">Target Instansi <span className="text-muted-foreground">(opsional)</span></label>
-                <input type="text" value={form.target_instansi} onChange={(e) => setForm({ ...form, target_instansi: e.target.value })} placeholder="Contoh: Kemenkeu" className="w-full px-4 py-2 border border-border rounded-xl bg-background text-foreground mt-1" />
+                <input type="text" value={form.target_instansi} onChange={(e) => setForm({ ...form, target_instansi: e.target.value })} placeholder="Contoh: Kemenkeu" className="w-full px-4 py-2 border border-border rounded-xl bg-card text-card-foreground mt-1" />
               </div>
               <Button className="w-full" onClick={register} disabled={loading || !form.name || !form.email || !form.password}>
                 {loading ? "Mendaftar..." : "Daftar & Kirim OTP"}
@@ -163,7 +163,7 @@ export default function RegisterPage() {
                     onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
                     placeholder="123456"
                     maxLength={6}
-                    className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-background text-foreground text-center text-2xl tracking-[0.5em]"
+                    className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-card text-card-foreground text-center text-2xl tracking-[0.5em]"
                     onKeyDown={(e) => e.key === "Enter" && code.length === 6 && verifyOTP()}
                   />
                 </div>
@@ -178,8 +178,8 @@ export default function RegisterPage() {
           )}
           {step === "done" && (
             <div className="text-center py-8">
-              <div className="mx-auto w-16 h-16 rounded-full bg-green-500/10 flex items-center justify-center mb-4">
-                <Check className="h-8 w-8 text-green-600" />
+              <div className="mx-auto w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Check className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-lg font-semibold">Registrasi Berhasil!</h3>
               <p className="text-sm text-muted-foreground mt-1">Mengarahkan ke dashboard...</p>

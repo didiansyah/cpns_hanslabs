@@ -6,7 +6,7 @@ from db import get_db
 from services.auth_service import decode_jwt
 from models import User, Progress, StudyLog
 
-router = APIRouter()
+router = APIRouter(redirect_slashes=False)
 
 def require_auth(request: Request, db: Session = Depends(get_db)):
     auth = request.headers.get("Authorization", "")
@@ -15,6 +15,7 @@ def require_auth(request: Request, db: Session = Depends(get_db)):
     if not data: return None
     return db.query(User).filter(User.id == data["user_id"]).first()
 
+@router.get("", include_in_schema=False)
 @router.get("/")
 def get_progress(user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return {"ok": False, "error": "Unauthorized"}

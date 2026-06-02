@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-06-01T03:29:44.822440Z",
+  "backup": "/root/cpns/backups/answer_legitimacy_round2_2026_06_01.json",
+  "backed_up_rows": 410,
+  "answer_fixed": 250,
+  "phrase_fixed": 74,
+  "phrase_missed": {
+    "2353": [
+      "belajar hal",
+      "hal positif"
+    ],
+    "3088": [
+      "belajar hal",
+      "hal positif"
+    ],
+    "2375": [
+      "membantu",
+      "beradaptasi"
+    ],
+    "3110": [
+      "membantu",
+      "beradaptasi"
+    ],
+    "2468": [
+      "koordinasi",
+      "izin"
+    ],
+    "3018": [
+      "koordinasi",
+      "izin"
+    ],
+    "2651": [
+      "menawarkan bantuan",
+      "meminta tugas"
+    ],
+    "3370": [
+      "menawarkan bantuan",
+      "meminta tugas"
+    ],
+    "3659": [
+      "termotivasi",
+      "melaporkan progres"
+    ],
+    "3709": [
+      "koordinasi",
+      "langsung"
+    ],
+    "4016": [
+      "lapor pimpinan",
+      "menerima keputusan"
+    ],
+    "4029": [
+      "mempertimbangkan pendapat"
+    ],
+    "4451": [
+      "solusi",
+      "pimpinan"
+    ]
+  },
+  "recategorized": 20,
+  "cleaned_text": 9,
+  "deleted": 63
+}

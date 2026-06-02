@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-06-01T02:53:02.185711Z",
+  "backup": "/root/cpns/backups/answer_legitimacy_improve_2026_06_01.json",
+  "planned_touched_ids": 531,
+  "backed_up_rows": 531,
+  "embedded_option_cleaned": 138,
+  "embedded_answer_aligned": 65,
+  "manual_answer_fixed": 201,
+  "recategorized": 155,
+  "deleted": 62
+}

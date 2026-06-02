@@ -2,7 +2,17 @@ from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 from pydantic import BaseModel, EmailStr, field_validator
 from db import get_db
-from services.auth_service import request_otp, verify_otp_register, send_otp_email, decode_jwt, login_with_password
+from services.auth_service import (
+    FRONTEND_URL,
+    create_password_reset,
+    decode_jwt,
+    login_with_password,
+    request_otp,
+    reset_password_with_token,
+    send_otp_email,
+    send_password_reset_email,
+    verify_otp_register,
+)
 from main import limiter
 
 router = APIRouter()
@@ -41,6 +51,22 @@ class RegisterReq(BaseModel):
 class LoginReq(BaseModel):
     email: EmailStr
     password: str
+
+class ForgotPasswordReq(BaseModel):
+    email: EmailStr
+
+class ResetPasswordReq(BaseModel):
+    token: str
+    password: str
+
+    @field_validator("password")
+    @classmethod
+    def validate_password(cls, v):
+        if len(v) < 6:
+            raise ValueError("Password minimal 6 karakter")
+        if len(v) > 128:
+            raise ValueError("Password maksimal 128 karakter")
+        return v
 
 class VerifyRegisterReq(BaseModel):
     email: EmailStr
@@ -91,6 +117,27 @@ def verify_register(req: VerifyRegisterReq, request: Request, db: Session = Depe
 def login(req: LoginReq, request: Request, db: Session = Depends(get_db)):
     """Login with email + password (no OTP)."""
     result, err = login_with_password(db, req.email, req.password)
+    if err:
+        return {"ok": False, "error": err}
+    return {"ok": True, "data": result}
+
+@router.post("/forgot-password")
+@limiter.limit("5/minute")
+async def forgot_password(req: ForgotPasswordReq, request: Request, db: Session = Depends(get_db)):
+    """Request a one-time password reset link. Response is generic to avoid email enumeration."""
+    token, err = create_password_reset(db, req.email)
+    if err:
+        return {"ok": False, "error": err}
+    if token:
+        reset_url = f"{FRONTEND_URL}/reset-password?token={token}"
+        await send_password_reset_email(str(req.email), reset_url)
+    return {"ok": True, "message": "Jika email terdaftar, link reset password sudah dikirim."}
+
+@router.post("/reset-password")
+@limiter.limit("10/minute")
+def reset_password(req: ResetPasswordReq, request: Request, db: Session = Depends(get_db)):
+    """Reset password using one-time token from email."""
+    result, err = reset_password_with_token(db, req.token, req.password)
     if err:
         return {"ok": False, "error": err}
     return {"ok": True, "data": result}

@@ -27,6 +27,17 @@ class EmailOTP(Base):
     used = Column(Boolean, default=False)
     created_at = Column(DateTime, server_default=func.now())
 
+class PasswordResetToken(Base):
+    __tablename__ = "password_reset_tokens"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    email = Column(String(100), nullable=False, index=True)
+    token_hash = Column(String(64), nullable=False, unique=True)
+    expires_at = Column(DateTime, nullable=False)
+    attempts = Column(Integer, default=0)
+    used = Column(Boolean, default=False)
+    created_at = Column(DateTime, server_default=func.now())
+
 class Progress(Base):
     __tablename__ = "progress"
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -48,6 +59,7 @@ class Simulation(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     sim_type = Column(String(20), nullable=False)
+    package_id = Column(Integer, ForeignKey("tryout_packages.id"), nullable=True, index=True)
     twk_score = Column(Integer)
     tiu_score = Column(Integer)
     tkp_score = Column(Integer)
@@ -55,6 +67,17 @@ class Simulation(Base):
     passed = Column(Boolean)
     duration_seconds = Column(Integer)
     questions_data = Column(JSON)
+    submitted_at = Column(DateTime, nullable=True)
+    created_at = Column(DateTime, server_default=func.now())
+
+class TryoutPackage(Base):
+    __tablename__ = "tryout_packages"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    part_number = Column(Integer, nullable=False, unique=True)
+    title = Column(String(120), nullable=False)
+    sim_type = Column(String(20), default="full", nullable=False)
+    question_ids = Column(JSON, nullable=False)
+    is_active = Column(Boolean, default=True, nullable=False)
     created_at = Column(DateTime, server_default=func.now())
 
 class Question(Base):

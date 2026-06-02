@@ -1,0 +1,153 @@
+{
+  "pdfs_considered": 31,
+  "raw_candidates": 137,
+  "unique_candidates": 107,
+  "novel_training_examples": 107,
+  "by_section": {
+    "TWK": 42,
+    "TKP": 35,
+    "TIU": 30
+  },
+  "by_topic": {
+    "TIU/Matematika Dasar": 11,
+    "TIU/Silogisme": 19,
+    "TKP/Bela Negara": 2,
+    "TKP/Integritas": 1,
+    "TKP/Jejaring Kerja": 2,
+    "TKP/Pelayanan Publik": 1,
+    "TKP/Profesionalisme": 29,
+    "TWK/Pancasila": 6,
+    "TWK/Sejarah Indonesia": 2,
+    "TWK/UUD 1945": 34
+  },
+  "source_stats": {
+    "1.  SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 39925,
+      "parsed": 12
+    },
+    "2. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 40008,
+      "parsed": 3
+    },
+    "3. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 46959,
+      "parsed": 9
+    },
+    "4. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 46303,
+      "parsed": 6
+    },
+    "5. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 40653,
+      "parsed": 7
+    },
+    "6. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 40936,
+      "parsed": 4
+    },
+    "7. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 37466,
+      "parsed": 5
+    },
+    "8. SOAL LATIHAN TWK-TIU-TKP.pdf": {
+      "chars": 37779,
+      "parsed": 4
+    },
+    "A. SOAL LATIHAN HOST.pdf": {
+      "chars": 27472,
+      "parsed": 0
+    },
+    "B.SOAL LATIHAN HOST.pdf": {
+      "chars": 36094,
+      "parsed": 0
+    },
+    "Buku Latihan Soal BUMN dan CPNS.pdf": {
+      "chars": 305,
+      "parsed": 0
+    },
+    "CPNS/HOTS SKD CPNS 01 Soal dan Pembahasan.pdf": {
+      "chars": 39343,
+      "parsed": 5
+    },
+    "CPNS/HOTS SKD CPNS 02 Soal dan Pembahasan.pdf": {
+      "chars": 40012,
+      "parsed": 9
+    },
+    "CPNS/KISI-KISI TKD CPNS 2021.pdf": {
+      "chars": 418780,
+      "parsed": 27
+    },
+    "CPNS/SUPER DIKTAT CPNS.pdf": {
+      "chars": 613,
+      "parsed": 0
+    },
+    "CPNS/TKP CPNS.pdf": {
+      "chars": 23079,
+      "parsed": 1
+    },
+    "DRILLING SOAL-SOAL CPNS.pdf": {
+      "chars": 723,
+      "parsed": 0
+    },
+    "MATERI SOAL LENGKAP SKD 2020 BY CENDEKIA.pdf": {
+      "chars": 278270,
+      "parsed": 0
+    },
+    "MATERI TWK.pdf": {
+      "chars": 34691,
+      "parsed": 0
+    },
+    "SOAL 2019-2020 CPNS-BUMN BY CENDEKIAPEDIA+PEMBAHASAN.pdf": {
+      "chars": 1474,
+      "parsed": 0
+    },
+    "SOAL KILAS BALIK CPNS 2015.pdf": {
+      "chars": 32303,
+      "parsed": 6
+    },
+    "SOAL LATIAN TIU VERBAL.pdf": {
+      "chars": 89469,
+      "parsed": 3
+    },
+    "SOAL TO 1 + KUNCI JAWABAN/SOAL TKD-TIU.pdf": {
+      "chars": 10221,
+      "parsed": 0
+    },
+    "SOAL TO 1 + KUNCI JAWABAN/SOAL TKD-TKP.pdf": {
+      "chars": 22461,
+      "parsed": 2
+    },
+    "SOAL TO 1 + KUNCI JAWABAN/SOAL TKD-TWK.pdf": {
+      "chars": 13996,
+      "parsed": 0
+    },
+    "SUKSES MENAKLUKAN BUMN&CPNS.pdf": {
+      "chars": 117,
+      "parsed": 0
+    },
+    "SUPER DIKTAT CPNS.pdf": {
+      "chars": 613,
+      "parsed": 0
+    },
+    "TKP CPNS.pdf": {
+      "chars": 23079,
+      "parsed": 1
+    },
+    "TWK+PEMBAHASAN.pdf": {
+      "chars": 85154,
+      "parsed": 18
+    },
+    "TWK+TIU+TKP + PEMBAHASAN.pdf": {
+      "chars": 40008,
+      "parsed": 3
+    },
+    "TWK+TIU+TKP+ PEMBAHASAN.pdf": {
+      "chars": 39925,
+      "parsed": 12
+    }
+  },
+  "outputs": {
+    "jsonl": "/root/cpns/question_training_corpus.jsonl",
+    "style_guide": "/root/cpns/generator_style_guide.md"
+  }
+}

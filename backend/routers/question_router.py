@@ -3,8 +3,43 @@ from sqlalchemy.orm import Session
 from db import get_db
 from models import Question
 
-router = APIRouter()
+router = APIRouter(redirect_slashes=False)
 
+def public_options(options):
+    """Expose option text only. TKP option scores stay server-side until answered."""
+    if not isinstance(options, list):
+        return []
+    return [o.get("text", "") if isinstance(o, dict) else o for o in options]
+
+def is_tkp_weighted(question: Question) -> bool:
+    options = question.options if isinstance(question.options, list) else []
+    return question.section == "TKP" and len(options) == 5 and all(isinstance(o, dict) and "score" in o for o in options)
+
+def is_public_usable(question: Question) -> bool:
+    opts = public_options(question.options)
+    normalized = [o.strip().lower() for o in opts if isinstance(o, str)]
+    has_answer_key = question.correct_answer is not None or is_tkp_weighted(question)
+    return (
+        len(opts) == 5
+        and all(isinstance(o, str) and o.strip() for o in opts)
+        and len(set(normalized)) == 5
+        and has_answer_key
+    )
+
+def option_score(question: Question, selected: int) -> tuple[bool, int, int]:
+    options = question.options if isinstance(question.options, list) else []
+    if selected < 0 or selected >= len(options):
+        return False, 0, 5
+    if question.section == "TKP" and isinstance(options[selected], dict):
+        scores = [int(o.get("score", 0)) for o in options if isinstance(o, dict)]
+        selected_score = int(options[selected].get("score", 0))
+        max_score = max(scores) if scores else 5
+        return selected_score == max_score, selected_score, max_score
+    correct = selected == question.correct_answer
+    return correct, 5 if correct else 0, 5
+
+
+@router.get("", include_in_schema=False)
 @router.get("/")
 def list_questions(section: str = None, topic: str = None, year: int = None, difficulty: str = None, limit: int = Query(20, le=100), db: Session = Depends(get_db)):
     q = db.query(Question)
@@ -16,11 +51,16 @@ def list_questions(section: str = None, topic: str = None, year: int = None, dif
         q = q.filter(Question.year == year)
     if difficulty:
         q = q.filter(Question.difficulty == difficulty)
-    questions = q.limit(limit).all()
+    questions = []
+    for item in q.limit(min(limit * 3, 300)).all():
+        if is_public_usable(item):
+            questions.append(item)
+        if len(questions) >= limit:
+            break
     return {"ok": True, "data": [{
         "id": q.id, "section": q.section, "topic": q.topic, "year": q.year,
         "difficulty": q.difficulty, "question_text": q.question_text,
-        "options": q.options
+        "options": public_options(q.options)
     } for q in questions]}
 
 @router.get("/topics")
@@ -40,11 +80,16 @@ def random_questions(section: str = None, topic: str = None, count: int = Query(
         q = q.filter(Question.section == section.upper())
     if topic:
         q = q.filter(Question.topic == topic)
-    questions = q.limit(count).all()
+    questions = []
+    for item in q.limit(min(count * 3, 150)).all():
+        if is_public_usable(item):
+            questions.append(item)
+        if len(questions) >= count:
+            break
     return {"ok": True, "data": [{
         "id": q.id, "section": q.section, "topic": q.topic, "year": q.year,
         "difficulty": q.difficulty, "question_text": q.question_text,
-        "options": q.options
+        "options": public_options(q.options)
     } for q in questions]}
 
 @router.get("/{question_id}")
@@ -55,11 +100,12 @@ def get_question(question_id: int, db: Session = Depends(get_db)):
     return {"ok": True, "data": {
         "id": q.id, "section": q.section, "topic": q.topic, "year": q.year,
         "difficulty": q.difficulty, "question_text": q.question_text,
-        "options": q.options
+        "options": public_options(q.options)
         # correct_answer and explanation NOT exposed — must use /check endpoint
     }}
 
-@router.post("/check")
+@router.post("/check", include_in_schema=False)
+@router.post("/check/")
 def check_answer(data: dict, db: Session = Depends(get_db)):
     q = db.query(Question).filter(Question.id == data.get("question_id")).first()
     if not q:
@@ -67,6 +113,17 @@ def check_answer(data: dict, db: Session = Depends(get_db)):
     user_answer = data.get("answer")
     if user_answer is None:
         return {"ok": False, "error": "Jawaban tidak boleh kosong"}
-    is_correct = user_answer == q.correct_answer
-    # Only reveal correct_answer + explanation AFTER user submits
-    return {"ok": True, "correct": is_correct, "correct_answer": q.correct_answer, "explanation": q.explanation}
+    try:
+        selected = int(user_answer)
+    except (TypeError, ValueError):
+        return {"ok": False, "error": "Jawaban tidak valid"}
+    is_correct, selected_score, max_score = option_score(q, selected)
+    # Only reveal scoring details AFTER user submits
+    return {
+        "ok": True,
+        "correct": is_correct,
+        "correct_answer": q.correct_answer,
+        "selected_score": selected_score,
+        "max_score": max_score,
+        "explanation": q.explanation,
+    }

@@ -6,8 +6,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  Clock, ChevronLeft, ChevronRight, Check, X, Loader2,
-  Bookmark, BookmarkCheck, Send, AlertTriangle,
+  Clock, ChevronLeft, ChevronRight, Check, Loader2,
+  Bookmark, BookmarkCheck, Send, AlertTriangle, Save,
+  LayoutGrid, X,
 } from "lucide-react";
 
 const SIM_CONFIG: Record<string, { label: string; time: number; sections: string[] }> = {
@@ -31,6 +32,15 @@ interface Answer {
   section: string;
 }
 
+interface RunnerDraft {
+  answers: Answer[];
+  bookmarks: number[];
+  current: number;
+  timeLeft: number;
+  questionIds: number[];
+  updatedAt: number;
+}
+
 export default function RunnerPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -45,13 +55,49 @@ export default function RunnerPage() {
   const [timeLeft, setTimeLeft] = useState(SIM_CONFIG[simType]?.time || 90 * 60);
   const [bookmarks, setBookmarks] = useState<Set<number>>(new Set());
   const [showConfirm, setShowConfirm] = useState(false);
+  const [showMap, setShowMap] = useState(false);
+  const [draftRestored, setDraftRestored] = useState(false);
+  const [lastSavedAt, setLastSavedAt] = useState<number | null>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const config = SIM_CONFIG[simType] || SIM_CONFIG.full;
+  const draftKey = `cpns_runner_draft_${simId || simType}`;
 
-  // Load questions for each section
+  const restoreDraft = (loadedQuestions: Question[]) => {
+    if (typeof window === "undefined" || loadedQuestions.length === 0) return;
+    const raw = localStorage.getItem(draftKey);
+    if (!raw) return;
+    try {
+      const draft = JSON.parse(raw) as RunnerDraft;
+      const loadedIds = loadedQuestions.map((item) => item.id).join(",");
+      if (draft.questionIds?.join(",") !== loadedIds) {
+        localStorage.removeItem(draftKey);
+        return;
+      }
+      setAnswers(Array.isArray(draft.answers) ? draft.answers : []);
+      setBookmarks(new Set(Array.isArray(draft.bookmarks) ? draft.bookmarks : []));
+      setCurrent(Math.min(Math.max(draft.current || 0, 0), loadedQuestions.length - 1));
+      if (typeof draft.timeLeft === "number" && draft.timeLeft > 0) setTimeLeft(draft.timeLeft);
+      setDraftRestored(true);
+      setLastSavedAt(draft.updatedAt || Date.now());
+    } catch {
+      localStorage.removeItem(draftKey);
+    }
+  };
+
+  // Load fixed package questions for tryout parts. Legacy/non-package sims fall back to random practice-style sets.
   useEffect(() => {
     async function loadAll() {
+      if (simId) {
+        const packageRes = await apiGet(`/simulations/${simId}/questions`);
+        if (packageRes.ok && packageRes.data?.length > 0) {
+          setQuestions(packageRes.data);
+          restoreDraft(packageRes.data);
+          setLoading(false);
+          return;
+        }
+      }
+
       const allQuestions: Question[] = [];
       for (const sec of config.sections) {
         const count = sec === "TWK" ? 30 : sec === "TIU" ? 35 : 45;
@@ -59,10 +105,37 @@ export default function RunnerPage() {
         if (res.ok) allQuestions.push(...res.data);
       }
       setQuestions(allQuestions);
+      restoreDraft(allQuestions);
       setLoading(false);
     }
     loadAll();
-  }, [simType]);
+  }, [simId, simType]);
+
+  useEffect(() => {
+    if (loading || questions.length === 0 || typeof window === "undefined") return;
+    const updatedAt = Date.now();
+    const draft: RunnerDraft = {
+      answers,
+      bookmarks: Array.from(bookmarks),
+      current,
+      timeLeft,
+      questionIds: questions.map((item) => item.id),
+      updatedAt,
+    };
+    localStorage.setItem(draftKey, JSON.stringify(draft));
+    setLastSavedAt(updatedAt);
+  }, [answers, bookmarks, current, timeLeft, questions, loading, draftKey]);
+
+  useEffect(() => {
+    const hasDraft = answers.length > 0 || bookmarks.size > 0;
+    if (!hasDraft) return;
+    const handler = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = "";
+    };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [answers.length, bookmarks]);
 
   // Timer
   useEffect(() => {
@@ -90,6 +163,22 @@ export default function RunnerPage() {
 
   const q = questions[current];
   const currentAnswer = answers.find((a) => a.questionId === q?.id);
+  const bookmarkedCount = bookmarks.size;
+
+  const questionGroups = [
+    { label: "TWK", start: 0, end: 30 },
+    { label: "TIU", start: 30, end: 65 },
+    { label: "TKP", start: 65, end: questions.length },
+  ].map((group) => ({ ...group, items: questions.slice(group.start, group.end) })).filter((group) => group.items.length > 0);
+
+  const getMapButtonClass = (question: Question, index: number) => {
+    const answered = answers.some((a) => a.questionId === question.id);
+    const bookmarked = bookmarks.has(question.id);
+    if (index === current) return "bg-primary text-primary-foreground ring-2 ring-primary/30 shadow-sm";
+    if (bookmarked) return "border border-accent/50 bg-accent/15 text-primary";
+    if (answered) return "border border-primary/30 bg-primary/10 text-primary";
+    return "border border-border bg-secondary/70 text-muted-foreground hover:bg-secondary hover:text-foreground";
+  };
 
   const selectAnswer = (idx: number) => {
     if (!q) return;
@@ -133,22 +222,6 @@ export default function RunnerPage() {
     return () => window.removeEventListener("keydown", handler);
   }, [q, showConfirm]);
 
-  const calculateScore = () => {
-    const scores: Record<string, { correct: number; total: number }> = {};
-    for (const sec of config.sections) {
-      scores[sec] = { correct: 0, total: 0 };
-    }
-    answers.forEach((a) => {
-      const question = questions.find((q) => q.id === a.questionId);
-      if (question && scores[question.section]) {
-        scores[question.section].total++;
-        // Note: We don't have correct_answer here, so we'll need to submit and let backend calculate
-        // For now, we'll estimate based on the scoring formula
-      }
-    });
-    return scores;
-  };
-
   const handleSubmit = useCallback(async () => {
     if (submitting) return;
     setSubmitting(true);
@@ -156,15 +229,10 @@ export default function RunnerPage() {
 
     const duration = config.time - timeLeft;
 
-    // Submit answers to backend for scoring
-    // For now, we'll use a simple scoring: each correct = 5 points
-    // In a real system, the backend would check each answer
     const res = await apiPost(`/simulations/${simId}/submit`, {
-      twk_score: Math.floor(Math.random() * 30) + 100, // Placeholder
-      tiu_score: Math.floor(Math.random() * 30) + 120,
-      tkp_score: Math.floor(Math.random() * 40) + 160,
       duration_seconds: duration,
       questions_data: {
+        questions: questions.map((q) => ({ id: q.id, section: q.section })),
         answers: answers.map((a) => ({ question_id: a.questionId, selected: a.selected })),
         total_questions: questions.length,
         answered: answers.length,
@@ -172,10 +240,11 @@ export default function RunnerPage() {
     });
 
     if (res.ok) {
+      if (typeof window !== "undefined") localStorage.removeItem(draftKey);
       router.push(`/dashboard/simulations/result?id=${simId}`);
     }
     setSubmitting(false);
-  }, [submitting, config.time, timeLeft, simId, answers, questions, router]);
+  }, [submitting, config.time, timeLeft, simId, answers, questions, router, draftKey]);
 
   if (loading) {
     return (
@@ -192,36 +261,99 @@ export default function RunnerPage() {
   const unansweredCount = questions.length - answeredCount;
   const progressPct = (answeredCount / questions.length) * 100;
 
+  const renderQuestionMap = (onPick?: () => void) => (
+    <CardContent>
+      <div className="mb-4 grid grid-cols-3 gap-2 text-center text-xs">
+        <div className="rounded-lg border border-border bg-secondary/40 p-2">
+          <p className="font-mono font-bold">{answeredCount}</p>
+          <p className="text-muted-foreground">Terjawab</p>
+        </div>
+        <div className="rounded-lg border border-border bg-secondary/40 p-2">
+          <p className="font-mono font-bold">{unansweredCount}</p>
+          <p className="text-muted-foreground">Belum</p>
+        </div>
+        <div className="rounded-lg border border-accent/30 bg-accent/15 p-2">
+          <p className="font-mono font-bold text-primary">{bookmarkedCount}</p>
+          <p className="text-muted-foreground">Ragu</p>
+        </div>
+      </div>
+      <div className="space-y-4">
+        {questionGroups.map((group) => (
+          <div key={group.label} className="space-y-2">
+            <div className="flex items-center justify-between">
+              <p className="text-xs font-bold tracking-wide text-muted-foreground">{group.label}</p>
+              <p className="text-[10px] font-mono text-muted-foreground">{group.start + 1}-{group.start + group.items.length}</p>
+            </div>
+            <div className="grid grid-cols-5 gap-1.5">
+              {group.items.map((question, groupIndex) => {
+                const index = group.start + groupIndex;
+                const isBookmarked = bookmarks.has(question.id);
+                return (
+                  <button
+                    key={question.id}
+                    onClick={() => { goTo(index); onPick?.(); }}
+                    aria-label={`Ke soal ${index + 1}`}
+                    className={`relative flex h-8 w-full items-center justify-center rounded-lg text-[11px] font-mono font-bold transition-all ${getMapButtonClass(question, index)}`}
+                  >
+                    {index + 1}
+                    {isBookmarked && index !== current && (
+                      <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-accent" />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-4 grid grid-cols-2 gap-2 text-[11px] text-muted-foreground">
+        <div className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-primary" /> Aktif</div>
+        <div className="flex items-center gap-1"><span className="h-3 w-3 rounded bg-primary/20" /> Terjawab</div>
+        <div className="flex items-center gap-1"><span className="h-3 w-3 rounded border border-border bg-secondary" /> Belum</div>
+        <div className="flex items-center gap-1"><span className="h-2 w-2 rounded-full bg-accent" /> Ragu</div>
+      </div>
+    </CardContent>
+  );
+
   return (
     <div className="space-y-4">
       {/* Top bar */}
-      <div className="sticky top-0 z-40 bg-background/95 backdrop-blur border-b border-border/50 -mx-4 lg:-mx-6 px-4 lg:px-6 py-3">
-        <div className="flex items-center justify-between">
+      <div className="sticky top-0 z-40 bg-card/95 backdrop-blur border-b border-border/50 -mx-4 lg:-mx-6 px-4 lg:px-6 py-3">
+        <div className="flex items-center justify-between gap-3">
           <div>
             <h1 className="font-bold font-serif text-sm">{config.label}</h1>
             <p className="text-xs text-muted-foreground">
               Soal {current + 1} / {questions.length} · {answeredCount} terjawab
             </p>
+            <p className="mt-0.5 inline-flex items-center gap-1 text-[10px] text-muted-foreground/70">
+              <Save className="h-3 w-3" />
+              {draftRestored ? "Draft dipulihkan · " : "Autosave aktif · "}
+              {lastSavedAt ? `tersimpan ${new Date(lastSavedAt).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" })}` : "menunggu perubahan"}
+            </p>
           </div>
-          <div className="flex items-center gap-3">
-            <Badge variant="secondary" className={`gap-1.5 font-mono px-3 py-1.5 ${timeLeft < 300 ? "bg-red-500/10 text-red-600" : ""}`}>
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+            <Button variant="outline" size="sm" className="rounded-lg lg:hidden" onClick={() => setShowMap(true)}>
+              <LayoutGrid className="h-4 w-4 sm:mr-1.5" />
+              <span className="hidden sm:inline">Peta</span>
+            </Button>
+            <Badge variant="secondary" className={`gap-1.5 font-mono px-3 py-1.5 ${timeLeft < 300 ? "bg-destructive/10 text-destructive" : ""}`}>
               <Clock className="h-3.5 w-3.5" />
               {formatTime(timeLeft)}
             </Badge>
             <Button
               variant="outline"
               size="sm"
-              className="rounded-lg"
+              className="rounded-lg border-primary/30"
               onClick={() => setShowConfirm(true)}
             >
-              <Send className="h-4 w-4 mr-1.5" /> Selesai
+              <Send className="h-4 w-4 sm:mr-1.5" /> <span className="hidden sm:inline">Selesai</span>
             </Button>
           </div>
         </div>
         {/* Progress bar */}
         <div className="mt-2 h-1 bg-secondary rounded-full overflow-hidden">
           <div
-            className="h-full bg-foreground/80 rounded-full transition-all duration-300"
+            className="h-full bg-primary rounded-full transition-all duration-300"
             style={{ width: `${progressPct}%` }}
           />
         </div>
@@ -240,16 +372,18 @@ export default function RunnerPage() {
                   </div>
                   <button
                     onClick={toggleBookmark}
-                    className={`p-1.5 rounded-lg transition-colors ${
-                      bookmarks.has(q.id) ? "text-amber-500 bg-amber-500/10" : "text-muted-foreground hover:text-foreground"
+                    aria-label={bookmarks.has(q.id) ? "Hapus tanda ragu" : "Tandai ragu"}
+                    className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-xs font-medium transition-colors ${
+                      bookmarks.has(q.id) ? "text-primary bg-accent/15 dark:text-primary" : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                     }`}
                   >
                     {bookmarks.has(q.id) ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
+                    {bookmarks.has(q.id) ? "Ragu" : "Tandai Ragu"}
                   </button>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm leading-relaxed">{q.question_text}</p>
+                <p className="text-base font-medium leading-relaxed text-foreground sm:text-[17px]">{q.question_text}</p>
                 <div className="space-y-2">
                   {q.options?.map((opt: string, i: number) => {
                     const isSelected = currentAnswer?.selected === i;
@@ -257,19 +391,25 @@ export default function RunnerPage() {
                       <button
                         key={i}
                         onClick={() => selectAnswer(i)}
-                        className={`w-full text-left p-3.5 rounded-xl border-2 text-sm transition-all ${
+                        aria-pressed={isSelected}
+                        className={`w-full text-left p-3.5 rounded-xl border-2 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 ${
                           isSelected
-                            ? "border-foreground bg-foreground/5"
-                            : "border-border hover:border-foreground/30 hover:bg-muted/30"
+                            ? "border-foreground bg-primary text-primary-foreground shadow-sm"
+                            : "border-border hover:border-primary/40 hover:bg-muted/30"
                         }`}
                       >
                         <div className="flex items-center gap-3">
                           <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-xs font-bold ${
-                            isSelected ? "bg-foreground text-background" : "bg-secondary text-muted-foreground"
+                            isSelected ? "bg-card text-card-foreground" : "bg-secondary text-muted-foreground"
                           }`}>
                             {String.fromCharCode(65 + i)}
                           </span>
-                          <span className="flex-1">{opt}</span>
+                          <span className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full border ${
+                            isSelected ? "border-background" : "border-border"
+                          }`}>
+                            {isSelected && <span className="h-2 w-2 rounded-full bg-card" />}
+                          </span>
+                          <span className={`flex-1 ${isSelected ? "text-primary-foreground" : ""}`}>{opt}</span>
                         </div>
                       </button>
                     );
@@ -280,7 +420,7 @@ export default function RunnerPage() {
           )}
 
           {/* Navigation */}
-          <div className="flex items-center justify-between">
+          <div className="sticky bottom-0 z-30 -mx-4 flex items-center justify-between border-t border-border/50 bg-card/95 px-4 py-3 backdrop-blur lg:static lg:mx-0 lg:border-0 lg:bg-transparent lg:p-0">
             <Button variant="outline" size="sm" className="rounded-lg" onClick={prev} disabled={current === 0}>
               <ChevronLeft className="h-4 w-4 mr-1" /> Sebelumnya
             </Button>
@@ -299,46 +439,24 @@ export default function RunnerPage() {
             <CardHeader className="pb-3">
               <CardTitle className="text-sm font-serif">Peta Soal</CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-5 gap-1.5">
-                {questions.map((q, i) => {
-                  const ans = answers.find((a) => a.questionId === q.id);
-                  const isBookmarked = bookmarks.has(q.id);
-                  return (
-                    <button
-                      key={q.id}
-                      onClick={() => goTo(i)}
-                      className={`relative flex h-9 w-full items-center justify-center rounded-lg text-xs font-mono font-bold transition-all ${
-                        i === current
-                          ? "bg-foreground text-background ring-2 ring-foreground/20"
-                          : ans
-                          ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
-                          : "bg-secondary text-muted-foreground hover:bg-secondary/80"
-                      }`}
-                    >
-                      {i + 1}
-                      {isBookmarked && (
-                        <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-amber-500" />
-                      )}
-                    </button>
-                  );
-                })}
-              </div>
-              <div className="mt-3 flex items-center gap-3 text-xs text-muted-foreground">
-                <div className="flex items-center gap-1">
-                  <span className="h-3 w-3 rounded bg-emerald-500/20" /> Terjawab
-                </div>
-                <div className="flex items-center gap-1">
-                  <span className="h-3 w-3 rounded bg-secondary" /> Belum
-                </div>
-                <div className="flex items-center gap-1">
-                  <span className="h-2 w-2 rounded-full bg-amber-500" /> Ragu
-                </div>
-              </div>
-            </CardContent>
+            {renderQuestionMap()}
           </Card>
         </div>
       </div>
+
+      {showMap && (
+        <div className="fixed inset-0 z-50 bg-black/50 lg:hidden" onClick={() => setShowMap(false)}>
+          <div className="absolute inset-x-0 bottom-0 max-h-[86vh] overflow-y-auto rounded-t-2xl bg-card p-4 shadow-xl" onClick={(event) => event.stopPropagation()}>
+            <div className="mb-3 flex items-center justify-between">
+              <h2 className="font-serif text-lg font-bold">Peta Soal</h2>
+              <Button variant="ghost" size="sm" className="rounded-full" onClick={() => setShowMap(false)}>
+                <X className="h-4 w-4" />
+              </Button>
+            </div>
+            {renderQuestionMap(() => setShowMap(false))}
+          </div>
+        </div>
+      )}
 
       {/* Confirm submit modal */}
       {showConfirm && (
@@ -346,9 +464,9 @@ export default function RunnerPage() {
           <Card className="w-full max-w-sm mx-4">
             <CardContent className="p-6 text-center">
               {unansweredCount > 0 ? (
-                <AlertTriangle className="h-12 w-12 text-amber-500 mx-auto mb-3" />
+                <AlertTriangle className="h-12 w-12 text-accent mx-auto mb-3" />
               ) : (
-                <Check className="h-12 w-12 text-emerald-500 mx-auto mb-3" />
+                <Check className="h-12 w-12 text-primary mx-auto mb-3" />
               )}
               <h2 className="text-lg font-bold font-serif mb-2">Yakin Selesai?</h2>
               <p className="text-sm text-muted-foreground mb-4">
@@ -356,6 +474,23 @@ export default function RunnerPage() {
                   ? `Masih ada ${unansweredCount} soal yang belum dijawab.`
                   : "Semua soal sudah dijawab!"}
               </p>
+              <p className="mb-4 rounded-lg border border-accent/30 bg-accent/15 px-3 py-2 text-xs text-primary">
+                Setelah dikirim, jawaban final dan tidak bisa diubah lagi.
+              </p>
+              <div className="mb-5 grid grid-cols-3 gap-2 text-center text-xs">
+                <div className="rounded-lg bg-secondary/60 p-2">
+                  <p className="font-mono text-base font-bold">{answeredCount}</p>
+                  <p className="text-muted-foreground">Terjawab</p>
+                </div>
+                <div className="rounded-lg bg-secondary/60 p-2">
+                  <p className="font-mono text-base font-bold">{unansweredCount}</p>
+                  <p className="text-muted-foreground">Belum</p>
+                </div>
+                <div className="rounded-lg bg-accent/15 p-2">
+                  <p className="font-mono text-base font-bold text-primary">{bookmarkedCount}</p>
+                  <p className="text-muted-foreground">Ragu</p>
+                </div>
+              </div>
               <div className="flex gap-3">
                 <Button variant="outline" className="flex-1 rounded-lg" onClick={() => setShowConfirm(false)}>
                   Lanjutkan

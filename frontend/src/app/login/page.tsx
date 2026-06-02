@@ -31,7 +31,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-background">
+    <div className="min-h-screen flex items-center justify-center px-4 bg-card">
       <div className="absolute top-4 right-4"><ThemeToggle /></div>
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
@@ -50,7 +50,7 @@ export default function LoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="nama@email.com"
-                  className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-background text-foreground"
+                  className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-card text-card-foreground"
                   onKeyDown={(e) => e.key === "Enter" && email && password && handleLogin()}
                 />
               </div>
@@ -64,7 +64,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Minimal 6 karakter"
-                  className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-background text-foreground"
+                  className="w-full pl-10 pr-4 py-2 border border-border rounded-xl bg-card text-card-foreground"
                   onKeyDown={(e) => e.key === "Enter" && email && password && handleLogin()}
                 />
               </div>
@@ -72,9 +72,12 @@ export default function LoginPage() {
             <Button className="w-full" onClick={handleLogin} disabled={loading || !email || !password}>
               {loading ? "Masuk..." : "Masuk"}
             </Button>
-            <p className="text-center text-sm text-muted-foreground">
-              Belum punya akun? <Link href="/register" className="text-foreground font-medium hover:underline">Daftar</Link>
-            </p>
+            <div className="flex items-center justify-between gap-3 text-sm">
+              <Link href="/forgot-password" className="text-muted-foreground hover:text-foreground hover:underline">Lupa password?</Link>
+              <span className="text-muted-foreground">
+                Belum punya akun? <Link href="/register" className="text-foreground font-medium hover:underline">Daftar</Link>
+              </span>
+            </div>
           </div>
         </CardContent>
       </Card>

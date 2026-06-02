@@ -41,11 +41,12 @@ npm-debug.log*
 # PM2
 .pm2/
 
-# Extracted data (too large for repo)
+# Extracted data / local backups (too large or may contain live data)
 extracted_questions.json
 new_extracted.json
 scraped_tkp.json
 bank-soal/
+backups/
 
 # Python temp files
 __pycache__/

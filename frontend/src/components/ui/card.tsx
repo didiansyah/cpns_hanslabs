@@ -1,6 +1,6 @@
 import { cn } from "@/lib/format";
 export function Card({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn("rounded-xl border border-border bg-card text-card-foreground", className)} {...props} />;
+  return <div className={cn("rounded-2xl border border-border bg-card text-card-foreground shadow-sm shadow-primary/5", className)} {...props} />;
 }
 export function CardContent({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return <div className={cn("p-6 pt-0", className)} {...props} />;

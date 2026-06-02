@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "@/lib/auth";
 import { apiPut } from "@/lib/api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,18 +8,36 @@ import { Badge } from "@/components/ui/badge";
 import { Check, Loader2, User, Mail, Phone, GraduationCap, Building2 } from "lucide-react";
 
 export default function SettingsPage() {
-  const { user } = useAuth();
+  const { user, token, setAuth } = useAuth();
   const [form, setForm] = useState({
-    name: user?.name || "", phone: user?.phone || "",
-    education: user?.education || "", target_instansi: user?.target_instansi || "",
+    name: "", phone: "",
+    education: "", target_instansi: "",
   });
   const [saved, setSaved] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (!user) return;
+    setForm({
+      name: user.name || "",
+      phone: user.phone || "",
+      education: user.education || "",
+      target_instansi: user.target_instansi || "",
+    });
+  }, [user]);
 
   const save = async () => {
     setSaving(true);
+    setError("");
     const res = await apiPut("/users/me", form);
-    if (res.ok) { setSaved(true); setTimeout(() => setSaved(false), 2000); }
+    if (res.ok && user && token) {
+      setAuth(token, { ...user, ...form });
+      setSaved(true);
+      setTimeout(() => setSaved(false), 2000);
+    } else {
+      setError(res.error || "Gagal menyimpan profil");
+    }
     setSaving(false);
   };
 
@@ -32,7 +50,7 @@ export default function SettingsPage() {
           <div className="flex items-center justify-between">
             <CardTitle className="text-base font-serif">Profil</CardTitle>
             {saved && (
-              <Badge className="bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-0 gap-1">
+              <Badge className="bg-primary/10 text-primary border-0 gap-1">
                 <Check className="h-3 w-3" strokeWidth={3} />
                 Tersimpan
               </Badge>
@@ -50,7 +68,7 @@ export default function SettingsPage() {
               type="text"
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
-              className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground/40 transition-all placeholder:text-muted-foreground/50"
+              className="w-full px-4 py-2.5 border border-border rounded-xl bg-card text-card-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all placeholder:text-muted-foreground/50"
               placeholder="Nama lengkap"
             />
           </div>
@@ -81,7 +99,7 @@ export default function SettingsPage() {
               value={form.phone}
               onChange={(e) => setForm({ ...form, phone: e.target.value })}
               placeholder="08xxxxxxxxxx"
-              className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground/40 transition-all placeholder:text-muted-foreground/50"
+              className="w-full px-4 py-2.5 border border-border rounded-xl bg-card text-card-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all placeholder:text-muted-foreground/50"
             />
           </div>
 
@@ -94,7 +112,7 @@ export default function SettingsPage() {
             <select
               value={form.education}
               onChange={(e) => setForm({ ...form, education: e.target.value })}
-              className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground/40 transition-all appearance-none cursor-pointer"
+              className="w-full px-4 py-2.5 border border-border rounded-xl bg-card text-card-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all appearance-none cursor-pointer"
             >
               <option value="">Pilih pendidikan</option>
               <option value="SMA">SMA/SMK</option>
@@ -116,9 +134,15 @@ export default function SettingsPage() {
               value={form.target_instansi}
               onChange={(e) => setForm({ ...form, target_instansi: e.target.value })}
               placeholder="Contoh: Kemenkeu, BKN, Kemenkumham"
-              className="w-full px-4 py-2.5 border border-border rounded-xl bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-foreground/40 transition-all placeholder:text-muted-foreground/50"
+              className="w-full px-4 py-2.5 border border-border rounded-xl bg-card text-card-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all placeholder:text-muted-foreground/50"
             />
           </div>
+
+          {error && (
+            <div className="rounded-xl border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+              {error}
+            </div>
+          )}
 
           <Button onClick={save} className="w-full rounded-lg" disabled={saving}>
             {saving ? (

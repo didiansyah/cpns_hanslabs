@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback, useRef } from "react";
-import { apiGet } from "@/lib/api";
+import { apiGet, apiPost } from "@/lib/api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -27,6 +27,10 @@ interface Answer {
   questionId: number;
   selected: number;
   correct: boolean;
+  correctAnswer?: number;
+  selectedScore?: number;
+  maxScore?: number;
+  explanation?: string;
 }
 
 export default function QuestionsPage() {
@@ -94,18 +98,29 @@ export default function QuestionsPage() {
   const q = questions[current];
   const currentAnswer = answers.find(a => a.questionId === q?.id);
 
-  const checkAnswer = useCallback(() => {
+  const checkAnswer = useCallback(async () => {
     if (selected === null || !q) return;
+    const res = await apiPost("/questions/check", { question_id: q.id, answer: selected });
+    if (!res.ok) return;
     setShowAnswer(true);
-    const correct = selected === (q as any).correct_answer;
+    const correct = Boolean(res.correct);
     setAnswers(prev => {
       const existing = prev.findIndex(a => a.questionId === q.id);
+      const nextAnswer = {
+        questionId: q.id,
+        selected,
+        correct,
+        correctAnswer: res.correct_answer,
+        selectedScore: res.selected_score,
+        maxScore: res.max_score,
+        explanation: res.explanation,
+      };
       if (existing >= 0) {
         const updated = [...prev];
-        updated[existing] = { questionId: q.id, selected, correct };
+        updated[existing] = nextAnswer;
         return updated;
       }
-      return [...prev, { questionId: q.id, selected, correct }];
+      return [...prev, nextAnswer];
     });
   }, [selected, q]);
 
@@ -176,7 +191,10 @@ export default function QuestionsPage() {
 
   const correctCount = answers.filter(a => a.correct).length;
   const wrongCount = answers.filter(a => !a.correct).length;
+  const totalScore = answers.reduce((sum, a) => sum + (a.selectedScore ?? (a.correct ? 5 : 0)), 0);
+  const maxScore = answers.reduce((sum, a) => sum + (a.maxScore ?? 5), 0);
   const pct = answers.length > 0 ? Math.round((correctCount / answers.length) * 100) : 0;
+  const isTkpPractice = section === "TKP";
 
   // Summary view
   if (showSummary && questions.length > 0) {
@@ -188,26 +206,30 @@ export default function QuestionsPage() {
           <CardContent className="p-6">
             <div className="flex flex-col items-center text-center">
               <div className={`flex h-20 w-20 items-center justify-center rounded-full mb-4 ${
-                pct >= 70 ? "bg-emerald-500/10" : pct >= 50 ? "bg-amber-500/10" : "bg-red-500/10"
+                pct >= 70 ? "bg-primary/10" : pct >= 50 ? "bg-accent/15" : "bg-destructive/10"
               }`}>
                 {pct >= 70 ? (
-                  <Trophy className="h-10 w-10 text-emerald-500" />
+                  <Trophy className="h-10 w-10 text-primary" />
                 ) : pct >= 50 ? (
-                  <Target className="h-10 w-10 text-amber-500" />
+                  <Target className="h-10 w-10 text-accent" />
                 ) : (
-                  <Zap className="h-10 w-10 text-red-500" />
+                  <Zap className="h-10 w-10 text-destructive" />
                 )}
               </div>
-              <p className="text-4xl font-bold font-mono mb-1">{pct}%</p>
+              <p className="text-4xl font-bold font-mono mb-1">
+                {isTkpPractice ? totalScore : `${pct}%`}
+              </p>
               <p className="text-muted-foreground text-sm">
-                {correctCount} benar dari {answers.length} soal
+                {isTkpPractice
+                  ? `nilai TKP dari maksimum ${maxScore}`
+                  : `${correctCount} benar dari ${answers.length} soal`}
               </p>
               <div className="flex items-center gap-4 mt-3 text-sm">
-                <span className="flex items-center gap-1.5 text-emerald-600">
-                  <Check className="h-4 w-4" /> {correctCount} Benar
+                <span className="flex items-center gap-1.5 text-primary">
+                  <Check className="h-4 w-4" /> {correctCount} {isTkpPractice ? "Skor 5" : "Benar"}
                 </span>
-                <span className="flex items-center gap-1.5 text-red-500">
-                  <X className="h-4 w-4" /> {wrongCount} Salah
+                <span className="flex items-center gap-1.5 text-destructive">
+                  <X className="h-4 w-4" /> {wrongCount} {isTkpPractice ? "Non-5" : "Salah"}
                 </span>
                 <span className="flex items-center gap-1.5 text-muted-foreground">
                   <Timer className="h-4 w-4" /> {formatTime(timer)}
@@ -237,15 +259,15 @@ export default function QuestionsPage() {
                     }}
                     className={`relative flex h-10 w-full items-center justify-center rounded-lg text-sm font-mono font-bold transition-all ${
                       isCorrect === true
-                        ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30"
+                        ? "bg-primary/10 text-primary border border-primary/30"
                         : isCorrect === false
-                        ? "bg-red-500/10 text-red-700 dark:text-red-400 border border-red-500/30"
+                        ? "bg-destructive/10 text-destructive border border-destructive/30"
                         : "bg-secondary text-muted-foreground border border-border"
                     }`}
                   >
                     {i + 1}
                     {isBookmarked && (
-                      <span className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-amber-500" />
+                      <span className="absolute -top-1 -right-1 h-2.5 w-2.5 rounded-full bg-accent" />
                     )}
                   </button>
                 );
@@ -375,17 +397,17 @@ export default function QuestionsPage() {
                 onClick={() => goToQuestion(i)}
                 className={`relative flex h-8 w-8 items-center justify-center rounded-lg text-xs font-mono font-bold transition-all ${
                   i === current
-                    ? "bg-foreground text-background ring-2 ring-foreground/20"
+                    ? "bg-primary text-primary-foreground ring-2 ring-primary/30"
                     : ans?.correct === true
-                    ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                    ? "bg-primary/10 text-primary"
                     : ans?.correct === false
-                    ? "bg-red-500/10 text-red-700 dark:text-red-400"
+                    ? "bg-destructive/10 text-destructive"
                     : "bg-secondary text-muted-foreground hover:bg-secondary/80"
                 }`}
               >
                 {i + 1}
                 {isBookmarked && (
-                  <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-amber-500" />
+                  <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-accent" />
                 )}
               </button>
             );
@@ -423,7 +445,7 @@ export default function QuestionsPage() {
                 <button
                   onClick={() => toggleBookmark(q.id)}
                   className={`p-1.5 rounded-lg transition-colors ${
-                    bookmarks.has(q.id) ? "text-amber-500 bg-amber-500/10" : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                    bookmarks.has(q.id) ? "text-accent bg-accent/15" : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
                   }`}
                 >
                   {bookmarks.has(q.id) ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
@@ -435,7 +457,7 @@ export default function QuestionsPage() {
             {/* Progress bar */}
             <div className="mt-3 h-1.5 bg-secondary rounded-full overflow-hidden">
               <div
-                className="h-full bg-foreground/80 rounded-full transition-all duration-300"
+                className="h-full bg-primary rounded-full transition-all duration-300"
                 style={{ width: `${((current + 1) / questions.length) * 100}%` }}
               />
             </div>
@@ -445,8 +467,8 @@ export default function QuestionsPage() {
             <div className="space-y-2.5">
               {q.options?.map((opt: any, i: number) => {
                 const optText = typeof opt === "string" ? opt : opt.text;
-                const isCorrect = showAnswer && i === (q as any).correct_answer;
-                const isWrong = showAnswer && selected === i && i !== (q as any).correct_answer;
+                const isCorrect = showAnswer && i === currentAnswer?.correctAnswer;
+                const isWrong = showAnswer && selected === i && i !== currentAnswer?.correctAnswer;
                 const isSelected = selected === i && !showAnswer;
                 return (
                   <button
@@ -454,19 +476,19 @@ export default function QuestionsPage() {
                     onClick={() => !showAnswer && setSelected(i)}
                     className={`w-full text-left p-3.5 rounded-xl border-2 text-sm transition-all ${
                       isSelected
-                        ? "border-foreground bg-foreground/5"
+                        ? "border-primary bg-primary/10"
                         : isCorrect
-                        ? "border-emerald-500 bg-emerald-500/10"
+                        ? "border-primary bg-primary/10"
                         : isWrong
-                        ? "border-red-500 bg-red-500/10"
-                        : "border-border hover:border-foreground/30 hover:bg-muted/30"
+                        ? "border-destructive bg-destructive/10"
+                        : "border-border hover:border-primary/40 hover:bg-muted/30"
                     }`}
                   >
                     <div className="flex items-start gap-3">
                       <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-xs font-bold ${
-                        isSelected ? "bg-foreground text-background" :
-                        isCorrect ? "bg-emerald-500 text-white" :
-                        isWrong ? "bg-red-500 text-white" :
+                        isSelected ? "bg-primary text-primary-foreground" :
+                        isCorrect ? "bg-primary text-white" :
+                        isWrong ? "bg-destructive text-white" :
                         "bg-secondary text-muted-foreground"
                       }`}>
                         {isCorrect ? <Check className="h-3.5 w-3.5" strokeWidth={3} /> :
@@ -482,13 +504,18 @@ export default function QuestionsPage() {
                 );
               })}
             </div>
-            {showAnswer && (q as any).explanation && (
+            {showAnswer && currentAnswer?.explanation && (
               <div className="p-4 bg-secondary/50 border border-border/50 rounded-xl">
                 <div className="flex items-center gap-2 mb-2">
-                  <Lightbulb className="h-4 w-4 text-amber-500" />
+                  <Lightbulb className="h-4 w-4 text-accent" />
                   <span className="text-sm font-semibold">Pembahasan</span>
+                  {q.section === "TKP" && currentAnswer.selectedScore !== undefined && (
+                    <Badge variant="secondary" className="ml-auto text-[10px]">
+                      Skor {currentAnswer.selectedScore}/{currentAnswer.maxScore}
+                    </Badge>
+                  )}
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{(q as any).explanation}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{currentAnswer.explanation}</p>
               </div>
             )}
             <div className="flex items-center justify-between pt-2">

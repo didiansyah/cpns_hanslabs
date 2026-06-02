@@ -1,14 +1,25 @@
 from fastapi import APIRouter, Depends
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 from db import get_db
 from models import Progress, User
 
-router = APIRouter()
+router = APIRouter(redirect_slashes=False)
 
+@router.get("", include_in_schema=False)
 @router.get("/")
 def leaderboard(db: Session = Depends(get_db)):
-    results = db.query(Progress, User).join(User, Progress.user_id == User.id).order_by(
-        (Progress.twk_score + Progress.tiu_score + Progress.tkp_score).desc()
+    total_score = (Progress.twk_score + Progress.tiu_score + Progress.tkp_score)
+    results = db.query(Progress, User).join(User, Progress.user_id == User.id).filter(
+        or_(
+            Progress.twk_score > 0,
+            Progress.tiu_score > 0,
+            Progress.tkp_score > 0,
+            Progress.sim_count > 0,
+            Progress.study_days > 0,
+        )
+    ).order_by(
+        total_score.desc()
     ).limit(100).all()
     return {"ok": True, "data": [{
         "rank": i + 1,
