@@ -46,9 +46,15 @@ export default function DashboardPage() {
 
   const toggleCheck = async (key: string) => {
     if (!checklist) return;
+    const previous = checklist;
     const updated = { ...checklist, [key]: !checklist[key] };
     setChecklist(updated);
-    await apiPut("/checklists/today", { [key]: updated[key] });
+    const res = await apiPut("/checklists/today", { [key]: updated[key] });
+    if (res.ok && res.progress) {
+      setProgress(res.progress);
+    } else if (!res.ok) {
+      setChecklist(previous);
+    }
   };
 
   if (loading) return (

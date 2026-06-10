@@ -11,6 +11,9 @@ import {
   LayoutGrid, X,
 } from "lucide-react";
 
+const AUTOSAVE_DEBOUNCE_MS = 15_000;
+const AUTOSAVE_INTERVAL_MS = 30_000;
+
 const SIM_CONFIG: Record<string, { label: string; time: number; sections: string[] }> = {
   full: { label: "Simulasi Penuh SKD", time: 90 * 60, sections: ["TWK", "TIU", "TKP"] },
   twk: { label: "Tes Wawasan Kebangsaan", time: 35 * 60, sections: ["TWK"] },
@@ -59,9 +62,29 @@ export default function RunnerPage() {
   const [draftRestored, setDraftRestored] = useState(false);
   const [lastSavedAt, setLastSavedAt] = useState<number | null>(null);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const autosaveTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const draftStateRef = useRef({ answers, bookmarks, current, timeLeft, questions });
 
   const config = SIM_CONFIG[simType] || SIM_CONFIG.full;
   const draftKey = `cpns_runner_draft_${simId || simType}`;
+  draftStateRef.current = { answers, bookmarks, current, timeLeft, questions };
+
+  const saveDraft = useCallback(() => {
+    if (loading || typeof window === "undefined") return;
+    const { answers, bookmarks, current, timeLeft, questions } = draftStateRef.current;
+    if (questions.length === 0) return;
+    const updatedAt = Date.now();
+    const draft: RunnerDraft = {
+      answers,
+      bookmarks: Array.from(bookmarks),
+      current,
+      timeLeft,
+      questionIds: questions.map((item) => item.id),
+      updatedAt,
+    };
+    localStorage.setItem(draftKey, JSON.stringify(draft));
+    setLastSavedAt(updatedAt);
+  }, [draftKey, loading]);
 
   const restoreDraft = (loadedQuestions: Question[]) => {
     if (typeof window === "undefined" || loadedQuestions.length === 0) return;
@@ -113,29 +136,30 @@ export default function RunnerPage() {
 
   useEffect(() => {
     if (loading || questions.length === 0 || typeof window === "undefined") return;
-    const updatedAt = Date.now();
-    const draft: RunnerDraft = {
-      answers,
-      bookmarks: Array.from(bookmarks),
-      current,
-      timeLeft,
-      questionIds: questions.map((item) => item.id),
-      updatedAt,
+    if (autosaveTimerRef.current) clearTimeout(autosaveTimerRef.current);
+    autosaveTimerRef.current = setTimeout(saveDraft, AUTOSAVE_DEBOUNCE_MS);
+    return () => {
+      if (autosaveTimerRef.current) clearTimeout(autosaveTimerRef.current);
     };
-    localStorage.setItem(draftKey, JSON.stringify(draft));
-    setLastSavedAt(updatedAt);
-  }, [answers, bookmarks, current, timeLeft, questions, loading, draftKey]);
+  }, [answers, bookmarks, current, questions, loading, saveDraft]);
+
+  useEffect(() => {
+    if (loading || questions.length === 0 || typeof window === "undefined") return;
+    const interval = setInterval(saveDraft, AUTOSAVE_INTERVAL_MS);
+    return () => clearInterval(interval);
+  }, [loading, questions.length, saveDraft]);
 
   useEffect(() => {
     const hasDraft = answers.length > 0 || bookmarks.size > 0;
     if (!hasDraft) return;
     const handler = (event: BeforeUnloadEvent) => {
+      saveDraft();
       event.preventDefault();
       event.returnValue = "";
     };
     window.addEventListener("beforeunload", handler);
     return () => window.removeEventListener("beforeunload", handler);
-  }, [answers.length, bookmarks]);
+  }, [answers.length, bookmarks, saveDraft]);
 
   // Timer
   useEffect(() => {
@@ -327,7 +351,7 @@ export default function RunnerPage() {
             </p>
             <p className="mt-0.5 inline-flex items-center gap-1 text-[10px] text-muted-foreground/70">
               <Save className="h-3 w-3" />
-              {draftRestored ? "Draft dipulihkan · " : "Autosave aktif · "}
+              {draftRestored ? "Draft dipulihkan · " : "Autosave 15–30 dtk · "}
               {lastSavedAt ? `tersimpan ${new Date(lastSavedAt).toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit" })}` : "menunggu perubahan"}
             </p>
           </div>
@@ -507,3 +531,4 @@ export default function RunnerPage() {
     </div>
   );
 }
+

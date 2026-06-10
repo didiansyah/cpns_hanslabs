@@ -1,0 +1,42 @@
+{
+  "title": "Ujian Berlangsung",
+  "forms": [
+    {
+      "action": null,
+      "method": null,
+      "inputs": [
+        [
+          "jawaban",
+          "a",
+          "radio"
+        ],
+        [
+          "jawaban",
+          "b",
+          "radio"
+        ],
+        [
+          "jawaban",
+          "c",
+          "radio"
+        ],
+        [
+          "jawaban",
+          "d",
+          "radio"
+        ],
+        [
+          "jawaban",
+          "e",
+          "radio"
+        ]
+      ]
+    }
+  ],
+  "links": [],
+  "scripts": [
+    "",
+    "",
+    "\r\n        // Global variables - FIXED: Timer tidak reset karena menggunakan sisa waktu dari server\r\n        let sisaWaktu = 6000;\r\n        let sesiId = 54298;\r\n        //let nomorAktif = 1;\r\n        l"
+  ]
+}

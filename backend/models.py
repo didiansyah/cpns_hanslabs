@@ -114,3 +114,16 @@ class StudyLog(Base):
     section = Column(String(3))
     notes = Column(Text)
     created_at = Column(DateTime, server_default=func.now())
+
+class Feedback(Base):
+    __tablename__ = "feedback"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    category = Column(String(40), nullable=False, default="other", index=True)
+    rating = Column(Integer)
+    message = Column(Text, nullable=False)
+    path = Column(String(255))
+    user_agent = Column(String(500))
+    status = Column(String(30), nullable=False, default="open", index=True)
+    created_at = Column(DateTime, server_default=func.now())
+    updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())

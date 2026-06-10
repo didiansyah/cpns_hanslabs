@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Ujian - Simulasi CAT Seleksi Kompetensi PPPK</title>
+    <link href="https://cat.bkn.go.id/simulasi/assets/css/all.min.css" rel="stylesheet">
+    <link href="https://cat.bkn.go.id/simulasi/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cat.bkn.go.id/simulasi/assets/css/dashboard.css" rel="stylesheet">
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table th,
+        .table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .btn-info {
+            background-color: #17a2b8;
+        }
+
+        .btn-sm {
+            padding: 5px 10px;
+            font-size: 0.8rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .option-box {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #e1e5e9;
+        }
+
+        .option-box.correct {
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .option-label {
+            font-weight: bold;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #e9ecef;
+        }
+
+        .option-label.correct {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .option-content {
+            display: inline;
+        }
+
+        .option-bobot {
+            float: right;
+            font-weight: bold;
+        }
+
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .badge-success {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .badge-warning {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .badge-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .filter-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .stats-cards {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .stat-card p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+        }
+
+        .question-preview {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+
+        .import-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .upload-area {
+            border: 2px dashed #007bff;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            background: #f8f9fa;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: #0056b3;
+            background: #e3f2fd;
+        }
+
+        .upload-area.dragover {
+            border-color: #28a745;
+            background: #d4edda;
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .btn-upload {
+            background: #007bff;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-upload:hover {
+            background: #0056b3;
+        }
+
+        .format-info {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .format-table {
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .alert {
+            margin: 20px 0;
+        }
+
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .selected-file {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .file-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .file-icon {
+            font-size: 24px;
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        .img-preview,
+        .current-image {
+            max-width: 180px;
+            max-height: 180px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+            padding: 5px;
+            background: #fff;
+        }
+
+        .image-wrapper {
+            margin-top: 10px;
+        }
+
+        .image-title {
+            font-size: 13px;
+            color: #6c757d;
+            margin-bottom: 5px;
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://cat.bkn.go.id/simulasi/assets/images/logo_bkn.png" alt="Logo BKN" class="logo">
+                    <div class="title">
+                        <h1>SIMULASI CAT BKN v2.0</h1>
+                        <p>Pusat Pengembangan Sistem Seleksi</p>
+                    </div>
+                </div>
+                <div class="user-section">
+                    <div class="user-info">
+                        <i class="fas fa-user-circle"></i>
+                        Hello, <span>Didi Khodriansyah</span>
+                    </div>
+                    <a href="https://cat.bkn.go.id/simulasi/dashboard" class="logout-btn">
+                        <i class="fas fa-dashboard"></i>
+                        Dashboard
+                    </a>
+                    <a href="https://cat.bkn.go.id/simulasi/auth/logout" class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="content-container">
+            
+            
+<main class="dashboard-main">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="card-title mb-0">
+                            <i class="fas fa-info-circle"></i> Simulasi CAT Seleksi Kompetensi PPPK                        </h4>
+                    </div>
+                    <div class="card-body">
+                                                    <div class="mb-4">
+                                <h6 class="text-muted">Deskripsi Ujian: Simulasi CAT Seleksi Kompetensi PPPK</h6>
+
+                            </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info-group">
+                                    <h6 class="text-muted">Informasi Ujian</h6>
+                                    <table class="table table-borderless">
+                                        <tr>
+                                            <td><i class="fas fa-clock text-warning"></i> Durasi</td>
+                                            <td><strong>60 menit</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-list-ol text-success"></i> Total Soal</td>
+                                            <td><strong>60 soal</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-trophy text-info"></i> Passing Grade</td>
+                                            <td><strong>200.00</strong></td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td><i class="fas fa-calendar text-info"></i> Tanggal Tersedia</td>
+                                            <td><strong>01/04/2026 08:00 - 31/12/2026 12:00</strong></td>
+                                        </tr> -->
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-group">
+
+                                    <h6 class="text-muted">Materi Ujian</h6>
+                                                                            <ul class="list-group list-group-flush">
+                                                                                            <li class="list-group-item px-0">
+                                                    <i class="fas fa-book text-primary"></i>
+                                                    Wawancara                                                    <span class="badge bg-secondary float-end">10 soal</span>
+                                                </li>
+                                                                                            <li class="list-group-item px-0">
+                                                    <i class="fas fa-book text-primary"></i>
+                                                    Sosial Kultural                                                    <span class="badge bg-secondary float-end">20 soal</span>
+                                                </li>
+                                                                                            <li class="list-group-item px-0">
+                                                    <i class="fas fa-book text-primary"></i>
+                                                    Manajerial                                                    <span class="badge bg-secondary float-end">30 soal</span>
+                                                </li>
+                                                                                    </ul>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-exclamation-triangle"></i> Perhatian Penting
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success"></i>
+                                Pastikan koneksi internet stabil
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success"></i>
+                                Siapkan alat tulis untuk coret-coretan
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success"></i>
+                                Jawaban akan tersimpan otomatis
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-times text-danger"></i>
+                                Jangan refresh atau tutup browser
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-times text-danger"></i>
+                                Ujian hanya dapat dikerjakan 1 kali
+                            </li>
+                            <li class="mb-0">
+                                <i class="fas fa-clock text-warning"></i>
+                                Waktu akan berjalan otomatis setelah mulai
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-body text-center">
+                        
+                                                    <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                                <i class="fas fa-play"></i> Mulai Ujian Sekarang
+                            </button>
+                        
+                        <a href="https://cat.bkn.go.id/simulasi/ujian_peserta" class="btn btn-secondary mt-2">
+                            <i class="fas fa-arrow-left"></i> Kembali
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Konfirmasi -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-light text-dark">
+                    <h5 class="modal-title">
+                        <i class="fas fa-exclamation-triangle"></i> Konfirmasi Mulai Ujian
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Apakah Anda yakin ingin memulai ujian?</strong></p>
+                    <p class="text-muted">Setelah memulai ujian:</p>
+                    <ul class="text-muted">
+                        <li>Timer akan berjalan otomatis</li>
+                        <li>Anda tidak dapat mengulangi ujian</li>
+                        <li>Pastikan koneksi internet stabil</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Batal
+                    </button>
+                    <form action="https://cat.bkn.go.id/simulasi/ujian_peserta/mulai/1a2dc6c3-f27a-475d-9e4a-1f22b4c5da42" method="post" style="display: inline;">
+                        <input type="hidden" name="ci_csrf_token"
+                            value="" />
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-play"></i> Ya, Mulai Ujian
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .info-group {
+            margin-bottom: 20px;
+        }
+
+        .info-group h6 {
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 8px 0;
+        }
+
+        .card {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+    </style>
+
+</main>
+</div>
+</div>
+
+
+<footer class="footer bg-light py-3">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Badan Kepegawaian Negara. Hak Cipta Dilindungi.</p>
+        <p class="mb-0">Simulasi CAT BKN v2.0</p>
+    </div>
+</footer>
+</div>
+
+<script src="https://cat.bkn.go.id/simulasi/assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://cat.bkn.go.id/simulasi/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cat.bkn.go.id/simulasi/assets/js/jquery.dataTables.min.js"></script>
+<script src="https://cat.bkn.go.id/simulasi/assets/js/dataTables.bootstrap5.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Initialize DataTables
+        $('.datatable').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.13.1/i18n/id.json'
+            }
+        });
+
+        // Auto-hide alerts after 5 seconds
+        setTimeout(function() {
+            $('.alert').alert('close');
+        }, 5000);
+    });
+
+    function previewImage(inputId, previewId, currentId = null) {
+
+        const input = document.getElementById(inputId);
+        const preview = document.getElementById(previewId);
+
+        if (!input || !preview) return;
+
+        input.addEventListener('change', function(e) {
+
+            const file = e.target.files[0];
+
+            if (!file) {
+                preview.classList.add('d-none');
+                return;
+            }
+
+            // Validasi ukuran 512KB
+            if (file.size > 512000) {
+                alert('Ukuran gambar maksimal 512KB');
+
+                input.value = '';
+                preview.src = '';
+                preview.classList.add('d-none');
+
+                return;
+            }
+
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+
+                preview.src = event.target.result;
+                preview.classList.remove('d-none');
+
+                // sembunyikan gambar lama jika upload baru
+                if (currentId) {
+                    const currentImage = document.getElementById(currentId);
+
+                    if (currentImage) {
+                        currentImage.style.display = 'none';
+                    }
+                }
+            };
+
+            reader.readAsDataURL(file);
+        });
+    }
+
+    previewImage(
+        'gambar_pertanyaan',
+        'preview_pertanyaan',
+        'current_pertanyaan'
+    );
+
+    previewImage('gambar_a', 'preview_a', 'current_a');
+    previewImage('gambar_b', 'preview_b', 'current_b');
+    previewImage('gambar_c', 'preview_c', 'current_c');
+    previewImage('gambar_d', 'preview_d', 'current_d');
+    previewImage('gambar_e', 'preview_e', 'current_e');
+</script>

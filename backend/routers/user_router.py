@@ -1,11 +1,20 @@
 from fastapi import APIRouter, Depends, Request
+import os
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from db import get_db
 from services.auth_service import decode_jwt
-from models import User, Progress
+from models import User
+from services.progress_service import get_or_create_progress, progress_payload
 
 router = APIRouter()
+
+DEFAULT_SUPERADMIN_EMAILS = {"didihansya@gmail.com", "thisishanslabs@gmail.com"}
+
+def is_superadmin_email(email: str) -> bool:
+    configured = os.getenv("SUPERADMIN_EMAILS", "")
+    emails = {item.strip().lower() for item in configured.split(",") if item.strip()} or DEFAULT_SUPERADMIN_EMAILS
+    return email.lower() in emails
 
 def require_auth(request: Request, db: Session = Depends(get_db)):
     auth = request.headers.get("Authorization", "")
@@ -31,7 +40,7 @@ def get_me(user=Depends(require_auth)):
         "id": user.id, "name": user.name, "email": user.email,
         "phone": user.phone, "education": user.education,
         "target_instansi": user.target_instansi, "previous_cpns": user.previous_cpns,
-        "verified": user.verified, "created_at": str(user.created_at)
+        "verified": user.verified, "is_superadmin": is_superadmin_email(user.email), "created_at": str(user.created_at)
     }}
 
 @router.put("/me")
@@ -47,16 +56,7 @@ def update_me(req: UpdateProfileReq, user=Depends(require_auth), db: Session = D
 def get_progress(user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user:
         return {"ok": False, "error": "Unauthorized"}
-    p = db.query(Progress).filter(Progress.user_id == user.id).first()
-    if not p:
-        p = Progress(user_id=user.id)
-        db.add(p)
-        db.commit()
-        db.refresh(p)
-    return {"ok": True, "data": {
-        "study_days": p.study_days, "study_hours": float(p.study_hours or 0),
-        "sim_count": p.sim_count, "current_week": p.current_week,
-        "twk_score": float(p.twk_score or 0), "tiu_score": float(p.tiu_score or 0),
-        "tkp_score": float(p.tkp_score or 0), "streak_days": p.streak_days,
-        "last_study_date": str(p.last_study_date) if p.last_study_date else None
-    }}
+    p = get_or_create_progress(db, user.id)
+    db.commit()
+    db.refresh(p)
+    return {"ok": True, "data": progress_payload(p)}

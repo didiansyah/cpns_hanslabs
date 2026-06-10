@@ -1,0 +1,4968 @@
+{
+  "scraped_at": "2026-06-04T07:45:49Z",
+  "source_url": "https://cat.bkn.go.id/simulasi/",
+  "exam": "Simulasi CAT SKD CPNS",
+  "sesi_id": 54298,
+  "count": 110,
+  "questions": [
+    {
+      "nomor": 1,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Jepang menyerah tanpa syarat kepada Sekutu pada tanggal ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "13 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "14 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "15 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "16 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "21 Agustus 1945",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 2,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Sumber hukum dari keputusan hakim terdahulu yang dijadikan dasar keputusan oleh hakim - hakim lain dalam memutuskan perkara yang sama disebut ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "statue",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "custom",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Jurisprudensi",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "treaty",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "doktrin",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 3,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Pada saat menjelang perayaan HUT Republik Indonesia sering diadakan pawai dan perlombaan untuk memeriahkannya. Bentuk keikutsertaan anda untuk memeriahkannya adalah dengan?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Memasang bendera",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menyanyikan lagu Indonesia Raya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menikmati hari libur tanggal 17 Agustus",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menyumbang untuk kegiatan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menonton perlombaan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 4,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Apa fungsi DPR menurut UUD 1945?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mengawasi pemerintah",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Membuat undang-undang",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menjalankan yudikatif",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mewakili rakyat",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Bercanda gurau",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 5,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Penulis kitab Sutasoma yang di dalamnya terdapat semboyan Bhinneka Tunggal Ika adalah ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mpu Panuluh",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mpu Kanwa",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mpu Prapanca",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mpu Tantular",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mpu Sedah",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 6,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Apa arti lambang rantai pada Pancasila?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Keadilan sosial",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Persatuan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Kemanusiaan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Persaudaraan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Kedamaian",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 7,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Prinsip-prinsip dasar demokrasi telah tercermin dalam kehidupan masyarakat desa terutama pada saat mengatasi pekerjaan yang membutuhkan tenaga bersama yaitu denga cara seperti di bawah ini. Kecuali ?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Partisipasi",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Berdoa",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Sumbangan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Gotong royong",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Kerja bakti",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 8,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Di antara pernyataan berikut yang tidak tepat berkaitan dengan sistem pemerintahan di Amerika Serikat adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bentuk negara federasi",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Presiden hanya sebagai simbol negara saja",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menerapkan sistem pemerintahan presidensial",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Terdapat pemisahan yang keras antara lembaga legislatif, eksekutif, dan yudikatif",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Pemilihan presiden dan wakil presiden dalam satu paket secara langsung",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 9,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Lambang negara Indonesia adalah Garuda Pancasila. Perisai pada Garuda Pancasila memiliki warna dasar...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "merah, putih, emas dan hitam",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "hijau dan putih",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "biru dan merah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "merah dan putih",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "hitam dan emas",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 10,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Siapa tokoh perumus Piagam Jakarta?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Soekarno",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Moh. Hatta",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Radjiman",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Ahmad Subardjo",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Sayuti Melik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 11,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Suatu Komunitas Pemuda di Jakarta melakukan kegiatan bagi-bagi nasi setiap malam Sabtu, hal ini bersesuaian dengan sila ke ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "1",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "2",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "3",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "4",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "5",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 12,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "UUD 1945 menjamin kebebasan berserikat, berkumpul, dan mengeluarkan pendapat. Namun, dalam pelaksanaannya, seseorang tidak boleh mengeluarkan pendapat yang melanggar hak orang lain atau mengganggu ketertiban umum. Hal ini menunjukkan bahwa hak asasi manusia di Indonesia ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bersifat mutlak dan tidak dapat diganggu gugat oleh siapapun termasuk negara",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Dibatasi oleh kewajiban untuk menghormati hak orang lain dan aturan undang-undang yang berlaku",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Hanya berlaku bagi warga negara yang sudah menjalankan kewajibannya secara penuh",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Dapat dicabut sewaktu-waktu oleh pemerintah jika dianggap membahayakan stabilitas nasional",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Merupakan pemberian negara yang sewaktu-waktu bisa dibatasi sesuai selera penguasa",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 13,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Pasal 29 UUD 1945 ayat (2) menyatakan negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya masing-masing dan beribadat menurut agama dan kepercayaannya itu. Oleh karena itu kebebasan beragama diartikan sebagai?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Kebebasan yang bersumber pada martabat manusia sebagai mahluk ciptaan Tuhan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kebebasan untuk menentukan dan memilih agama yang dianut serta berpindah-pindah",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Kebebasan dalam menjalankan ibadah kapan saja dan dimana saja",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Kebebasan melakukan penyembahan dan membentuk aliran baru keagamaan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Kebebasan memeluk atau tidak memeluk salah satu agama resmi",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 14,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Perhatikan paragraf berikut! Membaca buku secara rutin dapat meningkatkan wawasan dan kemampuan berpikir kritis. Selain itu, membaca juga membantu seseorang memperkaya kosakata dan meningkatkan kemampuan komunikasi. Oleh karena itu, budaya membaca perlu ditanamkan sejak usia dini. Ide pokok paragraf tersebut adalah?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Membaca meningkatkan kosakata.",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Membaca meningkatkan kemampuan komunikasi.",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Pentingnya menanamkan budaya membaca sejak dini.",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Manfaat membaca bagi pengembangan diri.",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Cara meningkatkan kemampuan berpikir kritis.",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 15,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Siapa pencipta lagu Indonesia Raya?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "WR Supratman",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Ismail Marzuki",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Hj Yetti",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Bambang Tri",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Husein Mutahar",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 16,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Nilai-nilai yang terkandung di dalam Pancasila harus mampu mencerminkan kondisi objektif yang sedang berkembang di masyarakat. Pernyataan tersebut merupakan wujud nilai pancasila dari dimensi ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Integritas",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kualitas",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Idealitas",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Fleksibilitas",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Realitas",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 17,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Dalam negara demokrasi, setiap warga negara memiliki hak untuk menyampaikan pendapat dan melakukan pengawasan sosial sesuai ketentuan hukum. Apabila terjadi intimidasi atau teror terhadap aktivis yang menyampaikan kritik secara damai, maka dampak yang paling berbahaya bagi kehidupan berbangsa dan bernegara adalah ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Meningkatnya kehati-hatian masyarakat dalam menyampaikan aspirasi",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Berkurangnya perbedaan pendapat di ruang publik",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "menurunnya kebebasan berpendapat serta melemahnya kontrol masyarakat terhadap jalannya pemerintahan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "menguatnya stabilitas politik melalui pembatasan kritik",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "memperlambat proses pengambilan kebijakan pemerintah",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 18,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Rumusan Pancasila yang sah dan benar disahkan oleh PPKI pada tanggal ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "15 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "16 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "17 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "18 Agustus 1945",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "19 Agustus 1945",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 19,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Hukum yang mengatur hubungan antara negara dengan alat - alat perlengkapannya atau hubungan antara negara dengan warga negara, termasuk dalam ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Hukum privat",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Hukum pidana",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Hukum perdata",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Hukum Administrasi Negara",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Hukum Publik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 20,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Di bagian mana dalam UUD 1945 yang menyebutkan tentang tata cara pembentukan Mahkamah Konstitusi ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Aturan Peralihan Pasal I",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Aturan Peralihan Pasal II",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Aturan Peralihan Pasal III",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Aturan Peralihan Pasal IV",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Aturan Peralihan Pasal V",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 21,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Dalam sebuah rapat desa untuk menentukan lokasi pembangunan jembatan, terjadi perbedaan pendapat yang tajam antara warga dusun utara dan dusun selatan. Masing-masing merasa lokasinya paling strategis. Implementasi sila ke-4 Pancasila yang paling tepat untuk menyelesaikan masalah tersebut adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mengambil keputusan berdasarkan suara terbanyak (voting) agar proses berjalan cepat dan efisien",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menyerahkan keputusan sepenuhnya kepada Kepala Desa karena ia adalah pimpinan tertinggi di desa tersebut",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Melakukan musyawarah dengan mendengarkan pendapat kedua belah pihak dan mengutamakan kepentingan umum di atas kepentingan golongan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Membangun dua jembatan sekaligus agar kedua pihak merasa adil meskipun anggaran desa menjadi defisit",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menunda pembangunan jembatan sampai salah satu pihak bersedia mengalah secara sukarela",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 22,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Semboyan Bhinneka Tunggal Ika memberikan pelajaran bagi rakyat Indonesia agar ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Tidak terbawa arus kebudayaan asing",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Bangsa Indonesia hendaknya dibentuk atas satu kesamaan budaya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Bangsa Indonesia tetap bersatu di atas keberagaman",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Bangsa Indonesia harus dapat bersaing dengan bangsa-bangsa lain",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Semua orang mempunyai hak dan kewajiban yang sama mengenai bangsa Indonesia",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 23,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Toleransi antar umat beragama yang diperbolehkan adalah dengan cara...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menghadiri peribadatan di rumah ibadah yang berlainan agama",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Aktif dalam kegiatan ritual umat beragama lain",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menghadiri kegiatan seremonial penganut agama lain",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Turut berdoa bersama-sama dalam satu rumah ibadah",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mengatur tata cara beribadah secara bersama",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 24,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Dalam pelaksanaan demokrasi, masyarakat memiliki tanggung jawab untuk memilih pemimpin berdasarkan integritas, kemampuan, dan rekam jejak. Apabila masyarakat memilih pemimpin secara asal-asalan atau tergiur oleh politik uang, maka dampak yang paling berbahaya bagi bangsa dan negara adalah ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Meningkatnya partisipasi masyarakat dalam pemilu",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Terpilihnya pemimpin yang berpotensi tidak kompeten dan mengabaikan kepentingan rakyat",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berkurangnya biaya kampanye politik",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mempercepat proses pergantian kepemimpinan nasional",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menguatnya hubungan antara masyarakat dan elite politik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 25,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Dalam kehidupan demokrasi, masyarakat tidak hanya memiliki hak untuk memilih pemimpin, tetapi juga perlu memahami perkembangan politik dan kebijakan publik. Sikap masyarakat yang peduli terhadap politik penting karena ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Politik hanya urusan pejabat dan partai sehingga masyarakat cukup mengikuti keputusan pemerintah",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kesadaran politik masyarakat dapat memperkuat pengawasan terhadap jalannya pemerintahan dan menjaga demokrasi tetap sehat",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Masyarakat yang aktif dalam politik wajib mendukung seluruh kebijakan pemerintah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Partisipasi politik masyarakat bertujuan untuk memperbesar konflik antarkelompok",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Kesadaran politik hanya diperlukan saat pemilu berlangsung",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 26,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Seorang warga negara Indonesia yang bekerja sebagai tenaga medis di daerah terpencil seringkali harus bekerja dengan fasilitas terbatas demi menyelamatkan nyawa masyarakat tanpa memandang latar belakang mereka. Tindakan tenaga medis tersebut merupakan pengamalan Pancasila, khususnya sila ke- ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "1",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "2",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "3",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "4",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "5",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 27,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Suatu organisasi kekuasaan yang memiliki kedaulatan disebut ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Pemerintahan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kerajaan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Negara",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Kekuasaan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Politik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 28,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Apa tujuan NKRI menurut UUD 1945?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Melindungi segenap bangsa Indonesia",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Memajukan kesejahteraan umum",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mewujudkan keadilan sosial",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melindungi hak asasi manusia",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Semua Benar",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 29,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Seorang ASN di bagian pelayanan publik mendapati seorang warga yang ingin mengurus administrasi namun berkasnya tidak lengkap. Warga tersebut mencoba menyelipkan sejumlah uang ke dalam map dengan harapan prosesnya tetap bisa berjalan karena ia sangat membutuhkannya untuk urusan mendesak. Tindakan paling tepat yang mencerminkan integritas tinggi adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menerima uang tersebut dengan niat membantu warga, namun tetap meminta warga melengkapi berkas di kemudian hari",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menolak uang tersebut dengan tegas dan meminta warga pulang untuk melengkapi berkas sesuai prosedur yang berlaku",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menolak uang tersebut, menjelaskan prosedur secara santun, serta memberikan arahan atau solusi bagaimana warga bisa melengkapi berkas dengan cepat",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melaporkan warga tersebut kepada pihak berwajib atas upaya gratifikasi tanpa memberikan penjelasan lebih lanjut",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mengabaikan uang tersebut dan memproses berkas seadanya agar tidak terjadi perdebatan di ruang publik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 30,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Sebagai norma dasar, Pancasila mengandung makna bahwa nilainya bersifat ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Fleksibel",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Normatif",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Rigid",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Imperatif",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Semantik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 31,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Apa arti kata 'Tunggal' dalam Bhinneka Tunggal Ika?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Berbeda-beda",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Bersatu",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Satu",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Kesatuan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Tanggung Jawab",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 32,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Pemerintah memiliki kewajiban untuk mengelola APBN secara transparan dan berpihak pada kepentingan rakyat. Jika anggaran negara lebih banyak digunakan untuk kegiatan seremonial, perjalanan dinas berlebihan, atau proyek pengadaan yang tidak memiliki manfaat nyata bagi masyarakat, maka kondisi tersebut dapat menyebabkan ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Meningkatnya kesejahteraan aparatur negara secara merata",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Terciptanya pemerintahan yang lebih sederhana dan efisien",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Terhambatnya program prioritas seperti pendidikan, kesehatan, dan pembangunan infrastruktur publik",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Bertambahnya partisipasi masyarakat dalam pengawasan anggaran",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menguatnya hubungan antar lembaga pemerintahan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 33,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Dahulu Indonesia pernah diberi nama dwipantara oleh India, apakah artinya?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Pulau Seberang",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Negara Padi",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Negara Emas",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Negara Perantara",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Kepulauan Laut Selatan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 34,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Pancasila sila ke-3 mengandung makna ...?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Persatuan Indonesia",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kemanusiaan yang adil dan beradab",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Keadilan sosial bagi seluruh rakyat Indonesia",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Ketuhanan Yang Maha Esa",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 35,
+      "total": 110,
+      "section_label": "Tes Wawasan Kebangsaan (TWK)",
+      "question_text": "Seorang pemimpin seharusnya memberikan pekerjaan kepada bawahannya dengan bijaksana yaitu?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Selalu memberikan contoh pada setiap pekerjaan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Memberikan pekerjaan sesuai dengan kodrat kemanusiannya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Memilih dengan teliti pekerjaan yang pantas akan diberikan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melakukan pengecekan langsung terhadap semua hasil bawahan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menasehati setiap agar melakukan pekerjaan dengan baik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 36,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "IRAN : TEHRAN = REPUBLIK CEKO : ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Praha",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Roma",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Brussel",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Madrid",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Athena",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 37,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Tentukan gambar berikutnya!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/6b8bf7c2d4c7687113cf7294c4e53a24.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q037_stem1_6b8bf7c2d4c7687113cf7294c4e53a24.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/08a6399cb00bafe3b12e30a030ac7c0f.jpg",
+              "alt": "Pilihan A",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q037_optA_08a6399cb00bafe3b12e30a030ac7c0f.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/b6951b7d7e9469ae9f9b6d690f425802.jpg",
+              "alt": "Pilihan B",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q037_optB_b6951b7d7e9469ae9f9b6d690f425802.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/8903d2516f99db3e096051d4f7e9bf46.jpg",
+              "alt": "Pilihan C",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q037_optC_8903d2516f99db3e096051d4f7e9bf46.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/09ca63d4638a666f24637098e0189e6c.jpg",
+              "alt": "Pilihan D",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q037_optD_09ca63d4638a666f24637098e0189e6c.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/b0b09f0fbe07a359d39d1a86facdcca7.jpg",
+              "alt": "Pilihan E",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q037_optE_b0b09f0fbe07a359d39d1a86facdcca7.jpg"
+            }
+          ]
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 38,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Perbandingan umur Joko dengan Anwar 10 tahun lalu adalah 1 : 4. Jika saat ini perbandingan usia mereka adalah 1 : 2. Maka jumlah umur mereka adalah ?.",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "75 tahun",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "65 tahun",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "55 tahun",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "45 tahun",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "40 tahun",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 39,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Ukuran kebun Pak Angga pada surat tanah memiliki panjang 12 cm dan lebar 9 cm. Jika skala pada surat tanah tersebut adalah 1:200. Berapakah luas kebun pada surat tanah tersebut?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "108",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "216",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "420",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "432",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "500",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 40,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Tentukan pola gambar berikutnya!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/d4ecc27688faa536cea61ea80e304c08.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q040_stem1_d4ecc27688faa536cea61ea80e304c08.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/f7123d26b29a73fdfe471e86b18d3a94.jpg",
+              "alt": "Pilihan A",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q040_optA_f7123d26b29a73fdfe471e86b18d3a94.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/81a480dc943cb518512291e8b916f50e.jpg",
+              "alt": "Pilihan B",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q040_optB_81a480dc943cb518512291e8b916f50e.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/fc0b0d9e92dbab6a43aadc8d6a5789dd.jpg",
+              "alt": "Pilihan C",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q040_optC_fc0b0d9e92dbab6a43aadc8d6a5789dd.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/2f190d1958ac81badc413122d2e3eadb.jpg",
+              "alt": "Pilihan D",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q040_optD_2f190d1958ac81badc413122d2e3eadb.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/a948c41a76172841af1fc89e6efbefe1.jpg",
+              "alt": "Pilihan E",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q040_optE_a948c41a76172841af1fc89e6efbefe1.jpg"
+            }
+          ]
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 41,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Redum : .....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Karsa",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Relikui",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mega",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Temaram",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Sadrah",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 42,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Pilihlah gambar yang tepat!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/3ee63d7c8fb8aa886957eb39119256b4.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q042_stem1_3ee63d7c8fb8aa886957eb39119256b4.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/c8cd151ec6b4404f4a5c67ac29d85421.jpg",
+              "alt": "Pilihan A",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q042_optA_c8cd151ec6b4404f4a5c67ac29d85421.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/c0996c4c963aff5d119f816a877f98d7.jpg",
+              "alt": "Pilihan B",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q042_optB_c0996c4c963aff5d119f816a877f98d7.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/71eb69bf01fbcf5b8429b6bc79b2e371.jpg",
+              "alt": "Pilihan C",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q042_optC_71eb69bf01fbcf5b8429b6bc79b2e371.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/cf8773834c2b64182445277c28afd8e3.jpg",
+              "alt": "Pilihan D",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q042_optD_cf8773834c2b64182445277c28afd8e3.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/523c8805e563995008a630ebaca14c8b.jpg",
+              "alt": "Pilihan E",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q042_optE_523c8805e563995008a630ebaca14c8b.jpg"
+            }
+          ]
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 43,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Pilihlah gambar yang tepat!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/2be61ad6b0ff3cd93c07a5f02829b4c2.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q043_stem1_2be61ad6b0ff3cd93c07a5f02829b4c2.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/fd6f84dd4fb8e6d017f5d7b8c6ab58ab.jpg",
+              "alt": "Pilihan A",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q043_optA_fd6f84dd4fb8e6d017f5d7b8c6ab58ab.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/4aabb3a8441322dcb6c34077723ff92b.jpg",
+              "alt": "Pilihan B",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q043_optB_4aabb3a8441322dcb6c34077723ff92b.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/b948bc70ede703bfe7c1745d910244a6.jpg",
+              "alt": "Pilihan C",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q043_optC_b948bc70ede703bfe7c1745d910244a6.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/cbaa2e56f15cd79ff4840e1e181d2d19.jpg",
+              "alt": "Pilihan D",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q043_optD_cbaa2e56f15cd79ff4840e1e181d2d19.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/043dd994b92cc118e263e49b5e89b641.jpg",
+              "alt": "Pilihan E",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q043_optE_043dd994b92cc118e263e49b5e89b641.jpg"
+            }
+          ]
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 44,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Nilai dari (0,4 x 0,8) + (0,5 x 0,7) adalah ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "0,475",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "0,574",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "0,67",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "6,7",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "7,5",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 45,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "397 x 397 + 104 x 104 +2 x 397 x 104 =",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "250.001",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "250.101",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "251.001",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "260.101",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "261.001",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 46,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Manakah gambar yang memiliki prinsip, pola, atau karakteristik yang berbeda dibandingkan gambar lainnya?",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/33d1bd5089c2ed66ae1dd18e2d12ffc4.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q046_stem1_33d1bd5089c2ed66ae1dd18e2d12ffc4.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "A",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "B",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "C",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "D",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "E",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 47,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Jika {x = 0,178 + 6,017 + 5,278925} dan {y = 12}, manakah pernyataan yang benar?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "x > y",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "x < y",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "x = y",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "hubungan x dan y tak dapat ditentukan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "x â‰ y",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 48,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Antonim kata Optimis adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Pesimis",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Apatis",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Fanatik",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Negatif",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Harmonis",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 49,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Suatu seri angka sebagai berikut: 72, 69, 56, 60, ...., seri selanjutnya adalah ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "74, 54",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "54, 47",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "47, 29",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "22, 15",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "18, 12",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 50,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Ani berangkat dari Bali pukul 06.00 WITA tiba di Jakarta pukul 09.00 WIB. Jika kecepatan pesawat adalah 375 km/jam. Berapakah jarak kedua kota tersebut?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "1501 m",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "1125 km",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "1500 km",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "2073 m",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "5492 km",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 51,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "KONTAMINASI = . . .",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Perusakan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Pemusnahan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Pencemaran",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Pemberian",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Pengaruh",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 52,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Kata yang memiliki makna sama dengan 'Bijak' adalah...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bodoh",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Arif",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Rakut",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Bijaksana",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Bohong",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 53,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Tentukan gambar berikutnya!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/2d21e48320ce293ca79f4331ee40f5be.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q053_stem1_2d21e48320ce293ca79f4331ee40f5be.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/b7bc11d649b38108d4aad8cc801ae8e2.jpg",
+              "alt": "Pilihan A",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q053_optA_b7bc11d649b38108d4aad8cc801ae8e2.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/7f6d79c53aa5b84e62a998ee5d7677a1.jpg",
+              "alt": "Pilihan B",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q053_optB_7f6d79c53aa5b84e62a998ee5d7677a1.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/11d7d6c8999d64b815bd7f2300dfb4e2.jpg",
+              "alt": "Pilihan C",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q053_optC_11d7d6c8999d64b815bd7f2300dfb4e2.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/a279d66d828e195a1b97cde8a4cfe058.jpg",
+              "alt": "Pilihan D",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q053_optD_a279d66d828e195a1b97cde8a4cfe058.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/5da314126f9751f522a3344f34ee0054.jpg",
+              "alt": "Pilihan E",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q053_optE_5da314126f9751f522a3344f34ee0054.jpg"
+            }
+          ]
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 54,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Keliling suatu persegi panjang 28 cm. Tentukan luas persegi panjang tersebut jika panjang nya 2 cm lebih dari lebar nya?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "38",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "48",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "57",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "66",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "70",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 55,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Pilihlah gambar yang tepat!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/ed074d57c5cdde16133364d31f4b3b73.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q055_stem1_ed074d57c5cdde16133364d31f4b3b73.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/346a02fce2e14e52106c5614753310f2.jpg",
+              "alt": "Pilihan A",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q055_optA_346a02fce2e14e52106c5614753310f2.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/17f77974826002ae0736de57c46dd509.jpg",
+              "alt": "Pilihan B",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q055_optB_17f77974826002ae0736de57c46dd509.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/f6e95a263dfecd7c0cfb76e0e42432ca.jpg",
+              "alt": "Pilihan C",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q055_optC_f6e95a263dfecd7c0cfb76e0e42432ca.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/ed049c95a96f68e2204c9a1d9f402059.jpg",
+              "alt": "Pilihan D",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q055_optD_ed049c95a96f68e2204c9a1d9f402059.jpg"
+            }
+          ]
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "",
+          "images": [
+            {
+              "url": "https://cat.bkn.go.id/simulasi/uploads/soal/0b616da838d3e03075abfd50f0f3366f.jpg",
+              "alt": "Pilihan E",
+              "local_path": "/root/cpns/scraped/bkn_cat/images/q055_optE_0b616da838d3e03075abfd50f0f3366f.jpg"
+            }
+          ]
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 56,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Perhatikan soal berikut!",
+      "stem_images": [
+        {
+          "url": "https://cat.bkn.go.id/simulasi/uploads/soal/bb8c4d3129e54ffbc730580099f7f502.jpg",
+          "alt": "Gambar Soal",
+          "local_path": "/root/cpns/scraped/bkn_cat/images/q056_stem1_bb8c4d3129e54ffbc730580099f7f502.jpg"
+        }
+      ],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "38/45",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "75/90",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "148/180",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "295/360",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "593/720",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 57,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "MARKA = . . .",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Tanda",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Larangan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Perintah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Petunjuk",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Markas",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 58,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Dalam suatu kelompok, terdapat 10 orang yang suka kopi dan 8 orang suka teh. Jika 3 orang suka keduanya, berapa orang yang hanya suka kopi?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "4",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "5",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "6",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "7",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "8",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 59,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Sinonim dari kata \"GIGIH\" adalah...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Malas",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Tekun",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Cepat",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Lambat",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Acuh",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 60,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Nilai dari 134^2 - 133^2 adalah...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "1",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "257",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "267",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "1460",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "3670",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 61,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Premis 1 : Jika aku pulang maka kakak akan mencuci baju. Premis 2 : Aku pulang.",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Kakak bisa jadi mencuci baju",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kakak mungkin akan mencuci baju",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Kakak tidak mencuci baju",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Tidak dapat ditarik kesimpulan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Kakak mencuci baju",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 62,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "....., ....., 122, 134, 268, 280",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "77 dan 88",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "68 dan 82",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "68 dan 53",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "99 dan 77",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "53 dan 69",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 63,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Seorang anak bernama Aruna dalam 1 menit dapat membuat 10 simpul pita, sedangkan Shafa dapat membuat 20 simpul dalam 1 menit, dan keduanya selesai setelah Shafa bekerja selama 1 jam maka banyak simpul yang dihasilkan oleh keduanya adalah ....",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "900",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "1800",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "1950",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "2250",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "2700",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 64,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Jika 2x + 3 = 11, maka nilai x adalah...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "3",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "4",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "5",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "6",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "7",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 65,
+      "total": 110,
+      "section_label": "Tes Intelegensi Umum (TIU)",
+      "question_text": "Jika X = 2019^2 - 2018^2 dan Y = 2019 + 2018 maka...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "X > Y",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "X < Y",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "X = Y",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "(X+Y)^2 = X^2 + Y^2",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Hubungan X dan Y tidak dapat ditentukan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 66,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Sebagai junior manager di kantor Anda. Anda diberikan tugas yang menurut Anda terlalu ringan. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menolaknya karena malu",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mengerjakannya dengan baik",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mengerjakannya asal - asalan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melapor pada atasan agar diberi pekerjaan yang lebih pantas",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Keluar dari pekerjaan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 67,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Atasan anda merupakan orang yang suka tidak masuk kantor. Maka Anda ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Tidak akan mencontohnya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Tidak suka dengan sikapnya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Memberikan nasihat kepadanya",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mengingatkan dia agar bisa lebih rajin",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mengajak semua staf menirunya",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 68,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Pada suatu ketika Anda menyapa tetangga Anda. ternyata Anda salah orang. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Pura - pura tidak terjadi apapun",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Meminta maaf sembari berlalu",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Meminta maaf dan sedikit basa - basi",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Malu dan mood rusak seharian",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Biasa saja",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 69,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Hal pertama yang Anda lakukan ketika datang ke sekolah adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menyalakan handphone kemudian membuka facebook",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Sarapan terlebih dahulu di kantin",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menata ruang kelas",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menyelesaikan pekerjaan rumah yang tertunda kemarin",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mempelajari materi yang hari itu akan diajarkan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 70,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Tim saya diberi iming - iming imbalan yang cukup besar dari suatu kantor yang kami audit. sikap saya sebagai anggota tim adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menerima asal ketua tim mengijinkan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menolak apabila yang lain juga menolak",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Memberi masukan ke ketua tim agar menolak imbalan tersebut",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mendatangi pimpinan kentor dan menjelaskan bahwa hal tersebut tidak benar",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menunggu petunjuk atasan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 71,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Jika saya melihat teman terlambat menyelesaikan tugas. saya akan...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Membiarkan saja",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mengingatkan dengan sopan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mengadukan ke atasan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menegurnya secara keras",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Ikut-ikutan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 72,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Cara menjaga integritas diri dalam pekerjaan adalah...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menyalahkan orang lain",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menjaga kejujuran",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mengabaikan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Bersikap masa bodoh",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Tetap bekerja santai",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 73,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Menonton youtube sambil bekerja menurut saya ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Boleh saja",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Tidak boleh",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Asal pimpinan setuju",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Teman kerja suka mendengarkan musik juga",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Sebaiknya menggunakan headset agar tidak menggangu yang lain",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 74,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Teman lama Anda ingin Anda membantunya mengurus penelitihan untuk tugas akhirnya. Maka yang Anda dapat lakukan untuk teman Anda adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menyarankan agar meminta bantuan teman yang lain",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mencoba melancarkan urusannya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Membantunya menyebarkan angket",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Membantu memanipulasi angket bila tidak mendapatkan izin dari tempat yang ia teliti",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mengisi angket tanpa sepengetahuan teman karena tidak ingin mengurus izin penelitian",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 75,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Teman kerja saya memberikan sejumlah uang atas balas jasa. sikap saya ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menolak dan memberi pengertian",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menolak dan melaporkannya ke KPK",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menolak karena jumlahnya sedikit",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menerima karena rekanan masih saudara",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menerima asal pimpinan ikut menerima",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 76,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Sebagai pimpinan kantor Anda ingin menerapkan tata tertib kantor yang akan dipatuhi oleh semua staff Anda. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Memberikan penghargaan ke pada staf yang paling patuh",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menempel tata tertib cara berpakaian dibanyak tempat yang mudah terbaca oleh para staf",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Memberikan sanksi yang tegas kepada setiap pelanggaran",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Berpakaian rapi terlebih dahulu sembari mengajak para staf anda untuk turut serta dengan anda",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Membentuk sebuah komisi penegakan disiplin",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 77,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda dipindahkan ke unit kerja yang kondisinya sangat jauh berbeda dengan kondisi unit kerja Anda sebelumnya. Maka respon Anda ialah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Berusaha keras menolak perintah atasan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mengajukan pengunduruan diri",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menerima perintah tersebut dan melaksanakan tugas dengan sepenuh hati",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menerima keputusan tersebut dengan rasa kecewa yang mendalam",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Melaksakan perintah dengan prinsip tidak ingin dekat dengan rekan kerja baru",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 78,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Ketika di seminar. Anda bertemu dengan seorang kompetitor Anda. maka sikap Anda ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Pura - pura tidak melihat",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Biasa saja",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Memutar arah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menyapanya",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Tersenyum sinis",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 79,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Saat pikiran saya sedang terasa jenuh dengan pekerjaan saya biasanya ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Berjalan - jalan sebentar di taman untuk menyegarkan pikiran",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Beristirahat sebentar kemudian melanjutkan pekerjaan yang masih ada",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menonton TV terlebih dahulu",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Browsing internet atau bermain facebook",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Bermain game sebentar di ponsel",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 80,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Telepon milik istri/ suami Anda berdering. sedangkan istri/ suami Anda tidak berada ditempat. Maka yang Anda lakukan ialah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Membiarkannya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mematikan telepon agar tidak mengganggu",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mengangkat telepon dan mencatat pesan untuknya",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menyuruh anak Anda untuk mengangkat",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Memanggil istri/ suami Anda agar ia cepat mengangkat telepon",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 81,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Salah satu teman anggota kelompok belajar Anda terlihat tidak bersemangat. padahal ujian sudah dekat. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Memarahinya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Membiarkannya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Meminta guru menegurnya",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mencoba memahami masalahnya",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mendekati secara personal dan mencoba mengetahui apa yang sedang menjadi masalahnya",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 82,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Setiap tugas dari atasan baru biasanya berat dan deadline - nya cepat menurut saya...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Merupakan pekerjaan yang tidak cocok dengan karakter saya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Saya tidak akan mampu mengerjakannya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Merupakan sebuah tantangan sendiri buat saya",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Sebagai sarana berfikir kreatif dan inovatif dalam menyelesaikan setiap tantangan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Saya gunakan sebagai bahan acuan untuk melatih rasa tanggung jawab saya",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 83,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Agar bisa ikut kegiatan bela diri yang merupakan ekstrakulikuler di sekolah, maka anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Segera melobi orang tua agar diizinkan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menunggu surat resmi dari sekolah sebelum mengutarakannya kepada orang tua",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Izin kepada orang tua beberapa jam sebelum anda berangkat",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Meminta rekan anda untuk membantu dalam izin kepada orang tua anda",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Tidak jadi ikut kegiatan itu karena tampaknya mustahil orang tua anda mengizinkan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 84,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Menurut saya bekerja bukan hanya sekedar untuk mencari uang tapi bekerja adalah sarana belajar untuk meningkatkan kualitas diri. untuk itu saya ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bekerja keras setiap waktu",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Berusaha sekuat tenaga demi keluarga",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berusaha sekuat tenaga dan memberikan terbaik",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melakukan apa saja demi kesuksesan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Bekerja secara profesional dan sungguh - sungguh",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 85,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Dalam sebuah survey konsumen. rating tertinggi untuk pelayanan terbaik jatuh kepada Anda. Maka Anda menyikapi pujian tersebut dengan cara ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mentraktir teman - teman anda yang lain",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menerima penghargaan tersebut dengan penuh suka cita",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Senantiasa bersyukur pada Tuhan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Bersyukur pada Tuhan dan berusaha bekerja lebih baik lagi",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Sangat terharu karena tidak menyangka akan terpilih",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 86,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda sering dijadikan bahan pembicaraan oleh rekan kerja Anda yang lain. sikap Anda ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bangga karena merasa terkenal",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mengklarifikasi gosip yang beredar dengan baik - baik",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Marah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Biasa saja",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menggosip balik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 87,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Sebagai seorang direktur pemasaran slogan yang Anda gunakan untuk memikat banyak pelanggan adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Kualitas produk kami sudah terbukti sejak dahulu",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Kesempurnaan pilihan anda bukti sempurna produk kami",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Bandingkan dengan harga yang lain. tempat kami paling murah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Jaminan produk kami seumur hidup anda",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Rasanya tidak sama seperti yang lain",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 88,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Ketika diberi saran oleh teman. Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Marah",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menerima apabila itu memang baik buat anda",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Tidak mempedulikannya",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melihat dahulu siapa yang mengkritik",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Biasa saja",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 89,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Peraturan baru mengatakan bahwa seluruh staff dilarang menggunakan mobil ke kantor. Kebetulan Anda staf dan biasa menggunakan mobil ke kantor. Maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menggunakan motor atau menggunakan transportasi umum",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Tetap menggunakan mobil dan membayar sendiri biaya parkir",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Memprotes keras peraturan baru",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mencari manager yang membawa motor untuk bekerja sama agar anda tetap dapat menggunakan mobil",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Tetap membawa mobil dan parkir di tempat lain",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 90,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Jika tugas saya belum selesai. saya akan...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Tetap menyelesaikannya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Meninggalkan tugas",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menyerahkan ke orang lain",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Meminta orang lain menyelesaikannya",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Bersedih",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 91,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Saya diminta mengerjakan tugas yang bukan tanggung jawab saya maka saya akan...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menolak sepenuhnya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mencari solusi terbaik",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Melimpahkan ke orang lain",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menyerahkan kepada atasan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menangis semalaman",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 92,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Sebagai seorang ayah. Anda memiliki salah seorang anak yang sangat susah diatur dan suka berkelahi. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menegurnya didepan umum",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menegurnya dengan keras",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menanyakan permasalahannya",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Membiarkannya",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mencoba mengetahui permasalahannya dan mencoba membantu menyelesaikannya",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 93,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Agar orang tua anda setuju membelikan Anda laptop baru, maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menjelaskan kondisi anda sekarang sehingga mereka tergerak untuk membelikan anda laptop",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Merengek - rengek seharian",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Meminta kakak anda untuk menyampaikan maksud anda itu kepada orang tua",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menyerahkan uang tabungan anda agar bisa membeli laptop dan meminta orang tua untuk melengkapi kekurangannya",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Meminjam laptop kakak anda saja",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 94,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Sebagai asisten pribadi. Anda mendapat tugas untuk menjaga anak atasan Anda. karena beliau yang sedang bertugas di luar kota. sedangkan Anda tidak terlalu menyukai keadaan yang berisik. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menolak permintaan atasan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Pura - pura ada janji",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Pasrah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menuruti perintah atasan dengan berat hati",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menitipkannya pada pembantu",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 95,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Saya mendapat tawaran untuk menjadi kepala sekolah. tetapi saya harus penempatan kerja keluar pulau disaat orang tua saya sedang sakit - sakitan. sikap yang saya ambil ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menolak tawaran tersebut",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menerima jika diberi uang pindah dengan jumlah yang besar",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menerima tawaran tersebut asalkan keluarga juga ikut pindah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menerima tawaran tersebut dengan konsekuensi keluarga saya tinggalkan sementara",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Meminta agar promosi jabatan di kota tempat tinggal saja",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 96,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda sedang membaca buku favorit Anda. Tiba - tiba ada orang yang ingin menanyakan sesuatu pada Anda. Maka yang Anda lakukan adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mengalihkan fokus dan menyimak pertanyaan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Jika sedang membaca buku saya tidak pernah memperhatikan sekeliling saya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Segera menutup buku dan mendengarkan pertanyaan orang tersebut",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menjawab pertanyaan tanpa mengalihkan pAndangan dari buku",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Membiarkan orang tersebut bertanya pada orang lain",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 97,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Pada saat atasan saya menulis buku baru. dan meminta saya menuliskan ulasannya. padahal saya tidak terlalu bisa menulis. tanggapan saya adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Saya gunakan kesempatan ini untuk menggali potensi lain diri saya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Saya berkata jujur ke pimpinan agar digantikan oleh orang yang lebbih mampu saja",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Saya coba - coba saja siapa tahu menang",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Saya langsung mengundurkan diri dari perlombaan daripada saya malu",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mendaftarkan teman saya yang lebih mampu",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 98,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Pada saat ada pertemuan di kantor sebisa mungkin Anda ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menyumbangkan ide apa saja",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Diam saja karena saya pegawai baru",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mengikuti apa saja hasil keputusan rapat",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Sebisa mungkin memberikan masukan yang dapat membantu perkembangan organisasi",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Meminta kesempatan berbicara jika diperbolehkan",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 99,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Menurut saya sikap yang harus ditunjukkan oleh seorang prajurit adalah ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mengikuti perintah atasan secara loyal",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Berintegritas dan memberikan nilai lebih",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Bersikap jujur dan profesional",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menciptakan hubungan baik dengan rekan kerja",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menyelesaikan tugas tepat waktu",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 100,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Salah satu sahabat saya memakai obat - obatan terlarang. saya sebagai teman harusnya ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Memberinya nasihat dan semangat agar bisa lepas dari jeratan obat terlarang",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Memberikan pengertian bahaya narkoba",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Mengajaknya untuk mengikuti rehabilitasi dari kecanduan narkoba",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Melaporkannya ke polisi",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Acuh saja karena bukan merupakan masalah saya",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 101,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Jika ada salah satu klien yang bersikap tidak profesional ketika Anda bersama salah seorang rekan setim kerja Anda melakukan kunjungan ke kantornya. maka Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Melaporkan klien tersebut kepada atasan anda",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Melaporkan klien tersebut ke pihak yang berwajib",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Meminta rekan anda untuk lebih mahir dalam bernegosiasi dengan klien tersebut",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mencoba untuk tetap bisa mencari informasi walau anda harus mengancamnya",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mencoba untuk tidak terlalu kaku dan angkuh dalam menggali informasi dari klien tersebut sehingga ia bisa lebih profesional",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 102,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Karena suatu hal. tunjangan bulanan Anda sebagai pegawai dialihkan ke fasilitas internet dan lainnya. Dengan kebijakan baru ini Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Marah - marah",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menurunkan performa kinerja",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berusaha mencari pendapatan lain tanpa mengganggu pekerjaan dan tugas utama",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Menerima keputusan tersebut dan membuat perencanaan keuangan",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mengajukan mutasi",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 103,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda baru saja mendapat teman satu tim. Maka Anda dan rekan kerja Anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bersaing untuk mendapatkan simpati atasan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mengerjakan tugas masing - masing",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berusaha saling menjatuhkan demi membangun simpati",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mengenal rekan kerja dengan sering pergi bersama setelah pulang",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Berusaha saling memahami dan bahu - membahu dengan maksimal",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 104,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Setiap pagi teman selalu mengajak beli jajanan terlebih dahulu sebelum masuk kelas. memang biasanya kami selalu datang lebih pagi. maka sikap saya ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Ikut ajakan membeli jajanan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Meminta teman untuk tidak jajan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menesehati teman agar sarapan terlebih dahulu sebelum ke sekolah",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Meminta teman agar membawa makan ke sekolah saja",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Menolak ajakannya",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 105,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Dalam memberikan pelayanan kepada masyarakat, hal yang paling penting adalah...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Kecepatan pelayanan",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Keramahan petugas",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Ketepatan dan kualitas pelayanan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Fasilitas yang mewah",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Biaya yang murah",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 106,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Ketika banyak kendala terjadi dalam menyelesaikan tugas oleh tim kerja. maka biasanya saya akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Menunggu perintah dari ketua tim",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Menunggu ada yang berinisiatif untuk menyelesaikannya",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Menyelesaikannya sendiri",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mengajak semua rekan setim untuk duduk bersama membahas masalah itu",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Merasa pesimis jika target tim kerja anda akan berhasil dicapai dengan baik",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 107,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Bagaimana sikap Anda di kantor?",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Bekerja dengan santai sambil sesekali membuka sosial media",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Bekerja dengan giat ketika diawasi",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Bekerja sambil sesekali mengakses situs online shop",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Berpura - pura bekerja dengan tekun",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Bekerja dengan giat baik diawasi maupun tidak",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 108,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda mengetahui ada penawaran kursus bahasa inggris dari instansi anda bekerja, maka sikap anda akan ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mempersiapkan diri untuk bisa mengikuti kursus tersebut demi meningkatkan kemampuan diri",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Mengajak rekan - rekan anda untuk turut mengikuti kursus tersebut",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berusaha menjaga agar informasi tersebut jangan sampai diketahui oleh rekan - rekan anda",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Ikut serta dalam kursus tersebut jika saya tidak sibuk",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Tidak ikut karena hanya akan menghabiskan waktu saja",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 109,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda adalah orang yang dulunya kurang pAndai bergaul. Ketika Anda diundang reuni SD dan bertemu teman - teman Anda maka ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Berbincang seperlunya",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Memilih untuk mencicipi hidangan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berusaha agar tidak terlihat teman - teman yang lain",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Berusaha membaur dengan teman - teman",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Mengajak pasangan agar dapat menghindari teman",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    },
+    {
+      "nomor": 110,
+      "total": 110,
+      "section_label": "Tes Karakteristik Pribadi (TKP)",
+      "question_text": "Anda baru saja menikah. kemudian Anda mendapat beasiswa dan di bulan yang sama harus berangkat ke luar negeri. Maka cara Anda menanggapi keputusan ini dengan cara ...",
+      "stem_images": [],
+      "options": [
+        {
+          "letter": "A",
+          "value": "a",
+          "text": "Mengajak pasangan dengan biaya pribadi",
+          "images": []
+        },
+        {
+          "letter": "B",
+          "value": "b",
+          "text": "Melobi penyedia beasiswa untuk mengundur keberangkatan",
+          "images": []
+        },
+        {
+          "letter": "C",
+          "value": "c",
+          "text": "Berangkat ke luar negeri dan memberi pengertian pada pasangan",
+          "images": []
+        },
+        {
+          "letter": "D",
+          "value": "d",
+          "text": "Mengundurkan diri",
+          "images": []
+        },
+        {
+          "letter": "E",
+          "value": "e",
+          "text": "Melobi beasiswa agar memindah kuliah ke dalam negeri",
+          "images": []
+        }
+      ],
+      "source": "cat.bkn.go.id/simulasi",
+      "source_session": "Simulasi CAT SKD CPNS",
+      "correct_answer": null,
+      "explanation": null
+    }
+  ],
+  "errors": []
+}

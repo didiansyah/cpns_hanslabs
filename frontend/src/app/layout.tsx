@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { Suspense } from "react";
 import { AuthProvider } from "@/lib/auth";
+import { RouteAnalytics } from "@/components/route-analytics";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
@@ -43,8 +46,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="id" suppressHydrationWarning>
       <body>
+        <Script
+          src="/umami/script.js"
+          data-website-id="4f24bfee-341b-4779-82ce-7f6115291a2b"
+          data-host-url="/umami"
+          strategy="afterInteractive"
+        />
         <ThemeProvider>
           <AuthProvider>{children}</AuthProvider>
+          <Suspense fallback={null}>
+            <RouteAnalytics />
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth";
-import { apiPost } from "@/lib/api";
+import { apiGet, apiPost } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -24,7 +24,13 @@ export default function LoginPage() {
     setLoading(false);
     if (res.ok && res.data) {
       setAuth(res.data.token, res.data.user);
-      router.push("/dashboard");
+      const profile = await apiGet("/users/me");
+      if (profile.ok && profile.data) {
+        setAuth(res.data.token, profile.data);
+        router.push(profile.data.is_superadmin ? "/dashboard/superadmin" : "/dashboard");
+      } else {
+        router.push("/dashboard");
+      }
     } else {
       setError(res.error || "Login gagal");
     }

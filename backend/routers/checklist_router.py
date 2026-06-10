@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from datetime import date
 from db import get_db
 from services.auth_service import decode_jwt
 from models import User, Checklist
+from services.progress_service import mark_study_activity, progress_payload, today_jakarta
 
 router = APIRouter()
 
@@ -18,7 +18,7 @@ def require_auth(request: Request, db: Session = Depends(get_db)):
 @router.get("/today")
 def get_today(user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return {"ok": False, "error": "Unauthorized"}
-    today = date.today()
+    today = today_jakarta()
     chk = db.query(Checklist).filter(Checklist.user_id == user.id, Checklist.date == today).first()
     if not chk:
         chk = Checklist(user_id=user.id, date=today)
@@ -40,15 +40,24 @@ class UpdateChecklistReq(BaseModel):
 @router.put("/today")
 def update_today(req: UpdateChecklistReq, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return {"ok": False, "error": "Unauthorized"}
-    today = date.today()
+    today = today_jakarta()
     chk = db.query(Checklist).filter(Checklist.user_id == user.id, Checklist.date == today).first()
     if not chk:
         chk = Checklist(user_id=user.id, date=today)
         db.add(chk)
     for k, v in req.model_dump(exclude_unset=True).items():
         setattr(chk, k, v)
+    progress = None
+    if any(v is True for v in req.model_dump(exclude_unset=True).values()):
+        progress = mark_study_activity(db, user.id)
     db.commit()
-    return {"ok": True, "message": "Checklist diperbarui"}
+    if progress:
+        db.refresh(progress)
+    return {
+        "ok": True,
+        "message": "Checklist diperbarui",
+        "progress": progress_payload(progress) if progress else None,
+    }
 
 @router.get("/history")
 def history(user=Depends(require_auth), db: Session = Depends(get_db)):

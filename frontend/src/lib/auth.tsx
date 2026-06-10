@@ -8,6 +8,7 @@ interface User {
   phone?: string;
   education?: string;
   target_instansi?: string;
+  is_superadmin?: boolean;
 }
 
 interface AuthCtx {
@@ -28,20 +29,29 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const t = localStorage.getItem("cpns_token");
     const u = localStorage.getItem("cpns_user");
-    if (t && u) {
-      setToken(t);
-      try { setUser(JSON.parse(u)); } catch {}
-      fetch("/api/users/me/", { headers: { Authorization: `Bearer ${t}` } })
-        .then((res) => res.json())
-        .then((res) => {
-          if (res.ok && res.data) {
-            localStorage.setItem("cpns_user", JSON.stringify(res.data));
-            setUser(res.data);
-          }
-        })
-        .catch(() => {});
+    if (!t || !u) {
+      setLoading(false);
+      return;
     }
-    setLoading(false);
+
+    setToken(t);
+    fetch("/api/users/me", { headers: { Authorization: `Bearer ${t}` } })
+      .then((res) => res.json())
+      .then((res) => {
+        if (res.ok && res.data) {
+          localStorage.setItem("cpns_user", JSON.stringify(res.data));
+          setUser(res.data);
+        } else {
+          localStorage.removeItem("cpns_token");
+          localStorage.removeItem("cpns_user");
+          setToken(null);
+          setUser(null);
+        }
+      })
+      .catch(() => {
+        try { setUser(JSON.parse(u)); } catch {}
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   const setAuth = (t: string, u: User) => {

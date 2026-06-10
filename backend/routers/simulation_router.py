@@ -1,4 +1,5 @@
 from datetime import datetime
+import time
 
 from fastapi import APIRouter, Depends, Request
 from fastapi.responses import JSONResponse
@@ -6,11 +7,16 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from db import get_db
 from services.auth_service import decode_jwt
-from models import User, Simulation, Progress, Question, TryoutPackage
+from models import User, Simulation, Question, TryoutPackage
+from services.progress_service import mark_study_activity
+from main import limiter
 
 router = APIRouter(redirect_slashes=False)
 
 PASSING = {"TWK": 65, "TIU": 80, "TKP": 166}
+CACHE_TTL_SECONDS = 300
+_package_metadata_cache: dict[str, object] = {"expires_at": 0.0, "data": []}
+_package_questions_cache: dict[tuple[int, ...], tuple[float, list[dict]]] = {}
 
 
 def api_error(message: str, status_code: int):
@@ -63,6 +69,23 @@ def package_counts(package: TryoutPackage):
     }
 
 
+def get_package_metadata(db: Session) -> list[dict]:
+    now = time.time()
+    if now < float(_package_metadata_cache.get("expires_at", 0)):
+        return _package_metadata_cache["data"]  # type: ignore[return-value]
+    packages = db.query(TryoutPackage).filter(TryoutPackage.is_active == True).order_by(TryoutPackage.part_number.asc()).all()
+    data = [{
+        "id": p.id,
+        "part_number": p.part_number,
+        "title": p.title,
+        "sim_type": p.sim_type,
+        "counts": package_counts(p),
+    } for p in packages]
+    _package_metadata_cache["data"] = data
+    _package_metadata_cache["expires_at"] = now + CACHE_TTL_SECONDS
+    return data
+
+
 def score_answer(question: Question, selected: int) -> tuple[bool, int, int]:
     options = question.options if isinstance(question.options, list) else []
     if selected < 0 or selected >= len(options):
@@ -82,6 +105,21 @@ def flatten_package_question_ids(question_ids_by_section: dict | None) -> list[i
     for sec in ("TWK", "TIU", "TKP"):
         ordered_ids.extend([int(qid) for qid in question_ids_by_section.get(sec, [])])
     return ordered_ids
+
+
+def get_public_questions_by_ids(db: Session, ordered_ids: list[int]) -> list[dict]:
+    key = tuple(ordered_ids)
+    now = time.time()
+    cached = _package_questions_cache.get(key)
+    if cached and now < cached[0]:
+        return cached[1]
+    questions = {q.id: q for q in db.query(Question).filter(Question.id.in_(ordered_ids)).all()}
+    data = [public_question(questions[qid]) for qid in ordered_ids if qid in questions]
+    _package_questions_cache[key] = (now + CACHE_TTL_SECONDS, data)
+    if len(_package_questions_cache) > 64:
+        oldest_key = min(_package_questions_cache, key=lambda item: _package_questions_cache[item][0])
+        _package_questions_cache.pop(oldest_key, None)
+    return data
 
 
 def calculate_scores(db: Session, questions_data: dict | None, allowed_question_ids: list[int] | None = None):
@@ -156,9 +194,10 @@ def calculate_scores(db: Session, questions_data: dict | None, allowed_question_
 
 
 @router.get("/packages")
-def list_packages(user=Depends(require_auth), db: Session = Depends(get_db)):
+@limiter.limit("30/minute")
+def list_packages(request: Request, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return api_error("Unauthorized", 401)
-    packages = db.query(TryoutPackage).filter(TryoutPackage.is_active == True).order_by(TryoutPackage.part_number.asc()).all()
+    packages = get_package_metadata(db)
     attempts = db.query(Simulation).filter(Simulation.user_id == user.id, Simulation.package_id.isnot(None), Simulation.total_score.isnot(None)).order_by(Simulation.created_at.asc()).all()
     by_package = {}
     for sim in attempts:
@@ -168,21 +207,18 @@ def list_packages(user=Depends(require_auth), db: Session = Depends(get_db)):
         item["latest_passed"] = sim.passed
         item["best_score"] = max(item["best_score"] or 0, sim.total_score or 0)
     return {"ok": True, "data": [{
-        "id": p.id,
-        "part_number": p.part_number,
-        "title": p.title,
-        "sim_type": p.sim_type,
-        "counts": package_counts(p),
-        "attempts": by_package.get(p.id, {}).get("attempts", 0),
-        "best_score": by_package.get(p.id, {}).get("best_score"),
-        "latest_score": by_package.get(p.id, {}).get("latest_score"),
-        "latest_passed": by_package.get(p.id, {}).get("latest_passed"),
+        **p,
+        "attempts": by_package.get(p["id"], {}).get("attempts", 0),
+        "best_score": by_package.get(p["id"], {}).get("best_score"),
+        "latest_score": by_package.get(p["id"], {}).get("latest_score"),
+        "latest_passed": by_package.get(p["id"], {}).get("latest_passed"),
     } for p in packages]}
 
 
 @router.post("", include_in_schema=False)
 @router.post("/")
-def create_sim(req: CreateSimReq, user=Depends(require_auth), db: Session = Depends(get_db)):
+@limiter.limit("10/minute")
+def create_sim(request: Request, req: CreateSimReq, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return api_error("Unauthorized", 401)
     package = None
     questions_data = req.questions_data
@@ -204,7 +240,8 @@ def create_sim(req: CreateSimReq, user=Depends(require_auth), db: Session = Depe
 
 @router.get("", include_in_schema=False)
 @router.get("/")
-def list_sims(user=Depends(require_auth), db: Session = Depends(get_db)):
+@limiter.limit("30/minute")
+def list_sims(request: Request, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return api_error("Unauthorized", 401)
     sims = db.query(Simulation).filter(Simulation.user_id == user.id).order_by(Simulation.created_at.desc()).limit(50).all()
     return {"ok": True, "data": [{
@@ -223,7 +260,8 @@ def list_sims(user=Depends(require_auth), db: Session = Depends(get_db)):
 
 
 @router.get("/{sim_id}/questions")
-def get_sim_questions(sim_id: int, user=Depends(require_auth), db: Session = Depends(get_db)):
+@limiter.limit("12/minute")
+def get_sim_questions(request: Request, sim_id: int, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return api_error("Unauthorized", 401)
     sim = db.query(Simulation).filter(Simulation.id == sim_id, Simulation.user_id == user.id).first()
     if not sim: return api_error("Simulasi tidak ditemukan", 404)
@@ -235,12 +273,12 @@ def get_sim_questions(sim_id: int, user=Depends(require_auth), db: Session = Dep
     if not question_ids_by_section:
         return api_error("Paket soal tidak ditemukan", 404)
     ordered_ids = flatten_package_question_ids(question_ids_by_section)
-    questions = {q.id: q for q in db.query(Question).filter(Question.id.in_(ordered_ids)).all()}
-    return {"ok": True, "data": [public_question(questions[qid]) for qid in ordered_ids if qid in questions]}
+    return {"ok": True, "data": get_public_questions_by_ids(db, ordered_ids)}
 
 
 @router.post("/{sim_id}/submit")
-def submit_sim(sim_id: int, req: SubmitSimReq, user=Depends(require_auth), db: Session = Depends(get_db)):
+@limiter.limit("5/minute")
+def submit_sim(request: Request, sim_id: int, req: SubmitSimReq, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return api_error("Unauthorized", 401)
     sim = db.query(Simulation).filter(Simulation.id == sim_id, Simulation.user_id == user.id).first()
     if not sim: return api_error("Simulasi tidak ditemukan", 404)
@@ -286,19 +324,19 @@ def submit_sim(sim_id: int, req: SubmitSimReq, user=Depends(require_auth), db: S
         sim.passed = total >= sum(PASSING.values())
     db.commit()
 
-    p = db.query(Progress).filter(Progress.user_id == user.id).first()
-    if p:
-        p.sim_count = (p.sim_count or 0) + 1
-        if twk_score is not None: p.twk_score = twk_score
-        if tiu_score is not None: p.tiu_score = tiu_score
-        if tkp_score is not None: p.tkp_score = tkp_score
-        db.commit()
+    p = mark_study_activity(db, user.id, duration_minutes=max(0, req.duration_seconds or 0) / 60)
+    p.sim_count = (p.sim_count or 0) + 1
+    if twk_score is not None: p.twk_score = twk_score
+    if tiu_score is not None: p.tiu_score = tiu_score
+    if tkp_score is not None: p.tkp_score = tkp_score
+    db.commit()
 
     return {"ok": True, "data": {"total_score": total, "passed": sim.passed}}
 
 
 @router.get("/{sim_id}")
-def get_sim(sim_id: int, user=Depends(require_auth), db: Session = Depends(get_db)):
+@limiter.limit("30/minute")
+def get_sim(request: Request, sim_id: int, user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return api_error("Unauthorized", 401)
     sim = db.query(Simulation).filter(Simulation.id == sim_id, Simulation.user_id == user.id).first()
     if not sim: return api_error("Simulasi tidak ditemukan", 404)
@@ -329,3 +367,5 @@ def get_sim(sim_id: int, user=Depends(require_auth), db: Session = Depends(get_d
         "ranking": ranking,
         "total_participants": total_participants,
     }}
+
+

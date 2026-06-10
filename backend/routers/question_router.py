@@ -1,9 +1,18 @@
-from fastapi import APIRouter, Depends, Query
+import time
+
+from fastapi import APIRouter, Depends, Query, Request
 from sqlalchemy.orm import Session
 from db import get_db
 from models import Question
+from main import limiter
+from services.auth_service import decode_jwt
+from services.progress_service import mark_study_activity, progress_payload
 
 router = APIRouter(redirect_slashes=False)
+
+CACHE_TTL_SECONDS = 300
+_topics_cache: dict[tuple[str | None], tuple[float, list[dict]]] = {}
+_question_cache: dict[int, tuple[float, dict]] = {}
 
 def public_options(options):
     """Expose option text only. TKP option scores stay server-side until answered."""
@@ -41,7 +50,8 @@ def option_score(question: Question, selected: int) -> tuple[bool, int, int]:
 
 @router.get("", include_in_schema=False)
 @router.get("/")
-def list_questions(section: str = None, topic: str = None, year: int = None, difficulty: str = None, limit: int = Query(20, le=100), db: Session = Depends(get_db)):
+@limiter.limit("20/minute")
+def list_questions(request: Request, section: str = None, topic: str = None, year: int = None, difficulty: str = None, limit: int = Query(20, le=100), db: Session = Depends(get_db)):
     q = db.query(Question)
     if section:
         q = q.filter(Question.section == section.upper())
@@ -64,16 +74,26 @@ def list_questions(section: str = None, topic: str = None, year: int = None, dif
     } for q in questions]}
 
 @router.get("/topics")
-def list_topics(section: str = None, db: Session = Depends(get_db)):
+@limiter.limit("60/minute")
+def list_topics(request: Request, section: str = None, db: Session = Depends(get_db)):
     from sqlalchemy import func
+    normalized_section = section.upper() if section else None
+    cache_key = (normalized_section,)
+    now = time.time()
+    cached = _topics_cache.get(cache_key)
+    if cached and now < cached[0]:
+        return {"ok": True, "data": cached[1]}
     q = db.query(Question.topic, func.count(Question.id).label("count"))
-    if section:
-        q = q.filter(Question.section == section.upper())
+    if normalized_section:
+        q = q.filter(Question.section == normalized_section)
     q = q.group_by(Question.topic).order_by(func.count(Question.id).desc())
-    return {"ok": True, "data": [{"topic": r.topic, "count": r.count} for r in q.all()]}
+    data = [{"topic": r.topic, "count": r.count} for r in q.all()]
+    _topics_cache[cache_key] = (now + CACHE_TTL_SECONDS, data)
+    return {"ok": True, "data": data}
 
 @router.get("/random")
-def random_questions(section: str = None, topic: str = None, count: int = Query(10, le=50), db: Session = Depends(get_db)):
+@limiter.limit("20/minute")
+def random_questions(request: Request, section: str = None, topic: str = None, count: int = Query(10, le=50), db: Session = Depends(get_db)):
     from sqlalchemy import func
     q = db.query(Question).order_by(func.rand())
     if section:
@@ -93,20 +113,31 @@ def random_questions(section: str = None, topic: str = None, count: int = Query(
     } for q in questions]}
 
 @router.get("/{question_id}")
-def get_question(question_id: int, db: Session = Depends(get_db)):
+@limiter.limit("30/minute")
+def get_question(request: Request, question_id: int, db: Session = Depends(get_db)):
+    now = time.time()
+    cached = _question_cache.get(question_id)
+    if cached and now < cached[0]:
+        return {"ok": True, "data": cached[1]}
     q = db.query(Question).filter(Question.id == question_id).first()
     if not q:
         return {"ok": False, "error": "Soal tidak ditemukan"}
-    return {"ok": True, "data": {
+    data = {
         "id": q.id, "section": q.section, "topic": q.topic, "year": q.year,
         "difficulty": q.difficulty, "question_text": q.question_text,
         "options": public_options(q.options)
         # correct_answer and explanation NOT exposed — must use /check endpoint
-    }}
+    }
+    _question_cache[question_id] = (now + CACHE_TTL_SECONDS, data)
+    if len(_question_cache) > 512:
+        oldest_key = min(_question_cache, key=lambda item: _question_cache[item][0])
+        _question_cache.pop(oldest_key, None)
+    return {"ok": True, "data": data}
 
 @router.post("/check", include_in_schema=False)
 @router.post("/check/")
-def check_answer(data: dict, db: Session = Depends(get_db)):
+@limiter.limit("30/minute")
+def check_answer(request: Request, data: dict, db: Session = Depends(get_db)):
     q = db.query(Question).filter(Question.id == data.get("question_id")).first()
     if not q:
         return {"ok": False, "error": "Soal tidak ditemukan"}
@@ -118,8 +149,16 @@ def check_answer(data: dict, db: Session = Depends(get_db)):
     except (TypeError, ValueError):
         return {"ok": False, "error": "Jawaban tidak valid"}
     is_correct, selected_score, max_score = option_score(q, selected)
+    progress = None
+    auth = request.headers.get("Authorization", "")
+    if auth.startswith("Bearer "):
+        payload = decode_jwt(auth[7:])
+        if payload and payload.get("user_id"):
+            progress = mark_study_activity(db, int(payload["user_id"]))
+            db.commit()
+
     # Only reveal scoring details AFTER user submits
-    return {
+    response = {
         "ok": True,
         "correct": is_correct,
         "correct_answer": q.correct_answer,
@@ -127,3 +166,8 @@ def check_answer(data: dict, db: Session = Depends(get_db)):
         "max_score": max_score,
         "explanation": q.explanation,
     }
+    if progress:
+        response["progress"] = progress_payload(progress)
+    return response
+
+

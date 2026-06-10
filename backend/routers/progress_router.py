@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, Request
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from datetime import date, datetime
 from db import get_db
 from services.auth_service import decode_jwt
-from models import User, Progress, StudyLog
+from models import User, StudyLog
+from services.progress_service import get_or_create_progress, mark_study_activity, progress_payload
 
 router = APIRouter(redirect_slashes=False)
 
@@ -19,19 +19,10 @@ def require_auth(request: Request, db: Session = Depends(get_db)):
 @router.get("/")
 def get_progress(user=Depends(require_auth), db: Session = Depends(get_db)):
     if not user: return {"ok": False, "error": "Unauthorized"}
-    p = db.query(Progress).filter(Progress.user_id == user.id).first()
-    if not p:
-        p = Progress(user_id=user.id)
-        db.add(p)
-        db.commit()
-        db.refresh(p)
-    return {"ok": True, "data": {
-        "study_days": p.study_days, "study_hours": float(p.study_hours or 0),
-        "sim_count": p.sim_count, "current_week": p.current_week,
-        "twk_score": float(p.twk_score or 0), "tiu_score": float(p.tiu_score or 0),
-        "tkp_score": float(p.tkp_score or 0), "streak_days": p.streak_days,
-        "last_study_date": str(p.last_study_date) if p.last_study_date else None
-    }}
+    p = get_or_create_progress(db, user.id)
+    db.commit()
+    db.refresh(p)
+    return {"ok": True, "data": progress_payload(p)}
 
 class StudyLogReq(BaseModel):
     duration_minutes: int
@@ -45,19 +36,10 @@ def log_study(req: StudyLogReq, user=Depends(require_auth), db: Session = Depend
     log = StudyLog(user_id=user.id, duration_minutes=req.duration_minutes, topic=req.topic, section=req.section, notes=req.notes)
     db.add(log)
 
-    p = db.query(Progress).filter(Progress.user_id == user.id).first()
-    if p:
-        p.study_hours = float(p.study_hours or 0) + req.duration_minutes / 60
-        today = date.today()
-        if p.last_study_date != today:
-            p.study_days = (p.study_days or 0) + 1
-            if p.last_study_date and (today - p.last_study_date).days == 1:
-                p.streak_days = (p.streak_days or 0) + 1
-            elif p.last_study_date and (today - p.last_study_date).days > 1:
-                p.streak_days = 1
-            p.last_study_date = today
+    p = mark_study_activity(db, user.id, duration_minutes=req.duration_minutes)
     db.commit()
-    return {"ok": True, "message": "Study log ditambahkan"}
+    db.refresh(p)
+    return {"ok": True, "message": "Study log ditambahkan", "progress": progress_payload(p)}
 
 @router.get("/charts")
 def charts(user=Depends(require_auth), db: Session = Depends(get_db)):

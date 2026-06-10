@@ -1,0 +1,84 @@
+{
+  "info_d44fae1b-68b6-4456-9efe-6e279e687964": {
+    "url": "https://cat.bkn.go.id/simulasi/ujian_peserta/info/d44fae1b-68b6-4456-9efe-6e279e687964",
+    "title": "Info Ujian - Simulasi CAT SKD CPNS",
+    "text": "Info Ujian - Simulasi CAT SKD CPNS SIMULASI CAT BKN v2.0 Pusat Pengembangan Sistem Seleksi Hello, Didi Khodriansyah Dashboard Logout Simulasi CAT SKD CPNS Deskripsi Ujian: Simulasi CAT SKD CPNS Informasi Ujian Durasi 100 menit Total Soal 110 soal Passing Grade 285.00 Materi Ujian Tes Wawasan Kebangsaan (TWK) 35 soal Tes Intelegensi Umum (TIU) 30 soal Tes Karakteristik Pribadi (TKP) 45 soal Perhatian Penting Pastikan koneksi internet stabil Siapkan alat tulis untuk coret-coretan Jawaban akan tersimpan otomatis Jangan refresh atau tutup browser Ujian hanya dapat dikerjakan 1 kali Waktu akan berjalan otomatis setelah mulai Mulai Ujian Sekarang Kembali Konfirmasi Mulai Ujian Apakah Anda yakin ingin memulai ujian? Setelah memulai ujian: Timer akan berjalan otomatis Anda tidak dapat mengulangi ujian Pastikan koneksi internet stabil Batal Ya, Mulai Ujian © 2026 Badan Kepegawaian Negara. Hak Cipta Dilindungi. Simulasi CAT BKN v2.0",
+    "links": [
+      [
+        "https://cat.bkn.go.id/simulasi/dashboard",
+        "Dashboard"
+      ],
+      [
+        "https://cat.bkn.go.id/simulasi/auth/logout",
+        "Logout"
+      ],
+      [
+        "https://cat.bkn.go.id/simulasi/ujian_peserta",
+        "Kembali"
+      ]
+    ],
+    "tables": [
+      {
+        "headers": [],
+        "rows": [
+          {
+            "col0": "Durasi",
+            "col1": "100 menit",
+            "_links": []
+          },
+          {
+            "col0": "Total Soal",
+            "col1": "110 soal",
+            "_links": []
+          },
+          {
+            "col0": "Passing Grade",
+            "col1": "285.00",
+            "_links": []
+          }
+        ]
+      }
+    ]
+  },
+  "info_1a2dc6c3-f27a-475d-9e4a-1f22b4c5da42": {
+    "url": "https://cat.bkn.go.id/simulasi/ujian_peserta/info/1a2dc6c3-f27a-475d-9e4a-1f22b4c5da42",
+    "title": "Info Ujian - Simulasi CAT Seleksi Kompetensi PPPK",
+    "text": "Info Ujian - Simulasi CAT Seleksi Kompetensi PPPK SIMULASI CAT BKN v2.0 Pusat Pengembangan Sistem Seleksi Hello, Didi Khodriansyah Dashboard Logout Simulasi CAT Seleksi Kompetensi PPPK Deskripsi Ujian: Simulasi CAT Seleksi Kompetensi PPPK Informasi Ujian Durasi 60 menit Total Soal 60 soal Passing Grade 200.00 Materi Ujian Wawancara 10 soal Sosial Kultural 20 soal Manajerial 30 soal Perhatian Penting Pastikan koneksi internet stabil Siapkan alat tulis untuk coret-coretan Jawaban akan tersimpan otomatis Jangan refresh atau tutup browser Ujian hanya dapat dikerjakan 1 kali Waktu akan berjalan otomatis setelah mulai Mulai Ujian Sekarang Kembali Konfirmasi Mulai Ujian Apakah Anda yakin ingin memulai ujian? Setelah memulai ujian: Timer akan berjalan otomatis Anda tidak dapat mengulangi ujian Pastikan koneksi internet stabil Batal Ya, Mulai Ujian © 2026 Badan Kepegawaian Negara. Hak Cipta Dilindungi. Simulasi CAT BKN v2.0",
+    "links": [
+      [
+        "https://cat.bkn.go.id/simulasi/dashboard",
+        "Dashboard"
+      ],
+      [
+        "https://cat.bkn.go.id/simulasi/auth/logout",
+        "Logout"
+      ],
+      [
+        "https://cat.bkn.go.id/simulasi/ujian_peserta",
+        "Kembali"
+      ]
+    ],
+    "tables": [
+      {
+        "headers": [],
+        "rows": [
+          {
+            "col0": "Durasi",
+            "col1": "60 menit",
+            "_links": []
+          },
+          {
+            "col0": "Total Soal",
+            "col1": "60 soal",
+            "_links": []
+          },
+          {
+            "col0": "Passing Grade",
+            "col1": "200.00",
+            "_links": []
+          }
+        ]
+      }
+    ]
+  }
+}

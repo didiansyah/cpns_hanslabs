@@ -3,6 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth";
+import { trackEvent } from "@/lib/analytics";
+import { FeedbackWidget } from "@/components/feedback-widget";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
   SidebarProvider,
@@ -11,6 +13,7 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
+  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
@@ -45,6 +48,10 @@ import {
   Plus,
   Building2,
   Wallet,
+  ShieldCheck,
+  BarChart3,
+  Users,
+  MessageSquare,
 } from "lucide-react";
 
 const nav = [
@@ -54,6 +61,15 @@ const nav = [
   { href: "/dashboard/leaderboard", label: "Leaderboard", icon: Trophy },
   { href: "/dashboard/settings", label: "Pengaturan", icon: Settings },
 ];
+
+const adminNav = [
+  { href: "/dashboard/superadmin", label: "Overview", icon: ShieldCheck },
+  { href: "/dashboard/superadmin/analytics", label: "Analytics", icon: BarChart3 },
+  { href: "/dashboard/superadmin/users", label: "User", icon: Users },
+  { href: "/dashboard/superadmin/questions", label: "Soal", icon: BookOpen },
+  { href: "/dashboard/superadmin/feedback", label: "Feedback", icon: MessageSquare },
+];
+const allNav = [...nav, ...adminNav];
 
 const donationItems = [
   { key: "kopi", label: "Traktir Kopi", price: "Rp10.000", amount: 10000, icon: Coffee },
@@ -102,6 +118,21 @@ function DonationModal({ open, onClose }: { open: boolean; onClose: () => void }
       return { ...donor, time: `${index * 2 + 2} jam lalu` };
     }).slice(0, 5);
   }, []);
+
+  useEffect(() => {
+    if (open) trackEvent("donation_modal_open", { initial_total: total });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
+
+  const submitDonation = () => {
+    setSubmitted(true);
+    trackEvent("donation_submit", {
+      total,
+      kopi: qty.kopi || 0,
+      nasi: qty.nasi || 0,
+      soal: qty.soal || 0,
+    });
+  };
 
   if (!open) return null;
 
@@ -193,7 +224,7 @@ function DonationModal({ open, onClose }: { open: boolean; onClose: () => void }
                 <button
                   type="button"
                   disabled={total === 0}
-                  onClick={() => setSubmitted(true)}
+                  onClick={submitDonation}
                   className="rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-sm shadow-primary/25 transition-colors hover:bg-accent disabled:cursor-not-allowed disabled:opacity-45"
                 >
                   Submit donasi
@@ -237,7 +268,7 @@ function DonationModal({ open, onClose }: { open: boolean; onClose: () => void }
 
 function Breadcrumb() {
   const pathname = usePathname();
-  const current = nav.find((n) =>
+  const current = [...allNav].sort((a, b) => b.href.length - a.href.length).find((n) =>
     n.href === "/dashboard" ? pathname === "/dashboard" : pathname.startsWith(n.href)
   );
   if (!current || pathname === "/dashboard") return null;
@@ -272,8 +303,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   );
   if (!user) return null;
 
-  const isActive = (href: string) =>
-    href === "/dashboard" ? pathname === "/dashboard" : pathname.startsWith(href);
+  const isActive = (href: string) => {
+    if (href === "/dashboard") return pathname === "/dashboard";
+    if (href === "/dashboard/superadmin") return pathname === href;
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
     <SidebarProvider>
@@ -312,11 +346,34 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             </SidebarGroupContent>
           </SidebarGroup>
 
+          {user.is_superadmin ? (
+            <SidebarGroup>
+              <SidebarGroupLabel className="px-2 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-sidebar-foreground/55">
+                Super Admin
+              </SidebarGroupLabel>
+              <SidebarGroupContent>
+                <SidebarMenu>
+                  {adminNav.map((item) => (
+                    <SidebarMenuItem key={item.href}>
+                      <SidebarMenuButton render={<Link href={item.href} />} isActive={isActive(item.href)} className="h-10 rounded-xl data-active:bg-primary data-active:text-primary-foreground data-active:shadow-sm data-active:shadow-primary/30">
+                        <item.icon />
+                        <span>{item.label}</span>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                  ))}
+                </SidebarMenu>
+              </SidebarGroupContent>
+            </SidebarGroup>
+          ) : null}
+
           <div className="mx-2 mt-4 rounded-2xl border border-sidebar-border/70 bg-sidebar-accent/70 p-3">
             <p className="text-xs font-medium leading-5 text-sidebar-foreground/75">Bantu biaya server, soal, dan perawatan platform.</p>
             <button
               type="button"
-              onClick={() => setDonationOpen(true)}
+              onClick={() => {
+                trackEvent("donation_cta_click", { source: "sidebar" });
+                setDonationOpen(true);
+              }}
               className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm shadow-primary/25 transition-colors hover:bg-accent"
             >
               <Heart className="h-4 w-4" />
@@ -372,6 +429,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </main>
       </SidebarInset>
       <DonationModal open={donationOpen} onClose={() => setDonationOpen(false)} />
+      <FeedbackWidget />
     </SidebarProvider>
   );
 }

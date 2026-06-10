@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Berlangsung</title>
+    <link href="https://cat.bkn.go.id/simulasi/assets/css/all.min.css" rel="stylesheet">
+    <link href="https://cat.bkn.go.id/simulasi/assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .ujian-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .timer-display {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .timer-warning {
+            background: rgba(255, 193, 7, 0.3) !important;
+        }
+
+        .timer-danger {
+            background: rgba(220, 53, 69, 0.3) !important;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-5px);
+            }
+
+            40% {
+                transform: translateX(5px);
+            }
+
+            60% {
+                transform: translateX(-5px);
+            }
+
+            80% {
+                transform: translateX(5px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .shake {
+            animation: shake 0.4s;
+        }
+
+        .progress-info {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .soal-navigation {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-height: calc(100vh - 150px);
+            overflow-y: auto;
+        }
+
+        .btn-soal {
+            width: 40px;
+            height: 40px;
+            border: 2px solidrgb(56, 4, 4);
+            background: red;
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 3px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-soal:hover {
+            border-color: #007bff;
+            color: rgb(177, 244, 157);
+            transform: translateY(-2px);
+        }
+
+        .btn-soal.info {
+            background: #FFDB58;
+            border-color: #FFDB58;
+            color: white;
+        }
+
+        .btn-soal.current {
+            background: #FFDB58;
+            border-color: #FFDB58;
+            color: white;
+        }
+
+        .btn-soal.answered {
+            background: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+
+        .soal-container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            min-height: calc(100vh - 200px);
+        }
+
+        .soal-header {
+            border-bottom: 2px solid #f8f9fa;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .soal-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+
+        .pilihan-jawaban {
+            margin-bottom: 15px;
+        }
+
+        .pilihan-jawaban input[type="radio"] {
+            display: none;
+        }
+
+        .pilihan-label {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .pilihan-label:hover {
+            border-color: #007bff;
+            background: #f8f9fa;
+        }
+
+        .pilihan-jawaban input[type="radio"]:checked+.pilihan-label {
+            border-color: #007bff;
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .pilihan-huruf {
+            width: 35px;
+            height: 35px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .pilihan-jawaban input[type="radio"]:checked+.pilihan-label .pilihan-huruf {
+            background: #007bff;
+            color: white;
+        }
+
+        .navigation-buttons {
+            position: sticky;
+            bottom: 0;
+            background: white;
+            padding: 20px 0;
+            border-top: 1px solid #dee2e6;
+            margin-top: 30px;
+        }
+
+        .save-indicator {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1001;
+        }
+
+        @media (max-width: 768px) {
+            #soalNavigasi {
+                display: none;
+            }
+
+            #soalNavigasi.show {
+                display: block;
+            }
+        }
+
+
+        @keyframes dots {
+            0% {
+                content: '';
+            }
+
+            25% {
+                content: '.';
+            }
+
+            50% {
+                content: '..';
+            }
+
+            75% {
+                content: '...';
+            }
+
+            100% {
+                content: '';
+            }
+        }
+
+        .dots-loading::after {
+            content: '';
+            animation: dots steps(4, end) 1s infinite;
+        }
+
+        /* =========================*/
+        /* GAMBAR SOAL & PILIHAN    */
+        /* =========================*/
+
+        .soal-image-wrapper {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .soal-image {
+            max-width: 100%;
+            max-height: 200px;
+            /* diperkecil */
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+            object-fit: contain;
+            background: white;
+            padding: 5px;
+        }
+
+        .pilihan-image-wrapper {
+            margin-top: 8px;
+        }
+
+        .pilihan-image {
+            max-width: 200px;
+            /* diperkecil */
+            max-height: 100px;
+            /* diperkecil */
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            object-fit: contain;
+            background: #fff;
+            padding: 4px;
+            display: block;
+        }
+
+        .pilihan-content {
+            flex: 1;
+        }
+
+        .pilihan-text {
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .pilihan-label {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+            gap: 12px;
+        }
+
+        .pilihan-label:hover {
+            border-color: #0d6efd;
+            background: #f8fbff;
+        }
+
+        .pilihan-jawaban input[type="radio"]:checked+.pilihan-label {
+            border-color: #0d6efd;
+            background: #eef5ff;
+        }
+
+        @media (max-width: 768px) {
+
+            .soal-image {
+                max-height: 160px;
+            }
+
+            .pilihan-image {
+                max-width: 150px;
+                max-height: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Save Indicator -->
+    <div id="saveIndicator" class="save-indicator">
+        <i class="fas fa-check"></i> Jawaban tersimpan
+    </div>
+
+    <!-- Header -->
+    <div class="ujian-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <h5 class="mb-1">Simulasi CAT SKD CPNS</h5>
+                    <small class="opacity-75">Peserta: Didi Khodriansyah</small>
+                </div>
+                <div class="col-md-7 text-end">
+                    <div class="progress-info">
+                        <span id="progressText">0 / 110</span>
+                        <div class="progress mt-2" style="height: 8px;">
+                            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="timer-display" id="timerDisplay">
+                        <i class="fas fa-clock"></i>
+                        <span id="timerText" style="font-size: x-large;">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-3">
+        <!-- Toggle Button for Mobile -->
+        <div class="d-block d-md-none text-end mb-2">
+            <button class="btn btn-outline-primary btn-sm" onclick="toggleNavigasi()">
+                <i class="fas fa-bars"></i> Navigasi Soal
+            </button>
+        </div>
+
+        <div class="row">
+            <!-- Navigation Panel -->
+            <div class="col-md-3">
+                <div id="div_selesai" class="soal-navigation mb-4" style="display: none;">
+                    <button class="btn btn-danger text-center w-100" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                        <i class="fas fa-check"></i> Selesaikan Ujian
+                    </button>
+                </div>
+                <div class="soal-navigation" id="soalNavigasi">
+                    <h6 class="mb-3"><i class="fas fa-list"></i> Navigasi Soal</h6>
+                    <div class="d-flex flex-wrap">
+                                                    <button class="btn-soal current "
+                                onclick="goToSoal(1)">
+                                1                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(2)">
+                                2                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(3)">
+                                3                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(4)">
+                                4                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(5)">
+                                5                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(6)">
+                                6                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(7)">
+                                7                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(8)">
+                                8                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(9)">
+                                9                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(10)">
+                                10                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(11)">
+                                11                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(12)">
+                                12                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(13)">
+                                13                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(14)">
+                                14                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(15)">
+                                15                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(16)">
+                                16                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(17)">
+                                17                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(18)">
+                                18                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(19)">
+                                19                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(20)">
+                                20                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(21)">
+                                21                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(22)">
+                                22                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(23)">
+                                23                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(24)">
+                                24                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(25)">
+                                25                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(26)">
+                                26                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(27)">
+                                27                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(28)">
+                                28                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(29)">
+                                29                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(30)">
+                                30                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(31)">
+                                31                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(32)">
+                                32                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(33)">
+                                33                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(34)">
+                                34                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(35)">
+                                35                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(36)">
+                                36                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(37)">
+                                37                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(38)">
+                                38                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(39)">
+                                39                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(40)">
+                                40                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(41)">
+                                41                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(42)">
+                                42                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(43)">
+                                43                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(44)">
+                                44                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(45)">
+                                45                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(46)">
+                                46                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(47)">
+                                47                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(48)">
+                                48                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(49)">
+                                49                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(50)">
+                                50                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(51)">
+                                51                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(52)">
+                                52                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(53)">
+                                53                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(54)">
+                                54                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(55)">
+                                55                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(56)">
+                                56                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(57)">
+                                57                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(58)">
+                                58                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(59)">
+                                59                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(60)">
+                                60                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(61)">
+                                61                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(62)">
+                                62                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(63)">
+                                63                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(64)">
+                                64                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(65)">
+                                65                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(66)">
+                                66                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(67)">
+                                67                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(68)">
+                                68                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(69)">
+                                69                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(70)">
+                                70                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(71)">
+                                71                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(72)">
+                                72                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(73)">
+                                73                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(74)">
+                                74                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(75)">
+                                75                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(76)">
+                                76                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(77)">
+                                77                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(78)">
+                                78                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(79)">
+                                79                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(80)">
+                                80                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(81)">
+                                81                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(82)">
+                                82                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(83)">
+                                83                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(84)">
+                                84                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(85)">
+                                85                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(86)">
+                                86                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(87)">
+                                87                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(88)">
+                                88                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(89)">
+                                89                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(90)">
+                                90                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(91)">
+                                91                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(92)">
+                                92                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(93)">
+                                93                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(94)">
+                                94                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(95)">
+                                95                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(96)">
+                                96                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(97)">
+                                97                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(98)">
+                                98                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(99)">
+                                99                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(100)">
+                                100                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(101)">
+                                101                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(102)">
+                                102                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(103)">
+                                103                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(104)">
+                                104                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(105)">
+                                105                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(106)">
+                                106                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(107)">
+                                107                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(108)">
+                                108                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(109)">
+                                109                            </button>
+                                                    <button class="btn-soal  "
+                                onclick="goToSoal(110)">
+                                110                            </button>
+                                            </div>
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="btn-soal answered me-2" style="width: 20px; height: 20px; font-size: 10px;"></span>
+                            <small>Sudah Dijawab</small>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="btn-soal info me-2" style="width: 20px; height: 20px; font-size: 10px;"></span>
+                            <small>Soal Aktif</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="btn-soal me-2" style="width: 20px; height: 20px; font-size: 10px;"></span>
+                            <small>Belum Dijawab</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question Panel -->
+            <div class="col-md-9">
+                <div id="loadingIndicator" style="display: none; text-align: center; margin-bottom: 10px;">
+                    <span style="font-weight: bold; color: #007bff;">Memuat soal berikutnya <span class="dots-loading"></span></span>
+                </div>
+                <div class="soal-container">
+
+                    
+                        <div class="soal-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4>Soal 1 dari 110</h4>
+                                    <span class="badge bg-primary">Tes Wawasan Kebangsaan (TWK)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="soal-content">
+                                                            <div class="soal-text">
+                                    Jepang  menyerah  tanpa  syarat  kepada  Sekutu pada tanggal ...                                </div>
+                            
+                                                    </div>
+
+                        <form id="jawabanForm">
+                                                                <div class="pilihan-jawaban">
+
+                                        <input type="radio"
+                                            name="jawaban"
+                                            id="pilihanA"
+                                            value="a"
+                                            >
+
+                                        <label for="pilihanA" class="pilihan-label">
+
+                                            <div class="pilihan-huruf">
+                                                A                                            </div>
+
+                                            <div class="pilihan-content">
+
+                                                                                                    <div class="pilihan-text">
+                                                        13 Agustus 1945                                                    </div>
+                                                
+                                                
+                                            </div>
+
+                                        </label>
+                                    </div>
+
+                                                                <div class="pilihan-jawaban">
+
+                                        <input type="radio"
+                                            name="jawaban"
+                                            id="pilihanB"
+                                            value="b"
+                                            >
+
+                                        <label for="pilihanB" class="pilihan-label">
+
+                                            <div class="pilihan-huruf">
+                                                B                                            </div>
+
+                                            <div class="pilihan-content">
+
+                                                                                                    <div class="pilihan-text">
+                                                        14 Agustus 1945                                                    </div>
+                                                
+                                                
+                                            </div>
+
+                                        </label>
+                                    </div>
+
+                                                                <div class="pilihan-jawaban">
+
+                                        <input type="radio"
+                                            name="jawaban"
+                                            id="pilihanC"
+                                            value="c"
+                                            >
+
+                                        <label for="pilihanC" class="pilihan-label">
+
+                                            <div class="pilihan-huruf">
+                                                C                                            </div>
+
+                                            <div class="pilihan-content">
+
+                                                                                                    <div class="pilihan-text">
+                                                        15 Agustus 1945                                                    </div>
+                                                
+                                                
+                                            </div>
+
+                                        </label>
+                                    </div>
+
+                                                                <div class="pilihan-jawaban">
+
+                                        <input type="radio"
+                                            name="jawaban"
+                                            id="pilihanD"
+                                            value="d"
+                                            >
+
+                                        <label for="pilihanD" class="pilihan-label">
+
+                                            <div class="pilihan-huruf">
+                                                D                                            </div>
+
+                                            <div class="pilihan-content">
+
+                                                                                                    <div class="pilihan-text">
+                                                        16 Agustus 1945                                                    </div>
+                                                
+                                                
+                                            </div>
+
+                                        </label>
+                                    </div>
+
+                                                                <div class="pilihan-jawaban">
+
+                                        <input type="radio"
+                                            name="jawaban"
+                                            id="pilihanE"
+                                            value="e"
+                                            >
+
+                                        <label for="pilihanE" class="pilihan-label">
+
+                                            <div class="pilihan-huruf">
+                                                E                                            </div>
+
+                                            <div class="pilihan-content">
+
+                                                                                                    <div class="pilihan-text">
+                                                        21 Agustus 1945                                                    </div>
+                                                
+                                                
+                                            </div>
+
+                                        </label>
+                                    </div>
+
+                                                    </form>
+                    
+                    <!-- Navigation Buttons -->
+                    <div class="navigation-buttons">
+                        <div class="d-flex justify-content-between">
+
+                            <button class="btn btn-primary" id="btnSimpan" onclick="simpanJawaban()" style="display: none;">
+                                <i class="fas fa-save"></i> Simpan dan Lanjutkan
+                            </button>
+                            <button class="btn btn-outline-danger me-2" id="btnSelanjutnya" onclick="lewatiSoal()" style="display: none;">
+                                <i class="fas fa-forward"></i> Lewatkan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Konfirmasi -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-light text-dark">
+                    <h5 class="modal-title">
+                        <i class="fas fa-exclamation-triangle"></i> Konfirmasi Selesaikan Ujian
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Apakah Anda yakin ingin mengakhiri ujian?</strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Batal
+                    </button>
+
+                    <button type="button" class="btn btn-primary" onclick="selesaiUjian()">
+                        <i class="fas fa-check"></i> Ya, Selesaikan
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cat.bkn.go.id/simulasi/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cat.bkn.go.id/simulasi/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Global variables - FIXED: Timer tidak reset karena menggunakan sisa waktu dari server
+        let sisaWaktu = 6000;
+        let sesiId = 54298;
+        //let nomorAktif = 1;
+        let currentSoal = parseInt(1);
+        let nextNumber = 0;
+        let totalSoal = parseInt(110);
+        let isNavigating = false;
+
+        let isLoading = false;
+        let totalAnswered = 0;
+
+        let loadingTimer = null;
+
+
+
+        // Timer function
+        function updateTimer() {
+            if (sisaWaktu <= 0) {
+                isNavigating = true;
+                isLoading = true;
+                window.location.href = 'https://cat.bkn.go.id/simulasi/ujian_peserta/selesai/54298';
+                return;
+            }
+
+            let hours = Math.floor(sisaWaktu / 3600);
+            let minutes = Math.floor((sisaWaktu % 3600) / 60);
+            let seconds = sisaWaktu % 60;
+
+            document.getElementById('timerText').textContent =
+                String(hours).padStart(2, '0') + ':' +
+                String(minutes).padStart(2, '0') + ':' +
+                String(seconds).padStart(2, '0');
+
+            // Warning colors
+            let timerDisplay = document.getElementById('timerDisplay');
+            timerDisplay.classList.remove('timer-warning', 'timer-danger');
+
+            if (sisaWaktu <= 360) { // 6 minutes
+                timerDisplay.classList.add('timer-warning');
+            }
+            if (sisaWaktu <= 120) { // 2 minute
+                timerDisplay.classList.remove('timer-warning');
+                timerDisplay.classList.add('timer-danger');
+            }
+
+            sisaWaktu--;
+        }
+
+        // Start timer
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+
+
+        function goToSoal(nomor) {
+            if (isLoading || nomor < 1 || nomor > totalSoal) return;
+
+            isLoading = true;
+            // Tampilkan loading jika lebih dari 3 detik
+            loadingTimer = setTimeout(showLoadingIndicator, 3000);
+
+            // Update navigation buttons immediately
+            updateNavigationButtons();
+
+            fetch('https://cat.bkn.go.id/simulasi/ujian_peserta/get_soal_ajax', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'sesi_id=' + sesiId + '&nomor_soal=' + nomor
+                })
+                .then(response => response.json())
+                .then(data => {
+                    clearTimeout(loadingTimer);
+                    hideLoadingIndicator();
+                    isLoading = false;
+
+                    if (data.status === 'success') {
+                        // Update soal content
+                        document.querySelector('.soal-container').innerHTML = data.soal_html;
+
+                        // Update current soal
+                        currentSoal = parseInt(data.nomor_soal);
+
+                        // Update navigation
+                        updateNavigationButtons(data.jawaban_count);
+                        updateSoalNavigation();
+
+                        // Update progress
+                        totalAnswered = parseInt(data.jawaban_count);
+                        updateProgress();
+
+                        // Update sisa waktu dari server
+                        sisaWaktu = data.sisa_waktu;
+
+                        // Scroll to top
+                        document.querySelector('.soal-container').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+
+                    } else if (data.status === 'redirect' || data.status === 'timeout') {
+                        window.location.href = data.url;
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    clearTimeout(loadingTimer);
+                    hideLoadingIndicator();
+                    isLoading = false;
+                    console.error('Error:', error);
+                    alert('Terjadi kesalahan saat memuat soal. Silakan coba lagi.');
+                });
+        }
+
+        function updateNavigationButtons(jawaban_count) {
+            // Update buttons di dalam soal content akan di-handle setelah content loaded
+            setTimeout(() => {
+
+                let btnSelanjutnya = document.getElementById('btnSelanjutnya');
+                let btnSimpan = document.getElementById('btnSimpan');
+                let div_selesai = document.getElementById('div_selesai');
+
+                if (btnSelanjutnya) {
+                    btnSelanjutnya.style.display = currentSoal < totalSoal ? 'block' : 'none';
+                }
+
+                if (btnSimpan) {
+                    btnSimpan.style.display = currentSoal <= totalSoal ? 'block' : 'none';
+                }
+
+                if (div_selesai) {
+                    div_selesai.style.display = jawaban_count == totalSoal ? 'block' : 'none';
+                }
+
+            }, 100);
+        }
+
+        function updateSoalNavigation() {
+            // Update active soal di navigation panel
+            document.querySelectorAll('.btn-soal').forEach(btn => {
+                btn.classList.remove('current');
+            });
+
+            let activeBtn = document.querySelector('.btn-soal[onclick="goToSoal(' + currentSoal + ')"]');
+            if (activeBtn) {
+                activeBtn.classList.add('current');
+            }
+        }
+
+
+        function lewatiSoal() {
+            if (currentSoal < totalSoal) {
+                goToSoal(currentSoal + 1);
+            }
+        }
+
+        function simpanJawaban() {
+            let jawaban = document.querySelector('input[name="jawaban"]:checked')?.value || '';
+            let btnSimpan = document.querySelector('button[onclick="simpanJawaban()"]');
+
+            if (!jawaban) {
+                btnSimpan.classList.add('shake');
+
+                // Hapus class shake setelah animasi selesai agar bisa digunakan lagi
+                setTimeout(() => {
+                    btnSimpan.classList.remove('shake');
+                }, 400);
+                return;
+            }
+
+            fetch('https://cat.bkn.go.id/simulasi/ujian_peserta/simpan_jawaban', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'sesi_id=' + sesiId + '&nomor_soal=' + currentSoal + '&jawaban=' + jawaban
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        //showSaveIndicator();
+                        //updateNavigationButton();
+                        updateNavigationAfterSave();
+                        updateProgress();
+                        nextNumber = currentSoal + 1;
+                        if (nextNumber > totalSoal) {
+                            nextNumber = 1;
+                        }
+                        goToSoal(nextNumber);
+                    } else {
+                        console.error('Error saving answer:', data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        function showSaveIndicator() {
+            let indicator = document.getElementById('saveIndicator');
+            indicator.style.display = 'block';
+            setTimeout(() => {
+                indicator.style.display = 'none';
+            }, 2000);
+        }
+
+        function updateNavigationAfterSave() {
+            // Update navigation button untuk soal yang sudah dijawab
+            let currentBtn = document.querySelector('.btn-soal[onclick="goToSoal(' + currentSoal + ')"]');
+            if (currentBtn && !currentBtn.classList.contains('answered')) {
+                currentBtn.classList.add('answered');
+                totalAnswered++;
+            }
+        }
+
+        // function updateNavigationButton() {
+        //     let button = document.querySelector('.btn-soal.current');
+        //     if (button) {
+        //         button.classList.add('answered');
+        //     }
+        // }
+
+        function updateProgress() {
+            // let answeredCount = document.querySelectorAll('.btn-soal.answered').length;
+            // let percentage = (answeredCount / totalSoal) * 100;
+            let percentage = (totalAnswered / totalSoal) * 100;
+
+            //document.getElementById('progressText').textContent = answeredCount + ' / ' + totalSoal;
+            document.getElementById('progressText').textContent = totalAnswered + ' / ' + totalSoal;
+            document.getElementById('progressBar').style.width = percentage + '%';
+
+
+        }
+
+        function showLoadingIndicator() {
+            // Show loading overlay
+            let loadingDiv = document.createElement('div');
+            loadingDiv.id = 'loadingOverlay';
+            loadingDiv.innerHTML = `
+                <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                            background: rgba(0,0,0,0.5); z-index: 9999; 
+                            display: flex; align-items: center; justify-content: center;">
+                    <div style="background: white; padding: 20px; border-radius: 10px; text-align: center;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="mt-2">Memuat soal...</div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(loadingDiv);
+            //document.getElementById('loadingIndicator').style.display = 'block';
+        }
+
+        function hideLoadingIndicator() {
+            let loadingDiv = document.getElementById('loadingOverlay');
+            if (loadingDiv) {
+                loadingDiv.remove();
+            }
+            //document.getElementById('loadingIndicator').style.display = 'none';
+        }
+
+
+        function selesaiUjian() {
+
+            // Save current answer before finishing
+            let selectedAnswer = document.querySelector('input[name="jawaban"]:checked');
+            if (selectedAnswer) {
+                let xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://cat.bkn.go.id/simulasi/ujian_peserta/simpan_jawaban', false);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.send('sesi_id=' + sesiId + '&nomor_soal=' + currentSoal + '&jawaban=' + selectedAnswer.value);
+            }
+
+            if (isNavigating) return; // Prevent double click
+            isNavigating = true;
+            isLoading = true;
+            window.location.href = 'https://cat.bkn.go.id/simulasi/ujian_peserta/selesai/54298';
+
+        }
+
+        function toggleNavigasi() {
+            const nav = document.getElementById('soalNavigasi');
+            nav.classList.toggle('show');
+        }
+
+        // FIXED: Only prevent closing browser, not navigation within app
+        // Add event listener
+        // Initialize navigation buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            updateNavigationButtons();
+        });
+
+        // Prevent browser back/forward
+        window.addEventListener('beforeunload', function(e) {
+            if (!isNavigating) {
+                // Browser membutuhkan returnValue untuk menampilkan dialog
+                e.preventDefault();
+                e.returnValue = 'Ujian sedang berlangsung. Yakin ingin meninggalkan halaman?';
+                return 'Ujian sedang berlangsung. Yakin ingin meninggalkan halaman?';
+            }
+
+            if (!isLoading) {
+                e.preventDefault();
+                e.returnValue = 'Ujian sedang berlangsung. Yakin ingin meninggalkan halaman?';
+                return 'Ujian sedang berlangsung. Yakin ingin meninggalkan halaman?';
+            }
+        });
+
+        // Push initial state
+        history.pushState(null, null, window.location.href);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2987 @@
+{
+  "scraped_at": "20260602_075227",
+  "source_url": "https://paramacpns.com/tryout/1",
+  "note": "DUMMY ONLY - not inserted into bank soal",
+  "target_counts": {
+    "TWK": 30,
+    "TIU": 35,
+    "TKP": 45
+  },
+  "actual_counts": {
+    "TWK": 30,
+    "TIU": 35,
+    "TKP": 45
+  },
+  "questions": [
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f7f150d7-2a7a-4c08-9cb0-48eabb75b937",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Budi Utomo didirikan pada 20 Mei 1908 di Jakarta oleh para mahasiswa STOVIA. Tokoh yang menggagas ide pembentukannya — yang kemudian disampaikan kepada para pelajar STOVIA hingga akhirnya organisasi ini terbentuk — adalah...",
+      "options": [
+        "dr. Cipto Mangunkusumo",
+        "dr. Wahidin Sudirohusodo",
+        "Ki Hajar Dewantara",
+        "H.O.S. Tjokroaminoto",
+        "Ernest Douwes Dekker"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "dr. Wahidin Sudirohusodo adalah penggagas ide Budi Utomo: ia berkeliling Jawa mengkampanyekan 'studiefonds' (dana pendidikan) dan menularkan gagasannya kepada Sutomo dkk di STOVIA. Sutomo-lah yang kemudian secara formal mendirikan organisasi pada 20 Mei 1908; tapi ide awalnya berasal dari Wahidin.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "8a824a4a-354e-449d-980f-bd5e2dd9a26b",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Semangat Sumpah Pemuda 1928 yang menyatakan satu bangsa, satu bahasa, dan satu tanah air relevan dengan tantangan Indonesia masa kini. Nilai inti dari Sumpah Pemuda yang PALING LANGSUNG tercermin dalam kewajiban ASN untuk menggunakan bahasa Indonesia dalam dokumen resmi negara adalah...",
+      "options": [
+        "Komitmen terhadap satu nusa sebagai wilayah kedaulatan yang tidak bisa diganggu gugat",
+        "Ikrar satu bahasa Indonesia sebagai bahasa persatuan seluruh rakyat Indonesia",
+        "Nilai persatuan Indonesia dalam Pancasila sila ketiga yang mengikat seluruh warga negara",
+        "Semangat non-kooperasi yang mewajibkan penggunaan produk dan bahasa dalam negeri",
+        "Prinsip nasionalisme Budi Utomo yang mengutamakan kemajuan budaya bangsa di atas segalanya"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Sumpah Pemuda mengikrarkan bahasa Indonesia sebagai bahasa persatuan — landasan normatif kewajiban penggunaan bahasa Indonesia dalam administrasi negara. Mudah tertukar dengan nilai persatuan Pancasila sila ketiga yang juga relevan, tapi ikrar berbahasa satu spesifik dari Sumpah Pemuda 1928.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "75fef22d-968e-4394-84bb-3bfebabe35f9",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Perhatikan pernyataan berikut: 'Organisasi ini cikal bakalnya berdiri di Solo pada awal 1910-an, awalnya bergerak di bidang perdagangan untuk melindungi pedagang batik pribumi, lalu berkembang menjadi gerakan massa politik dengan anggota jutaan orang di bawah kepemimpinan Tjokroaminoto.' Organisasi yang dimaksud adalah...",
+      "options": [
+        "Budi Utomo",
+        "Sarekat Islam",
+        "Muhammadiyah",
+        "Nahdlatul Ulama",
+        "Partai Nasional Indonesia"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Deskripsi ini merujuk pada Sarekat Islam — bermula dari Sarekat Dagang Islam (SDI) di Solo yang melindungi pedagang batik pribumi, lalu bertransformasi menjadi gerakan massa Islam terbesar di Hindia Belanda di bawah kepemimpinan H.O.S. Tjokroaminoto. Mudah keliru ke Muhammadiyah (juga 1912, juga tokoh Islam), tapi Muhammadiyah fokus dakwah-pendidikan, bukan perdagangan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a392d2c6-5fa0-45af-a5e6-42e6e104ac9e",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Organisasi pelajar Indonesia di Belanda mengalami perubahan nama secara bertahap: dari Indische Vereeniging (1908) → Indonesische Vereeniging (1922) → Perhimpunan Indonesia (1925). Perubahan nama bertahap ini secara keseluruhan mencerminkan...",
+      "options": [
+        "Keinginan organisasi untuk memperluas keanggotaan kepada pelajar dari seluruh Asia Tenggara",
+        "Pergeseran dari orientasi Belanda-Indonesia ke identitas nasional Indonesia yang mandiri dan anti-kolonial",
+        "Keputusan untuk mengubah fokus dari kegiatan sosial-budaya menjadi perjuangan bersenjata",
+        "Penyesuaian dengan kebijakan pemerintah Belanda yang mewajibkan organisasi pribumi mendaftar ulang",
+        "Upaya menjauhkan organisasi dari citra radikal agar tidak dibubarkan pemerintah kolonial"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Setiap perubahan nama mencerminkan radikalisasi identitas: dari 'Indisch' (terminologi kolonial), 'Indonesisch' (mulai mengadopsi nama Indonesia dalam bahasa Belanda), hingga 'Perhimpunan Indonesia' dalam bahasa sendiri — bukan kosmetik tapi pernyataan politik makin tegas. Hatta baru menjadi ketua pada 1926, jadi jangan mengatribusikan perubahan nama itu semata kepada Hatta.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "86324ce0-4260-4b9c-b05e-eadd88919737",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Volksraad (Dewan Rakyat) didirikan Belanda pada tahun 1918 sebagai lembaga perwakilan di Hindia Belanda. Tokoh pergerakan nasional yang pernah menjadi anggota Volksraad sekaligus dikenal sebagai salah satu pendiri organisasi pergerakan yang menuntut kemerdekaan adalah...",
+      "options": [
+        "Ki Hajar Dewantara",
+        "Ernest Douwes Dekker",
+        "Cipto Mangunkusumo",
+        "Mohammad Hatta",
+        "Soekarno"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Cipto Mangunkusumo menjadi anggota Volksraad sejak 1918 meski dikenal sebagai tokoh Indische Partij yang anti-kolonial — sebuah posisi paradoks: masuk lembaga bentukan Belanda sekaligus menentangnya. Memang Tjokroaminoto dan Agus Salim dari SI juga pernah duduk di Volksraad, tapi Cipto-lah yang paling kuat asosiasinya dengan IP, organisasi politik pertama yang menuntut kemerdekaan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "2cb724ae-dbba-48c7-b849-5f5d3c26ccba",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Mohammad Hatta adalah salah satu pemimpin Perhimpunan Indonesia di Belanda. Pada tahun 1927, Hatta pernah ditangkap oleh pemerintah Belanda. Alasan penangkapan Hatta adalah...",
+      "options": [
+        "Pidato di Kongres Liga Anti-Imperialisme di Brussel yang menuntut kemerdekaan koloni Belanda",
+        "Memimpin demonstrasi mahasiswa Indonesia di depan parlemen Belanda menuntut kemerdekaan",
+        "Tulisan-tulisan di majalah Indonesia Merdeka yang dianggap menghasut serta dugaan keterlibatan PI dalam pemberontakan komunis 1926",
+        "Menyelundupkan senjata dari Jerman untuk dikirimkan kepada pejuang di Indonesia",
+        "Memalsukan dokumen perjalanan untuk masuk ke wilayah jajahan Belanda secara ilegal"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Hatta ditangkap pada 23 September 1927 bersama Nazir Pamontjak, Ali Sastroamidjojo, dan Abdul Madjid. Dakwaannya: tulisan-tulisan di majalah Indonesia Merdeka yang dianggap menghasut, plus tuduhan keterlibatan PI dalam pemberontakan komunis 1926/1927. Hatta dibebaskan setelah membacakan pledoi 'Indonesie Vrij' (Indonesia Merdeka) pada 9 Maret 1928.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "991f99d9-5044-4626-9015-95896199b3e1",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Perhatikan kutipan berikut: 'Apabila aku seorang Belanda, aku tidak akan menyelenggarakan pesta-pesta kemerdekaan di negeri yang kita sendiri telah merampas kemerdekaannya.' Kutipan ini berasal dari tulisan berjudul 'Als ik een Nederlander was' yang dimuat di harian De Expres pada 1913. Penulis tulisan tersebut adalah...",
+      "options": [
+        "dr. Cipto Mangunkusumo",
+        "Ki Hajar Dewantara",
+        "Ernest Douwes Dekker",
+        "H.O.S. Tjokroaminoto",
+        "Mohammad Hatta"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Tulisan 'Als ik een Nederlander was' (Andaikan aku seorang Belanda) ditulis oleh Suwardi Suryaningrat — yang kemudian dikenal sebagai Ki Hajar Dewantara — sebagai protes atas rencana perayaan 100 tahun kemerdekaan Belanda dari Prancis yang dananya dipungut dari rakyat Hindia. Mudah tertukar dengan Douwes Dekker karena ia pemimpin redaksi De Expres tempat tulisan itu dimuat, tapi penulisnya adalah Suwardi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "fa1df0af-a560-44b5-b9d6-17281b3acb42",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Soekarno dalam tulisannya 'Nasionalisme, Islamisme, dan Marxisme' (1926) menyerukan persatuan tiga aliran. Apa tujuan utama tulisan tersebut?",
+      "options": [
+        "Membuktikan bahwa Marxisme lebih unggul dari Islam dan nasionalisme sebagai ideologi perjuangan",
+        "Menyerukan persatuan antara golongan nasionalis, Islam, dan marxis untuk bersama-sama melawan imperialisme",
+        "Menawarkan ideologi Pancasila sebagai sintesis dari ketiga aliran tersebut kepada rakyat Indonesia",
+        "Mengkritik Sarekat Islam yang dinilai terlalu eksklusif dan menghambat persatuan nasional",
+        "Mendukung komunisme internasional sebagai jalan terbaik untuk membebaskan bangsa Asia dari penjajahan"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Soekarno melihat ketiga aliran (nasionalis, Islam, marxis) sebagai kekuatan yang harus bersatu melawan imperialisme Belanda, bukan bersaing satu sama lain. Ini adalah gagasan sintesis yang sangat visioner untuk zamannya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9fd753b4-a2bd-42c1-9be9-c334f6bc81cd",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Dalam sejarah pergerakan nasional, MIAI (Majelis Islam A'la Indonesia) didirikan pada tahun 1937 sebagai federasi organisasi Islam. Apa yang membedakan MIAI dari organisasi Islam seperti Muhammadiyah atau NU?",
+      "options": [
+        "MIAI adalah organisasi Islam pertama yang secara terbuka menyatakan dukungan terhadap kemerdekaan Indonesia",
+        "MIAI merupakan federasi berbagai organisasi Islam, bukan organisasi tunggal seperti Muhammadiyah atau NU",
+        "MIAI adalah organisasi Islam yang fokus pada pendidikan pesantren dan menolak kurikulum sekolah modern",
+        "MIAI didirikan oleh pemerintah Belanda sebagai alat untuk memecah persatuan umat Islam Indonesia",
+        "MIAI adalah sayap politik dari Muhammadiyah yang dibentuk untuk terjun langsung ke dunia politik praktis"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "MIAI adalah federasi (gabungan) organisasi-organisasi Islam, bukan organisasi mandiri. Ia berfungsi sebagai koordinator, bukan kompetitor Muhammadiyah atau NU. Jepang kemudian mengubahnya menjadi Masyumi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "7eda36af-f5db-45d4-8eb8-4167986f8e40",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Tokoh pergerakan nasional yang diasingkan ke Ende (Flores) dan kemudian ke Bengkulu oleh pemerintah kolonial Belanda adalah...",
+      "options": [
+        "Mohammad Hatta",
+        "Sutan Sjahrir",
+        "Soekarno",
+        "Cipto Mangunkusumo",
+        "Ki Hajar Dewantara"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Soekarno diasingkan ke Ende (1934–1938) lalu ke Bengkulu (1938–1942) setelah PNI dibubarkan dan ia ditangkap. Hatta dan Sjahrir diasingkan ke Banda Neira dan Boven Digul — jangan sampai ketukar.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "6382057e-6d00-4334-8609-c85f00502a3e",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Sarekat Islam pada perkembangannya terpecah menjadi SI Putih dan SI Merah. Yang membedakan keduanya secara ideologis adalah...",
+      "options": [
+        "SI Putih berpusat di Jawa Tengah, SI Merah berpusat di Jawa Barat sehingga terjadi konflik teritorial",
+        "SI Putih berideologi Islam, SI Merah berideologi marxis-komunis yang dipengaruhi PKI",
+        "SI Putih bersifat kooperatif dengan Belanda, SI Merah bersifat non-kooperatif dan radikal",
+        "SI Putih dipimpin oleh ulama pesantren, SI Merah dipimpin oleh kaum terpelajar lulusan sekolah Belanda",
+        "SI Putih menginginkan federasi dengan Belanda, SI Merah menuntut kemerdekaan penuh"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "SI Merah berafiliasi dengan PKI dan berideologi marxis-komunis, dipimpin Semaun dan Darsono. SI Putih di bawah Tjokroaminoto-Agus Salim tetap berideologi Islam. Ini adalah contoh classic konflik Islam vs komunisme di tubuh organisasi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "8ec4ba5f-090e-46c7-8d5b-aefefc5d6eb3",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Ernest Douwes Dekker (juga dikenal sebagai Danudirja Setiabudi) memiliki latar belakang yang unik di antara tokoh pergerakan nasional. Keunikan yang membedakannya dari tokoh lain seperti Cipto dan Ki Hajar adalah...",
+      "options": [
+        "Ia adalah satu-satunya tokoh Indische Partij yang tidak pernah diasingkan oleh pemerintah kolonial",
+        "Ia adalah keturunan Indo-Eropa (Belanda-Jawa), bukan pribumi, namun justru paling gigih menuntut kemerdekaan Hindia",
+        "Ia adalah satu-satunya anggota Indische Partij yang juga menjadi anggota Volksraad bentukan Belanda",
+        "Ia memiliki gelar akademis tertinggi di antara tiga serangkai, yakni doktor dari Universitas Amsterdam",
+        "Ia adalah tokoh pergerakan yang pertama kali menggunakan istilah 'Indonesia' secara resmi dalam dokumen politik"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Douwes Dekker adalah Indo-Eropa (keturunan campuran Belanda-Jawa), bukan pribumi. Ini menarik karena justru ia yang paling vokal menuntut kemerdekaan Hindia dari Belanda, negeri leluhur dari sisi bapaknya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f23b54ec-57e8-46a4-8fb3-de35369efa32",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Kongres Pemuda I (1926) sering dianggap 'gagal' karena tidak menghasilkan ikrar seperti Kongres Pemuda II. Namun penilaian ini kurang tepat karena Kongres Pemuda I sebenarnya...",
+      "options": [
+        "Menghasilkan draft awal teks Sumpah Pemuda yang kemudian disempurnakan dua tahun kemudian",
+        "Menyepakati cita-cita persatuan bangsa dan menyiapkan agenda bagi Kongres Pemuda II, meski belum menghasilkan ikrar bersama yang final",
+        "Berhasil menyatukan seluruh organisasi pemuda ke dalam satu wadah federasi yang permanen",
+        "Menetapkan bahasa Indonesia sebagai bahasa persatuan secara resmi untuk pertama kalinya",
+        "Mendeklarasikan kemerdekaan Indonesia sebagai tujuan resmi gerakan pemuda"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Kongres Pemuda I berhasil menyepakati cita-cita persatuan dan menyiapkan fondasi bagi Kongres Pemuda II — termasuk membentuk panitia dan menyepakati agenda. Yang belum tercapai adalah rumusan ikrar bersama yang bulat. Jangan simplifikasi: kongres ini bukan kosong, tapi belum tuntas.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "03738961-de43-46b1-8b70-a78efcdc248d",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Cipto Mangunkusumo adalah tokoh Indische Partij yang juga dikenal sebagai dokter dan penulis kritik sosial. Setelah dibuang ke Belanda, Cipto kemudian diasingkan ke wilayah lain karena dianggap masih berbahaya. Ke manakah ia diasingkan?",
+      "options": [
+        "Ende, Flores",
+        "Bengkulu, Sumatera",
+        "Banda Neira, Maluku",
+        "Boven Digul, Papua",
+        "Sukabumi, Jawa Barat"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Cipto Mangunkusumo diasingkan ke Banda Neira sejak 1927. Hatta dan Sjahrir baru tiba di Banda Neira pada 1936 — setelah sebelumnya di Boven Digul. Jadi Boven Digul memang pernah menjadi tempat pengasingan Hatta (bukan Cipto), makanya opsi itu menjebak.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f95ddcb8-4713-4c94-bd3d-b65756f6aada",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Salah satu tokoh Perhimpunan Indonesia, Sutan Sjahrir, memiliki perbedaan pandangan dengan Hatta dan Soekarno terkait strategi perjuangan. Pandangan khas Sjahrir adalah...",
+      "options": [
+        "Memprioritaskan perjuangan bersenjata sebagai satu-satunya jalan mencapai kemerdekaan dari Belanda",
+        "Mengutamakan gerakan massa besar yang dipimpin satu partai tunggal yang kuat di bawah Soekarno",
+        "Menekankan pendidikan kader dan perjuangan sosialisme demokratis, menolak fasisme termasuk Jepang",
+        "Mendukung kerja sama dengan Jepang sebagai strategi untuk mengusir Belanda dari Indonesia",
+        "Mengutamakan lobby diplomatik internasional melalui Liga Bangsa-Bangsa untuk menekan Belanda"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Sjahrir percaya pada sosialisme demokratis dan pendidikan kader rakyat dari bawah, bukan massa movement ala Soekarno. Jangan tertukar: Hatta dekat dengan Sjahrir tapi keduanya berbeda dengan Soekarno dalam soal strategi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "6f135848-b8de-46c3-870d-0e6aa12a69f5",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Budi Utomo secara umum dianggap lebih moderat dibandingkan Indische Partij. Manakah pernyataan yang PALING TEPAT menggambarkan perbedaan orientasi kedua organisasi ini?",
+      "options": [
+        "Budi Utomo bersifat kooperatif dan Jawa-sentris, sementara Indische Partij bersifat non-kooperatif dan menuntut kemerdekaan bagi semua golongan di Hindia",
+        "Budi Utomo berideologi Islam, sementara Indische Partij berideologi nasionalisme sekuler",
+        "Budi Utomo berpusat di Batavia, sementara Indische Partij berpusat di Bandung dan lebih radikal",
+        "Budi Utomo didirikan oleh kalangan ulama, sementara Indische Partij didirikan oleh kalangan priyayi terpelajar",
+        "Budi Utomo menolak pendidikan Barat, sementara Indische Partij mendukung modernisasi melalui sistem pendidikan kolonial"
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "BU berfokus pada pendidikan priyayi Jawa dan masih bersifat kooperatif, sedangkan IP secara eksplisit menuntut kemerdekaan dan bersifat non-kooperatif. Perbedaan inilah yang membuat IP dibubarkan Belanda, sementara BU dibiarkan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "2e4948fe-220a-4f3c-8ad4-62ab55ec0582",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Soekarno ditangkap pemerintah Belanda pada tahun 1929 dan diadili karena aktivitas PNI. Dalam pembelaannya yang terkenal, Soekarno membacakan pledoi berjudul...",
+      "options": [
+        "Indonesia Merdeka",
+        "Indonesia Menggugat",
+        "Mencapai Indonesia Merdeka",
+        "Indonesia Bangkit",
+        "Nasionalisme, Islam, dan Marxisme"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Pledoi Soekarno berjudul 'Indonesia Menggugat' (1930), bukan 'Indonesia Merdeka' atau judul lain. Pledoi ini adalah karya retorika politiknya yang paling terkenal dan berisi analisis tajam tentang imperialisme.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "b0661de2-f709-475d-a703-cc35b2b65071",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Dalam Kongres Pemuda II (1928), lagu Indonesia Raya karya W.R. Supratman diperdengarkan untuk pertama kalinya secara publik — namun dengan cara yang tidak biasa. Mengapa lagu tersebut dimainkan hanya secara instrumental (tanpa lirik) pada momen itu?",
+      "options": [
+        "Lirik lagu Indonesia Raya belum selesai ditulis saat kongres berlangsung",
+        "Untuk menghindari tuduhan provokasi dari polisi Belanda yang mengawasi jalannya kongres",
+        "Tidak ada penyanyi yang hadir di kongres sehingga terpaksa dimainkan secara instrumental",
+        "Panitia kongres belum mendapat izin resmi untuk memperdengarkan lagu berlirik dari pemerintah kolonial",
+        "W.R. Supratman khawatir liriknya akan disalahartikan sebagai seruan pemberontakan bersenjata"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Supratman memainkan Indonesia Raya dengan biola tanpa lirik agar tidak dianggap provokasi terbuka oleh pengawas polisi Belanda yang hadir. Ini bukan soal belum selesai liriknya — lirik sudah ada — tapi soal taktik agar kongres tidak dibubarkan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "6d01057d-ce5d-4dd9-8b9f-5a9a4888620e",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Ki Hajar Dewantara dikenal sebagai tokoh Indische Partij sekaligus pendiri Taman Siswa. Konsep pendidikan Ki Hajar Dewantara yang menjadi semboyan pendidikan nasional Indonesia adalah...",
+      "options": [
+        "Ing Ngarso Sung Tulodo, Ing Madyo Mangun Karso, Tut Wuri Handayani",
+        "Cipta, Rasa, Karsa sebagai trilogi pengembangan manusia seutuhnya",
+        "Bhineka Tunggal Ika sebagai dasar persatuan dalam keberagaman bangsa",
+        "Satya, Guna, Bhakti sebagai landasan pendidikan karakter Indonesia",
+        "Takwa, Cerdas, Terampil sebagai tiga pilar pendidikan nasional Ki Hajar"
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Semboyan Ing Ngarso Sung Tulodo, Ing Madyo Mangun Karso, Tut Wuri Handayani adalah warisan Ki Hajar. Tut Wuri Handayani (di belakang memberi dorongan) kini menjadi semboyan resmi Kementerian Pendidikan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "05bd1c65-d050-468f-9e2d-2105ecfbe70e",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Sarekat Islam mengalami perpecahan internal pada awal 1920-an. Perpecahan ini terjadi karena adanya 'disiplin partai' yang bertujuan untuk...",
+      "options": [
+        "Memperkuat struktur organisasi SI agar lebih terpusat dan efisien dalam menghadapi Belanda",
+        "Melarang anggota SI merangkap keanggotaan di organisasi lain, khususnya PKI",
+        "Menghapus pengurus daerah yang terbukti korupsi dan menyalahgunakan dana organisasi",
+        "Mewajibkan seluruh anggota SI untuk mengikuti pendidikan agama Islam secara formal",
+        "Memisahkan SI dari pengaruh pemerintah kolonial yang mulai menyusup ke pengurus pusat"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Disiplin partai SI diterapkan untuk mengusir anggota yang juga bergabung dengan PKI (SI Merah). Trik-nya: 'disiplin partai' terdengar seperti penguatan internal, padahal tujuannya justru menyingkirkan faksi komunis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "845afc45-d928-4974-9dec-0cf050952e08",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 3,
+      "question_text": "Indische Partij menjadi organisasi pergerakan pertama yang secara tegas menuntut kemerdekaan Indonesia. Apa alasan utama pemerintah Belanda membubarkan dan mengasingkan tokoh-tokoh Indische Partij?",
+      "options": [
+        "Melakukan pemberontakan bersenjata terhadap garnisun militer Belanda di Jawa",
+        "Menerbitkan tulisan-tulisan yang dinilai menghasut dan mengancam kewibawaan pemerintah kolonial",
+        "Menolak membayar pajak dan mengorganisasi pemogokan buruh perkebunan secara besar-besaran",
+        "Menjalin kerja sama dengan kekuatan asing yang bermusuhan dengan Belanda",
+        "Mendirikan milisi rakyat bersenjata di daerah-daerah pedesaan Jawa"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "IP dibubarkan karena tulisan Douwes Dekker, Cipto, dan Ki Hajar dinilai menghasut dan membahayakan ketertiban kolonial — khususnya tulisan 'Als ik een Nederlander was'. Ini bukan soal kekerasan, melainkan soal kata-kata yang dianggap subversif.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "98346b18-1596-496c-81e6-402052ff0f29",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Majalah 'Indonesia Merdeka' adalah corong propaganda yang diterbitkan oleh organisasi...",
+      "options": [
+        "Budi Utomo",
+        "PNI",
+        "Sarekat Islam",
+        "Perhimpunan Indonesia",
+        "Indische Partij"
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Indonesia Merdeka adalah majalah resmi Perhimpunan Indonesia (PI) yang terbit di Belanda. Majalah ini menyebarkan gagasan kemerdekaan Indonesia ke kalangan internasional.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "dfa32d4b-7806-46ec-aa86-ff297f9aa882",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Asas utama yang dipegang PNI di bawah kepemimpinan Soekarno dalam menghadapi pemerintah kolonial Belanda adalah...",
+      "options": [
+        "Kooperasi penuh dengan pemerintah kolonial",
+        "Non-kooperasi",
+        "Moderat dan diplomatis",
+        "Federalisme",
+        "Pan-Islamisme"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "PNI memegang asas non-kooperasi, artinya menolak bekerja sama dengan pemerintah kolonial dalam bentuk apapun. Ini berbeda dengan Budi Utomo dan SI awal yang masih kooperatif.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f73bbf24-5021-4035-a9bb-0441742168d7",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Organisasi pergerakan nasional Muhammadiyah didirikan oleh KH. Ahmad Dahlan pada tahun...",
+      "options": [
+        "1908",
+        "1910",
+        "1912",
+        "1915",
+        "1920"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Muhammadiyah didirikan pada 18 November 1912 di Yogyakarta. Organisasi ini bergerak di bidang keagamaan, pendidikan, dan sosial sebagai bentuk pembaruan Islam di Hindia Belanda.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "1254e172-629e-489b-9b40-c3f7be77e303",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Sumpah Pemuda pada 28 Oktober 1928 diikrarkan dalam kongres pemuda. Siapakah ketua panitia Kongres Pemuda II tersebut?",
+      "options": [
+        "Muhammad Yamin",
+        "Wage Rudolf Supratman",
+        "Sugondo Djojopuspito",
+        "Soekarno",
+        "Amir Sjarifuddin"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Sugondo Djojopuspito adalah ketua panitia Kongres Pemuda II. Jangan tertukar dengan Muhammad Yamin yang berperan sebagai sekretaris sekaligus penulis naskah ikrar.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "64d4d815-8e07-4d13-b087-31506d84711b",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Taman Siswa didirikan oleh Ki Hajar Dewantara pada tahun 1922 di kota...",
+      "options": [
+        "Surakarta",
+        "Bandung",
+        "Semarang",
+        "Yogyakarta",
+        "Jakarta"
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Taman Siswa didirikan di Yogyakarta pada 3 Juli 1922. Ki Hajar Dewantara mendirikannya sebagai bentuk perlawanan budaya terhadap sistem pendidikan kolonial Belanda.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "688a3eb8-224e-4628-a3da-4fa6de143170",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Partai Nasional Indonesia (PNI) didirikan oleh Soekarno pada tahun...",
+      "options": [
+        "1920",
+        "1924",
+        "1927",
+        "1930",
+        "1932"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "PNI didirikan Soekarno pada tahun 1927 di Bandung. PNI adalah organisasi pertama yang secara tegas mengusung asas non-kooperasi dan tujuan kemerdekaan Indonesia.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "d238e7bc-15e8-48cf-a850-41e36e134754",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Sarekat Islam (SI) merupakan salah satu organisasi pergerakan terbesar pada awal abad ke-20. Siapakah tokoh yang menjadi pemimpin besar dan wajah utama organisasi ini sejak 1912?",
+      "options": [
+        "Haji Samanhudi",
+        "H.O.S. Tjokroaminoto",
+        "KH. Ahmad Dahlan",
+        "Agus Salim",
+        "Abdul Muis"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "H.O.S. Tjokroaminoto adalah pemimpin kharismatik Sarekat Islam yang menggerakkan organisasi ini menjadi gerakan massa berjumlah jutaan anggota. Mudah tertukar dengan Haji Samanhudi yang mendirikan cikal bakalnya (Sarekat Dagang Islam di Solo) — tapi Tjokroaminoto-lah yang membesarkan SI menjadi kekuatan politik nasional.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "eeeffa2c-8a21-4353-b3a7-ce680fc25469",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Organisasi Perhimpunan Indonesia (PI) adalah organisasi pelajar Indonesia di luar negeri. PI berpusat di kota...",
+      "options": [
+        "Amsterdam",
+        "Den Haag",
+        "Leiden",
+        "Rotterdam",
+        "Utrecht"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Perhimpunan Indonesia (cikal bakal Indische Vereeniging 1908) berpusat di Leiden — kota universitas tempat banyak mahasiswa Indonesia menimba ilmu. PPI Leiden hari ini menyebut diri sebagai kelanjutan langsung dari PI 1922.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "e8d46a88-f73c-44b8-94e4-32276312d7b9",
+      "section": "TWK",
+      "topic": "Nasionalisme",
+      "subtopic": "Organisasi & Tokoh Pergerakan Nasional",
+      "difficulty": 1,
+      "question_text": "Indische Partij didirikan pada tahun 1912 oleh tiga serangkai. Siapakah ketiga tokoh pendiri tersebut?",
+      "options": [
+        "Wahidin, Sutomo, Cipto Mangunkusumo",
+        "Douwes Dekker, Cipto Mangunkusumo, Ki Hajar Dewantara",
+        "Tjokroaminoto, Agus Salim, Abdul Muis",
+        "Soekarno, Hatta, Sjahrir",
+        "Douwes Dekker, Tjokroaminoto, Sutomo"
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Tiga serangkai Indische Partij adalah Ernest Douwes Dekker, dr. Cipto Mangunkusumo, dan Ki Hajar Dewantara. Ketiganya dibuang ke Belanda karena tulisan-tulisan kritisnya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "86c94725-61d3-4a10-b2ca-df73c2b6554c",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua siswa yang rajin pasti naik kelas. Bima naik kelas. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Bima pasti rajin.",
+        "Bima tidak rajin.",
+        "Bima ranking satu.",
+        "Belum tentu Bima rajin.",
+        "Semua yang naik kelas adalah rajin."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Hati-hati afirmasi konsekuen: 'rajin → naik kelas' tidak berarti 'naik kelas → rajin'. Bima bisa saja naik kelas karena alasan lain (nilai cukup, kebijakan sekolah). Trik: kesimpulan paling aman adalah 'belum tentu Bima rajin'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "b6b2f494-aa9b-47f8-a3f8-29e39b5d5f9a",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua mobil listrik ramah lingkungan. Sebagian mobil di parkiran adalah mobil listrik. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Semua mobil di parkiran ramah lingkungan.",
+        "Tidak ada mobil di parkiran yang ramah lingkungan.",
+        "Sebagian mobil di parkiran ramah lingkungan.",
+        "Semua yang ramah lingkungan adalah mobil listrik.",
+        "Mobil listrik tidak ada di parkiran."
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Sebagian mobil di parkiran masuk kategori 'mobil listrik', dan semua mobil listrik ramah lingkungan, jadi sebagian mobil di parkiran ramah lingkungan. Trik: kuantor 'sebagian' di premis terbawa ke kesimpulan. Hindari menarik kesimpulan 'semua mobil di parkiran ramah lingkungan'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9429cb1f-d6e1-41e5-b804-a88077bb6bc7",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua peserta seminar mendapat sertifikat. Andi tidak mendapat sertifikat. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Andi bukan peserta seminar.",
+        "Andi tidak datang ke seminar.",
+        "Andi adalah peserta seminar.",
+        "Andi peserta tapi tidak hadir.",
+        "Sertifikat hanya untuk peserta seminar."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Modus tollens klasik: peserta → sertifikat, Andi tidak punya sertifikat, jadi Andi bukan peserta seminar. Trik: 'tidak B' membatalkan 'A'. Hindari kesimpulan 'Andi tidak datang' karena 'tidak hadir di seminar' bukan informasi yang dikunci premis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a5a28cb6-45df-40ed-892a-2e5f3a9b3d09",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua mahasiswa wajib memiliki KTM. Rina adalah mahasiswa. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Rina tidak memiliki KTM.",
+        "Semua pemilik KTM adalah mahasiswa.",
+        "Rina pasti lulus.",
+        "Rina rajin belajar.",
+        "Rina wajib memiliki KTM."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Mahasiswa → wajib KTM, Rina mahasiswa, maka Rina wajib memiliki KTM. Trik: kunci 'wajib' di premis ikut terbawa ke kesimpulan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "b327f4f0-5fc1-4929-ac7d-e9a08eccdb79",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua pegawai negeri sipil mendapat gaji bulanan. Bu Sari adalah pegawai negeri sipil. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Bu Sari tidak mendapat gaji bulanan.",
+        "Bu Sari mendapat gaji bulanan.",
+        "Bu Sari mendapat gaji bulanan dan tunjangan.",
+        "Semua yang bergaji bulanan adalah PNS.",
+        "Bu Sari mendapat pensiun."
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "PNS → gaji bulanan, Bu Sari PNS, jadi Bu Sari pasti dapat gaji bulanan. Trik: ikuti aliran subjek-predikat secara langsung. Hindari menambahkan tunjangan, pensiun, atau besaran gaji yang tidak disebut.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "02d4cacc-a8c6-4908-be57-673d226b2586",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua kucing adalah mamalia. Mimi adalah kucing. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Mimi bukan mamalia.",
+        "Semua mamalia adalah kucing.",
+        "Mimi adalah mamalia.",
+        "Mimi adalah hewan peliharaan.",
+        "Mimi adalah kucing yang lucu."
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Terapkan modus ponens: kucing → mamalia, jadi Mimi pasti mamalia. Trik: jangan tergoda menambah sifat lain seperti 'lucu' yang tidak ada di premis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a9385679-b61d-4702-9fe6-ad32a8fa6a25",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua dokter adalah sarjana. Pak Hadi adalah dokter. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Pak Hadi adalah dokter yang pintar.",
+        "Pak Hadi bukan sarjana.",
+        "Semua sarjana adalah dokter.",
+        "Pak Hadi adalah sarjana.",
+        "Pak Hadi pasti kaya."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Modus ponens sederhana: kalau semua A adalah B, dan X adalah A, maka X pasti B. Trik: cukup ikuti rantai 'dokter → sarjana'. Hindari menambahkan info yang tidak ada di premis seperti 'pintar' atau 'kaya'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a265cb7b-9153-425c-b9ad-b8d04ae29687",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua karyawan teladan mendapat penghargaan. Pak Joko tidak mendapat penghargaan. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Pak Joko bukan karyawan.",
+        "Pak Joko bukan karyawan teladan.",
+        "Pak Joko karyawan teladan.",
+        "Pak Joko malas bekerja.",
+        "Semua karyawan teladan adalah Pak Joko."
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Modus tollens: kalau semua A adalah B, dan X bukan B, maka X bukan A. Pak Joko tidak dapat penghargaan, jadi Pak Joko bukan karyawan teladan. Hindari kesalahan umum: 'Pak Joko bukan karyawan' itu terlalu jauh — premis hanya bicara soal teladan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "177aa9e8-7e45-443a-b044-e25dda118061",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Tidak ada hewan reptil yang berbulu. Semua ular adalah reptil. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Sebagian ular berbulu.",
+        "Semua yang berbulu adalah reptil.",
+        "Tidak ada yang berbulu adalah ular.",
+        "Semua ular berbulu.",
+        "Tidak ada ular yang berbulu."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Ular ⊂ reptil, dan reptil tidak ada yang berbulu, maka ular tidak berbulu. Trik: kalau himpunan kecil masuk himpunan besar yang punya sifat negatif, sifat itu menurun. Kesalahan umum: membalik jadi 'tidak ada yang berbulu adalah ular' — itu over-generalisasi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f27ebded-99df-435f-84c2-da98f1626f54",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua pegawai yang lulus ujian akan dipromosikan. Bu Wati dipromosikan. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Bu Wati pasti lulus ujian.",
+        "Bu Wati tidak lulus ujian.",
+        "Belum tentu Bu Wati lulus ujian.",
+        "Semua yang dipromosikan lulus ujian.",
+        "Bu Wati bukan pegawai."
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Hati-hati: 'lulus → promosi' tidak otomatis berarti 'promosi → lulus' (itu kekeliruan afirmasi konsekuen). Bu Wati dipromosikan tidak menjamin dia lulus ujian — bisa saja ada jalur promosi lain. Trik: silogisme valid hanya berjalan satu arah; kesimpulan paling aman adalah 'belum tentu Bu Wati lulus ujian'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "c70bd091-cdb0-468b-b5ef-1a5008b05598",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua dokter adalah lulusan kedokteran. Sebagian lulusan kedokteran bekerja di rumah sakit. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Semua dokter bekerja di rumah sakit.",
+        "Tidak ada dokter yang bekerja di rumah sakit.",
+        "Semua lulusan kedokteran adalah dokter.",
+        "Tidak dapat dipastikan apakah dokter bekerja di rumah sakit.",
+        "Semua yang bekerja di rumah sakit adalah dokter."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Dokter ⊂ lulusan kedokteran, dan hanya 'sebagian' lulusan kedokteran yang kerja di RS — kita tidak bisa pastikan apakah 'sebagian' itu termasuk dokter atau bukan dokter. Trik: kalau premis kedua pakai 'sebagian' dan tidak jelas siapa, kesimpulan paling aman adalah 'tidak dapat dipastikan'. Hindari menyimpulkan 'semua dokter bekerja di RS' atau 'tidak ada dokter di RS' karena dua-duanya melampaui data.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9b26e369-0445-4794-8ab1-1f3e6a71d212",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua bunga mawar berduri. Tidak ada bunga melati yang berduri. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Sebagian melati adalah mawar.",
+        "Semua bunga melati adalah mawar.",
+        "Semua bunga berduri adalah mawar.",
+        "Bunga mawar bukan bunga.",
+        "Tidak ada bunga melati yang merupakan bunga mawar."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Mawar berduri, melati tidak berduri — artinya tidak ada irisan, jadi tidak ada bunga melati yang merupakan bunga mawar. Trik: kalau sifat A dimiliki semua X tapi tidak dimiliki Y, maka Y bukan X. Kesalahan umum: menyimpulkan 'mawar bukan bunga' — itu terlalu jauh.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f93ffb9f-83ac-421a-8bc5-8ac7146d59eb",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Semua pemain bola harus rajin berlatih. Sebagian pemain bola berasal dari Jawa. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Semua orang Jawa adalah pemain bola.",
+        "Semua orang Jawa harus rajin berlatih.",
+        "Hanya pemain bola Jawa yang harus rajin berlatih.",
+        "Pemain bola dari Jawa tidak perlu rajin berlatih.",
+        "Sebagian pemain bola dari Jawa harus rajin berlatih."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Gabungkan: pemain bola dari Jawa tetap masuk kategori 'pemain bola', jadi mereka tetap harus rajin berlatih. Trik: pertahankan modalitas 'harus' dari premis — jangan turunkan jadi 'rajin' biasa. Hindari kesimpulan 'semua orang Jawa harus rajin berlatih' karena premis hanya mengikat pemain bola.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "bcf042aa-a28a-41aa-b253-5ecc0c80aee7",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua produk lokal harus memiliki label SNI. Produk X adalah produk lokal. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Produk X tidak perlu label SNI.",
+        "Semua yang berlabel SNI adalah produk lokal.",
+        "Produk X harus memiliki label SNI.",
+        "Produk X adalah produk impor.",
+        "Produk X berkualitas tinggi."
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Produk lokal → harus berlabel SNI, X produk lokal, maka X harus berlabel SNI. Trik: kata kunci 'harus' di premis ikut ke kesimpulan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a931635e-31cb-407b-b5ec-337be1b63515",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua siswa kelas A pandai matematika. Andi siswa kelas A. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Andi tidak pandai matematika.",
+        "Andi pandai matematika.",
+        "Andi pandai semua mata pelajaran.",
+        "Semua yang pandai matematika ada di kelas A.",
+        "Andi adalah juara kelas."
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Kelas A → pandai matematika, Andi kelas A, maka Andi pandai matematika. Trik: jangan generalisasi terbalik 'semua yang pandai matematika ada di kelas A'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "edfac754-9433-4571-9453-4f1c2ec0555c",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua perawat memakai seragam putih. Susi adalah perawat. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Susi memakai seragam biru.",
+        "Semua yang berseragam putih adalah perawat.",
+        "Susi memakai seragam putih.",
+        "Susi adalah perawat senior.",
+        "Susi tidak berseragam."
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Perawat → seragam putih, Susi perawat, maka Susi memakai seragam putih. Trik: kembalikan sifat kelompok ke individu yang masuk kelompok.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9eda07cc-dfed-49f9-b8d6-32695e6dc28b",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua pohon mangga berbuah manis. Pohon di halaman Pak Tono adalah pohon mangga. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Buah pohon Pak Tono manis.",
+        "Pohon Pak Tono tidak berbuah.",
+        "Buah pohon Pak Tono asam.",
+        "Pohon Pak Tono cepat tumbuh.",
+        "Semua yang manis adalah mangga."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Pohon mangga → berbuah manis, pohon Pak Tono adalah mangga, maka buahnya manis. Trik: ikuti pola 'kalau anggota kelompok, maka punya sifat kelompok'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "fa715666-c437-4071-b420-1d83c643ad98",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua atlet rajin berlatih. Doni adalah atlet. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Doni adalah juara.",
+        "Doni rajin berlatih.",
+        "Doni tidak pernah kalah.",
+        "Semua yang rajin berlatih adalah atlet.",
+        "Doni tidak rajin berlatih."
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Atlet → rajin berlatih, Doni atlet, jadi Doni rajin berlatih. Trik: jangan tambahkan 'juara', 'menang', atau predikat lain yang tidak ada di premis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "5840c325-759f-422a-bd71-b9f3eaf5dcd5",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 1,
+      "question_text": "Semua burung memiliki paruh. Elang adalah burung. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Elang tidak memiliki paruh.",
+        "Semua yang berparuh adalah elang.",
+        "Elang adalah burung pemangsa.",
+        "Elang memiliki paruh.",
+        "Elang dapat terbang tinggi."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Burung → paruh, elang burung, maka elang berparuh. Trik: ini silogisme klasik bentuk 'Semua A adalah B; X adalah A; maka X adalah B'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "8d7e38bf-2191-4b90-be92-d39951780a97",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Setiap pengendara yang melanggar lampu merah akan ditilang oleh polisi. Ibu Yuni adalah pengendara yang sedang melintas di persimpangan jalan ketika lampu kuning menyala dan ia mempercepat laju kendaraannya. Pak Polisi yang berjaga tidak menilang Ibu Yuni. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Ibu Yuni adalah pengendara yang taat aturan.",
+        "Ibu Yuni adalah sahabat Pak Polisi.",
+        "Pak Polisi lalai dalam menjalankan tugas.",
+        "Ibu Yuni tidak melanggar lampu merah.",
+        "Semua pengendara di persimpangan tidak ditilang."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Modus tollens: melanggar lampu merah → ditilang; Ibu Yuni tidak ditilang, maka Ibu Yuni tidak melanggar lampu merah. Trik: detail 'lampu kuning' dan 'mempercepat laju' adalah pengecoh moral — secara hukum lampu kuning bukan pelanggaran lampu merah. Hindari simpulan 'pengendara yang taat' atau 'sahabat polisi' yang tidak ada di premis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "7c53952f-f99c-4b8f-b90e-f87839c92964",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Semua proposal penelitian yang diajukan ke LPDP harus disertai surat rekomendasi dari dua dosen pembimbing. Sebagian proposal yang lolos seleksi administrasi berasal dari bidang sains terapan. Dr. Maya, seorang peneliti, gagal lolos seleksi administrasi LPDP tahun ini. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Dr. Maya kemungkinan tidak memenuhi salah satu syarat administrasi.",
+        "Dr. Maya bukan dari bidang sains terapan.",
+        "Dr. Maya tidak memiliki dua surat rekomendasi dosen.",
+        "Dr. Maya bukan peneliti yang kompeten.",
+        "Semua proposal sains terapan lolos seleksi."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Premis: lolos seleksi → harus ada syarat (termasuk 2 surat rekomendasi). Dr. Maya gagal lolos seleksi — penyebabnya bisa beragam, bukan hanya kurang surat rekomendasi. Trik: kesimpulan paling aman adalah 'mungkin tidak memenuhi salah satu syarat'. Hindari kesimpulan absolut 'tidak punya 2 surat rekomendasi' karena bisa saja gagal karena hal lain (proposal lemah, format salah, dll).",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "6dc10df1-9689-4a27-ad58-3c6570bc8eda",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Semua karyawan PT Maju Jaya yang berasal dari kantor cabang Surabaya menerima tunjangan transportasi. Pak Bagus, seorang karyawan PT Maju Jaya, tidak menerima tunjangan transportasi. Adapun Pak Bagus diketahui sedang mengajukan mutasi ke Jakarta. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Pak Bagus bukan karyawan dari cabang Surabaya.",
+        "Pak Bagus adalah pegawai kontrak.",
+        "Pak Bagus berasal dari cabang Jakarta.",
+        "Pak Bagus akan dipecat setelah mutasi.",
+        "Semua karyawan yang mutasi tidak dapat tunjangan."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Modus tollens: cabang Surabaya → tunjangan transport; Pak Bagus tidak dapat tunjangan, maka Pak Bagus bukan dari cabang Surabaya. Trik: info 'mutasi ke Jakarta' adalah pengecoh — kita tidak tahu cabang asalnya pasti, hanya tahu 'bukan Surabaya'. Hindari simpulan 'dari cabang Jakarta' atau 'pegawai kontrak'; itu menambah info di luar premis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f0c618bc-ef68-48ee-a1c4-9ae3e894e182",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Tidak ada peserta lomba yang menggunakan alat bantu elektronik diperbolehkan masuk final. Sebagian peserta dari Tim Garuda menggunakan kalkulator saintifik selama kompetisi. Diketahui pula bahwa kalkulator saintifik termasuk alat bantu elektronik. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Seluruh anggota Tim Garuda tidak masuk final.",
+        "Tim Garuda didiskualifikasi dari kompetisi.",
+        "Semua peserta final tidak menggunakan kalkulator.",
+        "Sebagian peserta Tim Garuda tidak masuk final.",
+        "Tim Garuda menang lomba."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Rangkai: kalkulator saintifik = alat bantu elektronik; pengguna alat bantu elektronik tidak masuk final; sebagian Tim Garuda pakai kalkulator saintifik → sebagian Tim Garuda tidak masuk final. Trik: 'sebagian' di premis menjaga kesimpulan tetap 'sebagian'. Hindari menyimpulkan 'seluruh tim' atau 'tim didiskualifikasi' karena hanya sebagian anggota yang terdampak.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "3e968455-0f34-443b-8f7e-67b7181ce34e",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Semua mahasiswa Fakultas Teknik yang ingin lulus tepat waktu wajib menyelesaikan minimal 144 SKS. Sebagian mahasiswa Teknik mengambil program akselerasi yang memungkinkan mereka mengambil 24 SKS per semester. Rama adalah mahasiswa Fakultas Teknik yang baru menyelesaikan 100 SKS di akhir semester 6. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Rama pasti tidak akan lulus tepat waktu.",
+        "Rama belum memenuhi minimal SKS untuk lulus tepat waktu.",
+        "Rama pasti mengambil program akselerasi.",
+        "Rama akan lulus dengan IPK tinggi.",
+        "Semua mahasiswa Teknik telah mencapai 100 SKS."
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Premis kunci: lulus tepat waktu → minimal 144 SKS. Rama baru 100 SKS — kita tidak punya info apakah dia ingin lulus tepat waktu atau ikut akselerasi. Yang pasti: Rama belum mencapai 144 SKS. Trik: kesimpulan harus tepat sesuai data; jangan tarik 'pasti tidak lulus tepat waktu' karena masih ada 2 semester tersisa. Pengecoh 24 SKS/semester sengaja dipasang agar Anda kalkulasi prematur.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "249413e5-760c-4ff8-92ac-e15bd7223e2e",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Di Kementerian X, semua pegawai yang menduduki jabatan eselon II wajib mengikuti Diklat Kepemimpinan Tingkat II (PKN II). Bu Sinta diketahui belum pernah mengikuti PKN II selama 15 tahun masa kerjanya, meskipun ia adalah pegawai senior dengan prestasi gemilang. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Bu Sinta tidak akan pernah menjadi pegawai eselon II.",
+        "Bu Sinta bukan pegawai eselon II.",
+        "Bu Sinta pasti pegawai eselon III.",
+        "Bu Sinta akan dipromosikan tahun depan.",
+        "Semua pegawai senior wajib PKN II."
+      ],
+      "option_scores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 1,
+      "explanation": "Modus tollens: eselon II → wajib PKN II; Bu Sinta belum pernah PKN II, maka Bu Sinta bukan pegawai eselon II. Trik: jangan terkecoh frasa 'senior dengan prestasi gemilang' — itu pengecoh emosional. Premis hanya mengunci hubungan eselon II ↔ PKN II, jadi simpulan harus terbatas pada itu. Hindari simpulan 'tidak akan jadi eselon II' atau 'pegawai biasa' yang menambah informasi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "becc0c49-b306-48a4-b148-f803068efd2a",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Semua produk makanan yang dijual di supermarket Sehati harus memiliki izin BPOM, dan supermarket akan menolak setiap produk makanan yang tidak memenuhi syarat tersebut. Pak Hasan, seorang pemasok, mengeluhkan bahwa salah satu produknya — yaitu keripik singkong merek 'Renyah' — ditolak masuk supermarket Sehati minggu lalu. Diketahui pula bahwa keripik 'Renyah' merupakan produk makanan. Kesimpulan yang paling logis adalah ...",
+      "options": [
+        "Keripik 'Renyah' tidak memiliki izin BPOM.",
+        "Keripik 'Renyah' berbahaya untuk dikonsumsi.",
+        "Supermarket Sehati menolak semua keripik singkong.",
+        "Pak Hasan bukan pemasok resmi supermarket.",
+        "Keripik 'Renyah' kemungkinan tidak laku di pasaran."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Sekarang premisnya bi-implikasi: produk makanan masuk ↔ ber-BPOM. Keripik 'Renyah' adalah produk makanan dan ditolak, maka pasti tidak ber-BPOM (modus tollens). Trik: kunci ada di kata 'akan menolak setiap produk yang tidak memenuhi syarat'. Hindari simpulan 'berbahaya dikonsumsi' — penolakan supermarket bukan bukti keamanan pangan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "bd91679d-4691-4142-8234-da81d8488f9e",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Setiap peserta CPNS yang lulus tahap SKD berhak mengikuti tahap SKB. Sebagian peserta yang mengikuti SKB berasal dari jurusan hukum. Diketahui Andini adalah peserta CPNS dari jurusan hukum yang lulus SKD. Kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Andini berhak mengikuti tahap SKB.",
+        "Andini pasti lulus tahap SKB.",
+        "Semua peserta SKB berasal dari jurusan hukum.",
+        "Andini tidak boleh ikut SKB karena dari hukum.",
+        "Hanya peserta hukum yang lulus SKD."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Lulus SKD → berhak ikut SKB; Andini lulus SKD, jadi Andini berhak ikut SKB. Detail 'jurusan hukum' dan 'sebagian peserta SKB dari hukum' adalah pengecoh — yang menentukan adalah status 'lulus SKD'. Trik: fokus pada syarat utama, abaikan info dekoratif. Hindari simpulan 'pasti lulus SKB' — berhak ikut ≠ pasti lulus.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "c8e2c551-a8f9-436e-b51f-3c67f134a864",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Semua dosen di Universitas Bina Cendekia harus memiliki gelar minimal S2. Pak Surya adalah staf di Universitas Bina Cendekia yang hanya memiliki gelar S1. Berdasarkan kedua pernyataan tersebut, kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Pak Surya akan dipecat dari universitas.",
+        "Pak Surya harus melanjutkan kuliah S2.",
+        "Pak Surya adalah dosen junior.",
+        "Semua staf di universitas tersebut bergelar S1.",
+        "Pak Surya bukan dosen di Universitas Bina Cendekia."
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Modus tollens: dosen → S2 minimal; Pak Surya hanya S1 (tidak memenuhi syarat S2), maka Pak Surya bukan dosen. Tapi premis sudah menyebut dia 'staf', jadi kesimpulannya: Pak Surya bukan dosen di kampus tersebut. Trik: kata 'staf' itu netral — bisa staf administrasi, bukan otomatis dosen. Hindari simpulan 'akan dipecat' atau 'harus kuliah lagi' yang tidak ada di premis.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "084dcecd-13b3-4c16-b85d-8b98dde52677",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 3,
+      "question_text": "Di sebuah perusahaan, semua karyawan yang bekerja di divisi keuangan wajib mengikuti pelatihan akuntansi setiap tahun. Bu Linda adalah karyawan baru di divisi keuangan yang baru bergabung dua bulan lalu. Berdasarkan kebijakan perusahaan, kesimpulan yang paling tepat adalah ...",
+      "options": [
+        "Bu Linda dikecualikan dari pelatihan karena masih baru.",
+        "Bu Linda sudah pernah mengikuti pelatihan akuntansi.",
+        "Bu Linda wajib mengikuti pelatihan akuntansi tahunan.",
+        "Bu Linda akan menjadi akuntan handal setelah pelatihan.",
+        "Hanya karyawan senior yang wajib ikut pelatihan."
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Premis 'semua karyawan divisi keuangan wajib pelatihan akuntansi tahunan' + 'Linda di divisi keuangan' → Linda wajib ikut pelatihan akuntansi tahunan. Trik: jangan terjebak detail 'baru dua bulan' — itu pengecoh yang membuat seolah Linda dikecualikan. Kesalahan umum: menyimpulkan 'sudah pernah ikut' atau 'akan jadi akuntan handal', padahal premis tidak menyebutnya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "fcc27f0a-8bc5-4f4e-8cf9-87df80cb1536",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Silogisme Kategorik",
+      "difficulty": 2,
+      "question_text": "Tidak ada pegawai honorer yang mendapat tunjangan tetap. Pak Rudi mendapat tunjangan tetap. Kesimpulan yang tepat adalah ...",
+      "options": [
+        "Pak Rudi bukan pegawai honorer.",
+        "Pak Rudi adalah pegawai honorer.",
+        "Pak Rudi adalah pegawai senior.",
+        "Semua yang dapat tunjangan tetap adalah honorer.",
+        "Pak Rudi bukan pegawai."
+      ],
+      "option_scores": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct_answer": 0,
+      "explanation": "Kalau tidak ada honorer yang dapat tunjangan tetap, dan Pak Rudi dapat tunjangan tetap, maka Pak Rudi bukan honorer. Ini modus tollens dengan premis negatif. Trik: balik premis jadi 'kalau dapat tunjangan tetap, pasti bukan honorer'.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "b3265797-463b-4564-a31e-5b47ae00fe6d",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Penalaran Kondisional & Logika",
+      "difficulty": 2,
+      "question_text": "Syarat penerima bantuan: (1) penghasilan keluarga di bawah 2 juta, (2) memiliki KTP, (3) terdaftar di RT setempat. Pak Joko penghasilannya 1,8 juta, memiliki KTP, namun tidak terdaftar di RT. Apa kesimpulannya?",
+      "options": [
+        "Pak Joko menerima bantuan",
+        "Tidak dapat ditentukan",
+        "Pak Joko tidak menerima bantuan karena penghasilan terlalu tinggi",
+        "Pak Joko menerima bantuan separuh",
+        "Pak Joko tidak menerima bantuan karena tidak terdaftar di RT"
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Cek 3 syarat: penghasilan ✓, KTP ✓, terdaftar RT ✗. Karena syarat kumulatif, satu saja tidak terpenuhi maka gagal. Pak Joko tidak menerima bantuan. Trik: kata 'dan' berarti SEMUA harus terpenuhi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a7e4c26d-52dd-4fc7-b2a5-fac98a804417",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Penalaran Kondisional & Logika",
+      "difficulty": 2,
+      "question_text": "Syarat kepala tim: (1) pengalaman minimal 5 tahun, (2) lulus tes kepemimpinan, (3) rekomendasi atasan. Pak Bayu pengalamannya 7 tahun, belum mengikuti tes kepemimpinan, mendapat rekomendasi. Apa kesimpulannya?",
+      "options": [
+        "Pak Bayu menjadi kepala tim",
+        "Pak Bayu tidak memenuhi syarat karena tidak ada rekomendasi",
+        "Pak Bayu tidak memenuhi syarat karena pengalaman kurang",
+        "Pak Bayu tidak memenuhi syarat karena belum lulus tes kepemimpinan",
+        "Tidak dapat ditentukan"
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "correct_answer": 3,
+      "explanation": "Cek 3 syarat: pengalaman 7 ≥ 5 ✓, lulus tes ✗ (belum tes), rekomendasi ✓. Syarat kedua gagal karena belum tes (artinya belum lulus). Trik: 'belum mengikuti tes' otomatis berarti belum lulus tes.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "8b901932-509e-48bb-8264-cac9b50c3448",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Penalaran Kondisional & Logika",
+      "difficulty": 1,
+      "question_text": "Syarat masuk perpustakaan: membawa kartu anggota. Dito tidak membawa kartu anggota. Apa kesimpulannya?",
+      "options": [
+        "Dito boleh masuk perpustakaan",
+        "Tidak dapat ditentukan",
+        "Dito harus membayar denda",
+        "Dito boleh masuk jika ditemani petugas",
+        "Dito tidak boleh masuk perpustakaan"
+      ],
+      "option_scores": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "correct_answer": 4,
+      "explanation": "Syarat tidak terpenuhi, jadi Dito tidak boleh masuk. Trik: cek apakah syarat terpenuhi atau tidak, sesederhana itu. Hindari menambah asumsi seperti 'mungkin diizinkan teman' karena tidak ada di soal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "182d712c-b804-4474-920f-eecf65a4a30d",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Penalaran Kondisional & Logika",
+      "difficulty": 2,
+      "question_text": "Jika Wati bangun pagi, maka ia berolahraga. Jika ia berolahraga, maka ia sehat. Wati tidak sehat. Apa kesimpulan yang valid?",
+      "options": [
+        "Wati bangun pagi",
+        "Wati berolahraga",
+        "Wati tidak bangun pagi",
+        "Wati sakit kronis",
+        "Tidak dapat ditentukan"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Kontraposisi berlapis: tidak sehat → tidak olahraga → tidak bangun pagi. Trik: kontraposisi merambat balik dari akhir ke awal rantai.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "004fef3f-3b54-4c2f-91a3-488e831941f5",
+      "section": "TIU",
+      "topic": "Verbal",
+      "subtopic": "Penalaran Kondisional & Logika",
+      "difficulty": 3,
+      "question_text": "Aturan promosi karyawan PT Sejahtera: (1) masa kerja minimal 3 tahun, (2) tidak pernah mendapat surat peringatan dalam 1 tahun terakhir, (3) penilaian kinerja minimal B, dan (4) lulus tes kompetensi. Bu Sinta sudah bekerja 5 tahun, mendapat SP1 sembilan bulan lalu yang sudah dicabut bulan ini, penilaian kinerjanya A, dan lulus tes kompetensi. Apa kesimpulan yang paling tepat?",
+      "options": [
+        "Bu Sinta dipromosikan karena SP-nya sudah dicabut",
+        "Bu Sinta tidak dipromosikan karena masa kerja kurang",
+        "Bu Sinta tidak dipromosikan karena pernah mendapat SP1 dalam 1 tahun terakhir",
+        "Bu Sinta dipromosikan karena kinerjanya A",
+        "Bu Sinta tidak dipromosikan karena tidak lulus tes kompetensi"
+      ],
+      "option_scores": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "correct_answer": 2,
+      "explanation": "Cek 4 syarat: masa kerja 5 ≥ 3 ✓; SP1 dalam 1 tahun terakhir tetap tercatat meski dicabut ✗; kinerja A ≥ B ✓; lulus tes ✓. Bu Sinta tidak memenuhi syarat kedua karena SP1 itu masih dalam rentang 1 tahun terakhir. Trik: 'dicabut' tidak menghapus fakta historis bahwa pernah mendapat SP dalam periode tersebut.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "01678ce0-9392-46d9-8ae5-d65ccd2cf084",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Warga membentak Anda di depan loket karena merasa terlalu lama menunggu. Bagaimana sikap Anda?",
+      "options": [
+        "Minta warga untuk berbicara dengan nada lebih sopan baru dilayani",
+        "Balas dengan tegas bahwa Anda tidak bisa dibentak agar warga lain tahu aturan",
+        "Tetap tenang, akui bahwa menunggu lama memang melelahkan, lalu segera proses berkasnya",
+        "Tetap tenang dan langsung memproses berkas tanpa banyak bicara",
+        "Diam saja sambil meneruskan pekerjaan agar tidak terjadi perdebatan"
+      ],
+      "option_scores": [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      "correct_answer": 2,
+      "explanation": "Tetap tenang, akui kekecewaannya, dan langsung proses berkasnya menunjukkan empati tanpa terprovokasi sekaligus tindakan konkret. Sekadar tetap tenang tanpa menjawab kekecewaannya akan terasa dingin.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "54a54bd3-77b0-4ed3-9179-f9e6778466ea",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Warga komplain karena petugas sebelumnya memberi informasi yang berbeda dengan informasi Anda. Apa yang Anda lakukan?",
+      "options": [
+        "Minta maaf dan berikan informasi yang Anda yakini benar",
+        "Jelaskan bahwa informasi Anda yang benar dan minta warga mengikuti arahan Anda",
+        "Sarankan warga menanyakan kembali ke petugas sebelumnya",
+        "Minta maaf atas kebingungan, konfirmasi ke petugas terkait, lalu berikan jawaban yang pasti",
+        "Cek prosedur di buku panduan, sampaikan ke warga apa yang tertulis, lalu minta konfirmasi pemahaman"
+      ],
+      "option_scores": [
+        4,
+        2,
+        1,
+        5,
+        3
+      ],
+      "correct_answer": 3,
+      "explanation": "Meminta maaf, mengonfirmasi ke petugas terkait, dan memberi jawaban final adalah tindakan paling utuh karena menyelesaikan kebingungan warga. Hanya meminta maaf tanpa verifikasi tidak menghasilkan kepastian.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "ebf5e2fa-ee06-44ec-b45e-ac74959cfebc",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Seorang warga lansia kesulitan mengisi formulir dan mulai frustasi. Apa tindakan Anda?",
+      "options": [
+        "Jelaskan secara verbal cara pengisian formulir dengan sabar",
+        "Bantu mengisi bagian-bagian yang sulit saja sambil menunggu warga lain",
+        "Dampingi warga mengisi formulir poin demi poin hingga selesai dengan sabar",
+        "Minta warga membawa pulang formulir dan mengisinya di rumah bersama keluarga",
+        "Sarankan warga mengantri ulang setelah berkasnya lengkap"
+      ],
+      "option_scores": [
+        3,
+        4,
+        5,
+        2,
+        1
+      ],
+      "correct_answer": 2,
+      "explanation": "Mendampingi langsung mengisi formulir menyelesaikan masalah saat itu juga, sesuai prinsip empati dan tindakan langsung. Hanya menjelaskan tanpa membantu fisik kurang memadai untuk lansia yang sudah frustasi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9885dedb-fc7f-4e7d-92ec-e2c6029bac74",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Seorang warga datang dengan nada marah karena KTP-nya belum jadi setelah satu bulan. Apa yang Anda lakukan?",
+      "options": [
+        "Katakan bahwa keterlambatan bukan tanggung jawab Anda dan minta warga menghubungi bagian lain",
+        "Minta warga menunggu di ruang tunggu sampai petugas yang bersangkutan datang",
+        "Jelaskan bahwa antrian memang panjang dan minta warga bersabar",
+        "Dengarkan keluhannya, segera cek status berkas di sistem, lalu beri kepastian kapan KTP selesai",
+        "Cek status berkas lalu berikan estimasi waktu, tapi tanpa menanggapi kemarahannya"
+      ],
+      "option_scores": [
+        1,
+        3,
+        2,
+        5,
+        4
+      ],
+      "correct_answer": 3,
+      "explanation": "Mendengarkan dulu lalu mengecek status dan memberi kepastian waktu adalah pola lengkap: empati, tindakan, kejelasan. Sekadar minta nomor antrian tanpa empati membuat warga merasa diabaikan, dan menyalahkan sistem justru memperburuk konflik.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "33c88bff-6250-44a4-8f01-09bfae3df99a",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Anda menyaksikan rekan kerja Anda berdebat dengan warga dan terlihat kewalahan. Warga semakin emosional dan rekan Anda mulai meninggikan suara. Apa tindakan Anda?",
+      "options": [
+        "Beri isyarat ke rekan dari kejauhan agar lebih tenang dan mengatur nada bicara",
+        "Tetap fokus pada pekerjaan Anda agar tidak ikut campur urusan rekan",
+        "Dekati rekan, tawarkan bantuan penanganan, dan beri ruang rekan untuk menenangkan diri",
+        "Ambil alih layanan dengan halus, tenangkan suasana, dan bantu rekan menyelesaikan masalah warga",
+        "Panggil atasan lewat telepon atau pesan agar segera datang menyelesaikan situasi"
+      ],
+      "option_scores": [
+        2,
+        1,
+        4,
+        5,
+        3
+      ],
+      "correct_answer": 3,
+      "explanation": "Ambil alih dengan halus, tenangkan suasana, dan bantu menyelesaikan masalah warga adalah tindakan kolegial yang menyelamatkan pelayanan tanpa menjatuhkan rekan. Sekadar menawarkan bantuan dan memberi ruang rekan menenangkan diri (skor 4) belum cukup karena warga yang emosional tetap tertahan tanpa progres. Pola: konflik dengan warga butuh wajah baru yang netral mengambil alih, bukan sekadar dukungan moral untuk rekan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "c88a87f7-53bc-48f4-ae27-2a046396d9a9",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga mengeluh karena layanan online kantor Anda sering error sehingga ia harus datang langsung berkali-kali. Ia merekam keluhannya dengan ponsel dan ingin viralkan. Apa yang Anda lakukan?",
+      "options": [
+        "Layani warga tuntas dan minta ia tidak memviralkan karena bisa berdampak buruk bagi citra kantor",
+        "Layani warga dengan cepat agar ia segera pergi dan tidak jadi merekam lebih lama",
+        "Layani warga tuntas dan janjikan masalah teknis segera ditangani sesuai prosedur",
+        "Sampaikan bahwa merekam di area kantor tidak diperbolehkan dan minta ia menyimpan ponselnya",
+        "Akui keluhannya valid, layani tuntas, catat masalah untuk tim IT, dan beri kontak tindak lanjut"
+      ],
+      "option_scores": [
+        2,
+        3,
+        4,
+        1,
+        5
+      ],
+      "correct_answer": 4,
+      "explanation": "Akui keluhannya valid, layani tuntas saat itu, catat masalah teknisnya untuk tim IT, dan beri kontak follow-up adalah respons solutif yang menyelesaikan masalah personal sekaligus sistemik. Hanya melayani tuntas tanpa eskalasi ke IT membiarkan masalah berulang untuk warga lain. Pola: ancaman viral tidak diredam dengan permintaan, tapi dengan pelayanan yang tidak perlu disembunyikan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "eb169eff-c0d9-494d-8ea7-30189cea2725",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga sangat puas dengan pelayanan Anda dan menawarkan amplop berisi uang sebagai ucapan terima kasih, sambil bersikeras Anda menerimanya. Apa yang Anda lakukan?",
+      "options": [
+        "Menyarankan warga menyerahkan amplopnya kepada atasan Anda jika ingin menyampaikan apresiasi atas pelayanan yang diberikan",
+        "Menolak santun, menjelaskan aturan integritas, dan menyarankan apresiasi via survei kepuasan resmi",
+        "Menolak amplop dengan sopan dan menjelaskan bahwa Anda tidak diperbolehkan menerima pemberian apa pun dari warga",
+        "Menerima amplopnya agar warga tidak kecewa, kemudian menyerahkan isinya ke kotak amal yang tersedia di kantor",
+        "Menolak amplop dan meminta warga menyimpan kembali amplop tersebut tanpa banyak penjelasan lebih lanjut"
+      ],
+      "option_scores": [
+        2,
+        5,
+        4,
+        1,
+        3
+      ],
+      "correct_answer": 1,
+      "explanation": "Tolak dengan santun, jelaskan aturan integritas, dan sarankan apresiasi lewat survei kepuasan atau ucapan terima kasih biasa menjaga integritas tanpa membuat warga merasa ditolak kasar. Hanya menolak tanpa mengarahkan ke bentuk apresiasi lain meninggalkan warga dengan canggung. Pola: integritas mutlak, tapi cara menolak tetap menjaga hubungan baik.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "e9e90248-3c24-4ae1-a3dc-ac2e8004dabb",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Saat ada operasi lapangan, seorang warga keberatan keras dan menghadang petugas dengan emosi tinggi karena merasa dirugikan. Suasana berpotensi memanas. Apa tindakan Anda?",
+      "options": [
+        "Menghentikan operasi sementara dan meminta warga membuat pengaduan tertulis terlebih dahulu sebelum kegiatan dapat dilanjutkan",
+        "Tenangkan warga lalu lanjutkan operasi setelah ia bersedia mundur",
+        "Panggil aparat keamanan untuk mengamankan situasi terlebih dahulu",
+        "Lanjutkan operasi karena sudah sesuai prosedur dan abaikan keberatan warga",
+        "Menenangkan situasi, mengajak warga bicara di tempat aman, mendengarkan keberatannya, lalu mengarahkan ke kanal pengaduan resmi"
+      ],
+      "option_scores": [
+        3,
+        4,
+        2,
+        1,
+        5
+      ],
+      "correct_answer": 4,
+      "explanation": "Tenangkan situasi, ajak warga bicara di tempat aman, dengarkan keberatannya, dan jelaskan dasar tindakan serta kanal pengaduan adalah de-eskalasi yang menjaga keamanan dan martabat warga. Hanya menghentikan operasi tanpa dialog menunda konflik tanpa solusi. Pola: konflik lapangan reda lewat dialog dan kepastian jalur, bukan paksaan atau mundur tanpa alasan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "b16985aa-9ed2-44e9-ba55-6dd3744fad20",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga datang membawa keluhan rumit yang membutuhkan koordinasi tiga unit berbeda. Anda hanya punya wewenang di satu unit. Apa yang Anda lakukan?",
+      "options": [
+        "Catat keluhan secara utuh, koordinasi langsung dengan dua unit lain, dan jadilah titik kontak utama bagi warga",
+        "Selesaikan bagian Anda saja, kemudian sarankan warga mendatangi dua unit lain secara berurutan",
+        "Catat keluhan dan teruskan ke tiga unit secara internal, lalu minta warga menunggu kabar selanjutnya",
+        "Selesaikan bagian Anda dan jelaskan secara rinci urutan yang harus ditempuh warga ke dua unit berikutnya",
+        "Sarankan warga membuat surat resmi yang ditujukan ke ketiga unit sekaligus"
+      ],
+      "option_scores": [
+        5,
+        2,
+        3,
+        4,
+        1
+      ],
+      "correct_answer": 0,
+      "explanation": "Catat keluhan utuh, koordinasi proaktif dengan dua unit lain, dan jadi titik kontak utama bagi warga adalah pelayanan terpadu yang menghilangkan beban koordinasi dari warga. Hanya mengarahkan ke tiga unit dengan urutan jelas tetap menyisakan beban koordinasi pada warga. Pola: kompleksitas internal jangan dijadikan PR warga.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "04de4400-dafa-4ae8-8556-599d5f0f4954",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga melapor bahwa ia merasa didiskriminasi oleh petugas lain karena perbedaan suku. Ia ingin masalahnya diselesaikan tapi takut melapor resmi. Apa tindakan Anda?",
+      "options": [
+        "Yakinkan kerahasiaan, jelaskan kanal pengaduan resmi yang aman, dan tawarkan pendampingan dalam proses pelaporan",
+        "Sarankan warga melapor langsung ke kepala unit pelayanan yang bersangkutan tanpa menawarkan pendampingan",
+        "Yakinkan kerahasiaan dan dengarkan keluhannya secara seksama, namun tidak menunjukkan jalur pelaporan resmi yang tersedia",
+        "Sarankan warga membicarakan masalahnya langsung dengan petugas yang dimaksud agar bisa diselesaikan baik-baik",
+        "Sampaikan bahwa diskriminasi sulit dibuktikan dan minta warga berpikir ulang"
+      ],
+      "option_scores": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "correct_answer": 0,
+      "explanation": "Yakinkan kerahasiaan dan perlindungan pelapor, jelaskan kanal pengaduan resmi yang aman, dan tawarkan pendampingan dalam proses adalah respons sensitif sekaligus prosedural. Hanya yakinkan dan dengar tanpa menunjukkan jalur resmi membiarkan masalah tidak tertangani. Pola: kasus diskriminasi butuh saluran formal dengan perlindungan, bukan penyelesaian informal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9c532d99-7539-408b-8b98-8f843ae4c401",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga menolak untuk mengisi survei kepuasan setelah dilayani, dan secara terang-terangan mengatakan bahwa pelayanan Anda mengecewakan. Apa sikap Anda?",
+      "options": [
+        "Menjelaskan bahwa Anda sudah melayani sesuai prosedur baku dan tidak ada yang salah dengan layanan",
+        "Hormati keputusannya untuk tidak mengisi survei dan teruskan pekerjaan",
+        "Menanyakan tulus apa yang mengecewakan, mencatat detailnya, dan berterima kasih atas masukan",
+        "Minta warga tetap mengisi survei agar datanya lengkap untuk laporan",
+        "Tanyakan singkat apa yang kurang baik tanpa mencatat detailnya"
+      ],
+      "option_scores": [
+        1,
+        3,
+        5,
+        2,
+        4
+      ],
+      "correct_answer": 2,
+      "explanation": "Tanyakan dengan tulus apa yang mengecewakan dan catat sebagai bahan perbaikan adalah respons reflektif dan terbuka pada feedback. Hanya menerima kekecewaan tanpa menggali detail kehilangan kesempatan belajar. Pola: feedback negatif adalah aset, bukan ancaman — gali dengan rasa ingin tahu, bukan pembelaan diri.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "ca360d53-eeda-4de3-93e2-ce2fc7e7aad8",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga datang dengan dokumen yang tidak sesuai persyaratan, namun ia memaksa karena sudah jauh-jauh datang dari kampung. Ia mulai membentak-bentak. Apa yang Anda lakukan?",
+      "options": [
+        "Layani warga apa adanya karena ia datang dari jauh agar tidak menambah konflik",
+        "Tenangkan warga, jelaskan persyaratan, dan tawarkan opsi dokumen substitusi atau jadwal kembali yang efisien",
+        "Jelaskan persyaratan dengan rinci dan sarankan warga melengkapi dokumen sebelum kembali tanpa opsi substitusi",
+        "Sampaikan bahwa aturan adalah aturan dan minta warga tidak membentak",
+        "Tetap tegas pada aturan dan minta warga melengkapi dokumen di lain hari"
+      ],
+      "option_scores": [
+        1,
+        5,
+        4,
+        2,
+        3
+      ],
+      "correct_answer": 1,
+      "explanation": "Tenangkan, jelaskan persyaratan dengan jelas, dan tawarkan opsi konkret seperti dokumen substitusi atau jadwal kembali yang efisien menyeimbangkan empati dan kepatuhan aturan. Hanya menjelaskan persyaratan tanpa opsi praktis terasa kaku bagi warga jarak jauh. Pola: aturan tetap, tapi pelayanan harus mencari jalan terdekat agar warga tidak rugi sia-sia.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f3855708-a39e-4c27-a5a1-dc49e1d6c6d1",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga mengeluh di media sosial dengan menyebut nama Anda secara langsung soal pelayanan yang ia anggap buruk. Anda baru tahu hari ini. Apa yang Anda lakukan?",
+      "options": [
+        "Laporkan ke atasan dan tunggu arahan resmi sebelum mengambil langkah apa pun, termasuk menghubungi warga",
+        "Abaikan postingan tersebut karena media sosial bukan kanal resmi pengaduan yang diakui prosedur instansi",
+        "Laporkan ke atasan dan humas, hubungi warga secara langsung untuk klarifikasi, dan tindaklanjuti substansi keluhannya",
+        "Balas postingannya di media sosial secara langsung untuk memberikan penjelasan dari sudut pandang Anda",
+        "Hubungi warga secara pribadi untuk klarifikasi tanpa terlebih dahulu melibatkan humas atau atasan dalam proses tersebut"
+      ],
+      "option_scores": [
+        4,
+        1,
+        5,
+        2,
+        3
+      ],
+      "correct_answer": 2,
+      "explanation": "Laporkan ke atasan/humas, hubungi warga untuk klarifikasi langsung, dan tindaklanjuti substansi keluhannya menggabungkan jalur resmi dan empati pribadi. Hanya membalas di media sosial tanpa lapor humas berisiko miskomunikasi institusional. Pola: keluhan publik direspons institusional dulu, lalu personal — bukan sebaliknya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "5d9ca034-1b27-494a-93cb-74e235c1f0bb",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Saat melayani warga, Anda menemukan ada kesalahan data di sistem yang merugikan warga sehingga ia tidak bisa mengakses bantuan sosial. Warga tampak putus asa. Apa yang Anda lakukan?",
+      "options": [
+        "Akui kesalahan data, segera ajukan koreksi melalui prosedur resmi, dan beri update progres ke warga sampai selesai",
+        "Sampaikan kepada warga bahwa data di sistem tidak bisa diubah dan minta ia melapor langsung ke kantor pusat",
+        "Ajukan koreksi data melalui prosedur resmi dan minta warga menunggu kabar lanjutan dari pihak pengelola sistem",
+        "Sarankan warga membawa dokumen pendukung agar ia bisa mengurus koreksi datanya secara mandiri ke pihak terkait",
+        "Catat masalahnya dan sampaikan akan diteruskan ke admin sistem pada kesempatan berikutnya yang memungkinkan"
+      ],
+      "option_scores": [
+        5,
+        1,
+        4,
+        2,
+        3
+      ],
+      "correct_answer": 0,
+      "explanation": "Akui kesalahannya, ajukan koreksi data segera lewat prosedur yang ada, dan tetap update warga progresnya adalah sikap akuntabel sekaligus berorientasi tindakan. Hanya mengajukan koreksi tanpa update berkala membuat warga kembali bertanya-tanya. Pola: kesalahan internal tidak boleh dibebankan ke warga sebagai pekerjaan tambahan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "ab22f4f4-d73a-4d89-a266-6730f9392fc4",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga datang membawa keluhan kebijakan baru yang menurutnya merugikan. Ia memaksa Anda untuk mencabut kebijakan tersebut, padahal itu di luar wewenang Anda. Apa yang Anda lakukan?",
+      "options": [
+        "Dengarkan keluhannya, jelaskan ranah wewenang Anda, dan bantu warga menyusun pengaduan resmi ke pihak yang berwenang",
+        "Sarankan warga membuat petisi atau menyampaikan aspirasi melalui media sosial agar suaranya lebih didengar",
+        "Sampaikan bahwa Anda akan meneruskan keluhan tersebut ke atasan agar mendapat tindak lanjut dari pihak yang berwenang",
+        "Dengarkan keluhannya dan jelaskan bahwa ia harus menyampaikan masalah ini ke instansi atau pejabat yang berwenang",
+        "Jelaskan bahwa kebijakan adalah keputusan resmi yang tidak dapat digugat secara perorangan oleh warga biasa"
+      ],
+      "option_scores": [
+        5,
+        2,
+        3,
+        4,
+        1
+      ],
+      "correct_answer": 0,
+      "explanation": "Dengarkan keluhannya, jelaskan ranah wewenang Anda, tawarkan kanal pengaduan resmi dan bantu menyusun pengaduan yang konstruktif menyalurkan aspirasi ke jalur yang tepat. Hanya menjelaskan ini di luar wewenang tanpa menunjukkan kanal yang benar membuat warga merasa dilempar. Pola: tidak punya wewenang bukan berarti tidak punya bantuan; arahkan ke jalur yang benar.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "014c252b-f5c9-4f81-a3ac-14a5ca58b6b1",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga marah karena merasa dipingpong dari satu loket ke loket lain. Saat sampai di loket Anda, ia sudah sangat emosional dan melempar berkasnya ke meja. Apa yang Anda lakukan?",
+      "options": [
+        "Minta warga menenangkan diri dulu di ruang tunggu sebelum bisa dilayani lebih lanjut",
+        "Periksa berkasnya dan jelaskan ke loket mana harus pergi jika bukan kewenangan Anda",
+        "Tegur warga karena melempar berkas dan minta meminta maaf dulu",
+        "Akui frustrasinya, periksa berkasnya, lalu tuntaskan atau antar ke unit tepat",
+        "Tetap tenang dan tanyakan apa kebutuhannya untuk diproses di loket Anda"
+      ],
+      "option_scores": [
+        2,
+        3,
+        1,
+        5,
+        4
+      ],
+      "correct_answer": 3,
+      "explanation": "Akui rasa frustasinya, periksa berkas dan kebutuhannya secara menyeluruh, lalu tuntaskan di loket Anda atau antar langsung ke unit yang tepat menghentikan siklus dipingpong. Hanya tetap tenang dan memproses tanpa mengakui frustasinya kurang menyentuh akar masalah emosional. Pola: jangan jadi loket berikutnya yang melempar — tuntaskan atau antarkan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "2c95a5ef-04c2-4578-a1e6-ba8079d9c668",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Anda mendapati antrian sangat panjang karena server sistem online sedang down. Warga mulai kesal dan beberapa berteriak. Apa tindakan Anda?",
+      "options": [
+        "Umumkan gangguan secara terbuka, koordinasi dengan tim IT, lalu tawarkan opsi penjadwalan ulang dengan antrian prioritas",
+        "Umumkan gangguan kepada warga dan minta mereka kembali keesokan hari tanpa menawarkan opsi alternatif apa pun",
+        "Umumkan gangguan dan koordinasikan dengan IT, namun tidak menawarkan opsi atau solusi alternatif kepada warga yang menunggu",
+        "Minta warga bersabar dan menunggu di tempat sampai sistem kembali normal, tanpa informasi perkiraan waktu pemulihan",
+        "Sampaikan bahwa sistem sedang down dan semua warga diminta pulang dulu serta kembali di lain waktu"
+      ],
+      "option_scores": [
+        5,
+        3,
+        4,
+        2,
+        1
+      ],
+      "correct_answer": 0,
+      "explanation": "Sampaikan informasi gangguan secara terbuka, koordinasi dengan IT, dan tawarkan opsi alternatif seperti penjadwalan ulang prioritas adalah komunikasi krisis yang transparan dan solutif. Hanya memberi tahu gangguan tanpa opsi alternatif meninggalkan warga tanpa rencana. Pola: dalam gangguan, kepastian alur baru lebih penting daripada janji kapan normal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "668f7038-34f3-43d2-9a3e-78113045e98b",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang ibu menangis di kantor karena tidak bisa mendaftarkan anaknya sekolah akibat akta kelahiran yang belum jadi. Padahal pendaftaran tutup hari ini. Apa yang Anda lakukan?",
+      "options": [
+        "Sarankan ibu untuk menghubungi langsung pihak sekolah guna meminta perpanjangan tenggat pendaftaran secara mandiri",
+        "Cek status akta dan upayakan dipercepat selesai hari ini saja, tanpa berkoordinasi dengan pihak sekolah",
+        "Jelaskan kepada ibu bahwa proses akta tidak bisa dipercepat karena sudah ada standar waktu penyelesaian yang berlaku",
+        "Tenangkan ibu dan minta ia menunggu akta selesai untuk mendaftarkan anaknya di tahun ajaran berikutnya saja",
+        "Tenangkan ibu, cek status akta, koordinasi cepat dengan sekolah dan pencatatan sipil untuk surat keterangan sementara"
+      ],
+      "option_scores": [
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "correct_answer": 4,
+      "explanation": "Tenangkan, segera cek status akta, koordinasi cepat dengan pihak sekolah dan pencatatan sipil untuk solusi sementara seperti surat keterangan adalah respons proaktif lintas instansi. Hanya mempercepat pemrosesan akta tanpa koordinasi ke sekolah berisiko terlambat juga. Pola: kasus mendesak butuh pemecahan kreatif sesuai kewenangan, bukan pasrah pada jadwal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "0722b57f-a161-474b-963c-ddd6ae8bc4ff",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga difabel kesulitan mengakses loket pelayanan karena tidak ada jalur khusus dan loket tinggi. Ia sudah menunggu lama dan mulai kelelahan. Apa tindakan Anda?",
+      "options": [
+        "Sarankan warga agar ke depannya datang bersama pendamping sehingga akses ke loket lebih mudah dan lancar",
+        "Sampaikan bahwa fasilitas aksesibilitas memang belum tersedia dan minta warga menyesuaikan kondisi yang ada",
+        "Minta warga menunggu sampai antrean sepi agar lebih leluasa mendekati loket tanpa bantuan orang lain",
+        "Layani warga di kursi tunggu yang lebih nyaman lalu segera laporkan kebutuhan jalur difabel ke atasan untuk diperbaiki",
+        "Layani warga di kursi tunggu yang lebih nyaman, namun tidak melaporkan kebutuhan fasilitas difabel ke atasan setelahnya"
+      ],
+      "option_scores": [
+        3,
+        1,
+        2,
+        5,
+        4
+      ],
+      "correct_answer": 3,
+      "explanation": "Layani langsung di tempat yang nyaman bagi warga lalu usulkan perbaikan fasilitas adalah respons inklusif yang menyelesaikan masalah saat itu sekaligus mengangkat isu sistemik. Hanya melayani di tempat tanpa usulan perbaikan menyelesaikan satu kasus, bukan masalah berulang. Pola: ASN melayani dengan menyesuaikan diri ke warga, bukan sebaliknya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "ae07ca12-6769-433b-829d-a8c5ceb6c84b",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Anda baru saja selesai menjelaskan prosedur kepada seorang warga, tapi ia menolak menerima penjelasan dan memaksa agar Anda \"memberi jalan\" karena ia mengaku saudara dari pejabat tinggi setempat. Apa yang Anda lakukan?",
+      "options": [
+        "Sampaikan bahwa Anda akan melayani sesuai prosedur yang berlaku, tanpa merespons klaim koneksinya",
+        "Beri prioritas khusus untuk menghindari masalah dengan pejabat yang disebut",
+        "Jelaskan dengan santun bahwa prosedur sama untuk semua, lalu tawarkan bantuan sesuai aturan",
+        "Tegaskan bahwa prosedur berlaku sama untuk semua warga tanpa pengecualian apapun, lalu akhiri percakapan",
+        "Sampaikan bahwa Anda akan tanyakan dulu ke atasan apakah ada pengecualian"
+      ],
+      "option_scores": [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      "correct_answer": 2,
+      "explanation": "Tetap santun, tegaskan bahwa prosedur sama untuk semua, dan tawarkan bantuan dalam koridor aturan menjaga integritas tanpa konfrontasi keras. Sekadar menegaskan prosedur tanpa menawarkan bantuan dalam koridor aturan kurang membuka jalan keluar bagi warga. Pola: tekanan dengan nama besar dijawab dengan ketegasan prosedural, bukan kompromi diam-diam.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "70d521fa-d6c7-4dbc-ae82-c9e63b320b5c",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga datang dengan keluhan berkas hilang di kantor Anda, padahal ia sudah menyerahkannya tiga minggu lalu dengan bukti tanda terima. Ia mengancam akan melapor ke media. Apa yang Anda lakukan?",
+      "options": [
+        "Minta warga menunggu sementara Anda mencari berkasnya di arsip",
+        "Cari berkas berdasarkan tanda terima, dan jika tidak ditemukan sarankan warga membuat ulang tanpa janji pemulihan formal dari kantor",
+        "Minta warga membuat berkas baru saja agar prosesnya bisa dimulai ulang",
+        "Akui kesalahan kantor, cari berkas berdasarkan tanda terima, jelaskan langkah pemulihan jika tidak ditemukan, beri komitmen waktu",
+        "Sampaikan bahwa kehilangan berkas adalah hal biasa dan minta warga tidak mempersoalkan"
+      ],
+      "option_scores": [
+        3,
+        4,
+        2,
+        5,
+        1
+      ],
+      "correct_answer": 3,
+      "explanation": "Akui masalahnya, lakukan pencarian dengan tanda terima, sampaikan langkah konkret pemulihan, dan beri komitmen waktu adalah respons yang transparan dan bertanggung jawab. Hanya mencari berkas tanpa janji pemulihan jika tidak ditemukan meninggalkan warga tanpa kepastian. Pola: ancaman media tidak ditenangkan dengan janji kosong, tapi dengan tindakan nyata.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "afeb9769-cf47-4ea1-b3d1-86f0654f282b",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Anda menerima pengaduan dari warga bahwa salah satu rekan kerja Anda diam-diam meminta uang tambahan untuk mempercepat proses. Warga tidak ingin namanya diketahui karena takut. Apa yang Anda lakukan?",
+      "options": [
+        "Yakinkan kerahasiaan, catat detail kejadian, lalu teruskan ke unit pengaduan internal atau pengawas integritas",
+        "Mendekati rekan kerja secara langsung untuk meminta klarifikasi tanpa menyebutkan dari mana informasi tersebut berasal",
+        "Catat keluhannya dan sampaikan ke atasan langsung Anda secara informal dulu",
+        "Menyarankan warga menyampaikan sendiri keluhannya ke atasan karena akan lebih kredibel jika langsung dari pihak yang dirugikan",
+        "Sarankan warga tidak membahas hal itu untuk menghindari masalah lebih besar"
+      ],
+      "option_scores": [
+        5,
+        3,
+        4,
+        2,
+        1
+      ],
+      "correct_answer": 0,
+      "explanation": "Yakinkan kerahasiaan, catat detailnya, dan teruskan ke unit pengaduan internal/integritas adalah jalur resmi yang melindungi pelapor sekaligus menindaklanjuti dugaan pelanggaran. Mengonfrontasi rekan langsung tanpa bukti dan jalur formal berisiko membocorkan identitas pelapor. Pola: keluhan integritas selalu diteruskan ke jalur formal, bukan diselesaikan personal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "cc7e6597-6b71-43f3-965d-9285ced22d6b",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Saat sedang melayani warga di loket, seorang warga lain memaksa menyerobot karena merasa urusannya darurat. Warga yang sedang dilayani protes keras. Sebagai petugas, apa yang Anda lakukan?",
+      "options": [
+        "Selesaikan warga yang sedang dilayani, lalu layani warga yang menyerobot sesuai urutan antrean biasa berikutnya",
+        "Selesaikan warga yang dilayani, lalu tanya kondisi warga yang menyerobot untuk diarahkan ke jalur prioritas jika memang darurat",
+        "Tegaskan agar warga mengikuti antrean dan tidak boleh menyerobot dengan alasan apa pun, lalu lanjutkan pelayanan",
+        "Layani warga yang menyerobot lebih dulu agar konflik segera mereda meski tidak adil bagi yang sudah antre",
+        "Minta kedua warga menyelesaikan sendiri di antara mereka siapa yang seharusnya lebih dahulu mendapat pelayanan"
+      ],
+      "option_scores": [
+        4,
+        5,
+        3,
+        1,
+        2
+      ],
+      "correct_answer": 1,
+      "explanation": "Tegaskan urutan antrian terlebih dahulu lalu tawarkan jalur khusus jika benar darurat menyeimbangkan keadilan dan empati. Hanya mengikuti aturan kaku tanpa menggali apakah benar darurat berisiko mengabaikan kondisi nyata. Pola: keadilan lebih penting daripada cepat, tapi kepatuhan aturan tetap diiringi pengecekan kebutuhan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "27a9ce4a-4a1a-4745-8f4c-25f1a87aab31",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 3,
+      "question_text": "Seorang warga datang ketiga kalinya menanyakan progres izin usahanya yang sudah berbulan-bulan tidak ada kabar. Setelah dicek, ternyata berkasnya tertahan di unit lain karena ada syarat yang belum lengkap, namun tidak ada yang memberitahu warga. Apa tindakan Anda?",
+      "options": [
+        "Minta maaf, jelaskan rinci kekurangan berkas, koordinasi langsung ke unit terkait, dan beri estimasi waktu pasti",
+        "Sampaikan bahwa berkas masih dalam proses dan minta warga sabar menunggu konfirmasi",
+        "Minta maaf dan jelaskan kekurangan berkas, lalu bantu warga menghubungi unit terkait",
+        "Jelaskan kekurangan berkas yang menyebabkan tertahan dan minta warga melengkapi sendiri ke unit terkait",
+        "Sarankan warga membuat pengaduan resmi agar berkasnya diprioritaskan"
+      ],
+      "option_scores": [
+        5,
+        1,
+        4,
+        3,
+        2
+      ],
+      "correct_answer": 0,
+      "explanation": "Minta maaf, jelaskan kekurangan berkas dengan rinci, koordinasikan langsung dengan unit terkait, dan beri estimasi waktu pasti adalah penyelesaian end-to-end yang menjawab akar masalah komunikasi. Hanya menjelaskan kekurangan tanpa koordinasi melempar bola lagi ke warga. Pola: untuk keluhan kronis, ASN tidak hanya menjelaskan, tapi membantu menutup celah proses.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "66ef1dab-a18b-49a6-aca6-3a46c4cfeec6",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Anda menerima telepon dari warga yang menyampaikan keluhan dengan nada emosi. Apa yang Anda lakukan?",
+      "options": [
+        "Jelaskan bahwa keluhan melalui telepon tidak dapat langsung diproses dan minta warga datang esok hari",
+        "Sarankan warga datang langsung ke kantor agar proses penanganan dapat berjalan lebih baik",
+        "Dengarkan keluhannya, catat detail masalahnya, lalu sampaikan langkah tindak lanjut yang konkret",
+        "Dengarkan keluhannya lalu sampaikan akan diteruskan ke pihak yang berwenang menanganinya",
+        "Minta warga menenangkan diri terlebih dahulu sebelum keluhannya dapat diterima dan dicatat"
+      ],
+      "option_scores": [
+        1,
+        3,
+        5,
+        4,
+        2
+      ],
+      "correct_answer": 2,
+      "explanation": "Dengarkan tuntas, catat detailnya, lalu sampaikan langkah konkret tindak lanjut adalah respons paling lengkap. Sekadar mendengarkan tanpa janji tindak lanjut konkret membuat warga bertanya-tanya.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "5819b246-6600-4719-a185-afec47499f90",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Dua warga bertengkar di ruang tunggu kantor pelayanan karena berebut antrian. Apa tindakan Anda?",
+      "options": [
+        "Tengahi keduanya, cek nomor antrian secara objektif, lalu jelaskan urutan yang benar",
+        "Tengahi, minta keduanya menunjukkan nomor antrian masing-masing, dan konfirmasi urutan yang sah kepada keduanya",
+        "Pisahkan keduanya dan minta mereka mengambil nomor antrian baru",
+        "Biarkan mereka menyelesaikan sendiri karena bukan urusan pelayanan",
+        "Tegur kedua warga dengan tegas, minta mereka tenang, dan ingatkan agar menghormati warga lain di ruang tunggu"
+      ],
+      "option_scores": [
+        5,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct_answer": 0,
+      "explanation": "Menengahi, memeriksa antrian secara objektif, dan menjelaskan urutan resmi adalah cara meredam konflik dengan kepastian. Sekadar memisahkan tanpa menyelesaikan urutan antrian akan memicu pertengkaran ulang.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "38d2434e-b0a1-4a03-8090-9ea2f887c5a9",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Warga datang menanyakan progres pengaduan jalan rusak yang ia laporkan dua minggu lalu. Anda lakukan?",
+      "options": [
+        "Sampaikan bahwa pengaduan jalan biasanya memerlukan waktu proses cukup lama tanpa mengecek sistem",
+        "Cek di sistem dan sampaikan statusnya kepada warga, namun tidak memberikan estimasi waktu tindak lanjut",
+        "Cek di sistem, sampaikan progresnya, dan beri estimasi kapan tindak lanjut dilakukan",
+        "Minta warga datang minggu depan karena Anda perlu mengecek dulu",
+        "Catat ulang pengaduan secara rinci dan janjikan akan segera ditindaklanjuti oleh petugas yang berwenang"
+      ],
+      "option_scores": [
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "correct_answer": 2,
+      "explanation": "Cek sistem, sampaikan progres, dan beri estimasi tindak lanjut adalah jawaban paling lengkap. Sekadar mencatat ulang pengaduan menunda kepastian dan berisiko membuat warga kembali tanpa hasil.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "f850eb31-64b4-4a46-a311-219485576afc",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Seorang warga datang membawa keluhan yang bukan kewenangan unit Anda. Apa tindakan Anda?",
+      "options": [
+        "Hubungi unit terkait, sampaikan kasusnya, lalu antar warga atau berikan kontaknya",
+        "Beri tahu lokasi unit yang berwenang dan pastikan warga memahami cara menuju ke sana",
+        "Minta warga membuat surat pengantar dari unit Anda dulu sebelum ke unit lain",
+        "Katakan bahwa Anda tidak bisa membantu karena bukan tugas Anda",
+        "Sampaikan bahwa itu bukan kewenangan unit Anda dan minta warga ke unit lain"
+      ],
+      "option_scores": [
+        5,
+        4,
+        3,
+        1,
+        2
+      ],
+      "correct_answer": 0,
+      "explanation": "Mengantar atau menghubungkan warga ke unit yang berwenang adalah pelayanan tanpa lepas tangan. Sekadar memberi tahu lokasi unit lain berisiko membuat warga kembali bingung di tempat baru.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "36c0dbf9-5aef-4879-b8dc-abc4c21e239e",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Seorang warga menuduh Anda sengaja mempersulit pengurusan izinnya. Sikap Anda?",
+      "options": [
+        "Dengarkan keluhan, jelaskan tahapan yang sudah dan belum dilewati, tunjukkan progres dari sistem",
+        "Membantah tuduhan secara tegas sambil menunjukkan bahwa prosedur sudah sesuai ketentuan",
+        "Jelaskan tahapan prosedur secara umum tanpa membuka data progres",
+        "Diam dan teruskan pekerjaan agar tidak memperpanjang konflik",
+        "Tawarkan untuk menghubungi atasan Anda bila warga merasa penjelasan yang diberikan belum memuaskan"
+      ],
+      "option_scores": [
+        5,
+        2,
+        4,
+        1,
+        3
+      ],
+      "correct_answer": 0,
+      "explanation": "Mendengarkan keluhan, menjelaskan tahapan secara terbuka, dan menunjukkan progres adalah bentuk akuntabilitas tanpa defensif. Sekadar membantah tuduhan tanpa bukti progres tidak membangun kepercayaan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9ec43533-8d4b-426d-830b-aa3a9a2942fa",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Menangani Keluhan & Konflik dengan Warga",
+      "difficulty": 1,
+      "question_text": "Seorang warga mengeluh bahwa loket pelayanan tutup padahal jam kerja masih ada 30 menit lagi. Apa yang Anda lakukan?",
+      "options": [
+        "Buka kembali loket dan layani warga sampai jam kerja resmi berakhir",
+        "Sarankan warga datang besok pagi dengan antrian prioritas",
+        "Minta maaf dan jelaskan bahwa petugas loket sudah pulang lebih awal",
+        "Sampaikan bahwa loket memang sering tutup lebih awal kalau sepi",
+        "Layani warga sebatas yang bisa Anda lakukan tanpa membuka loket secara resmi"
+      ],
+      "option_scores": [
+        5,
+        3,
+        2,
+        1,
+        4
+      ],
+      "correct_answer": 0,
+      "explanation": "Membuka kembali loket dan melayani warga adalah pilihan yang paling sesuai standar pelayanan publik. Sekadar minta maaf tanpa membuka loket gagal menyelesaikan masalah warga di tempat.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "c821aa0f-293c-4d60-b6a7-5fa8501be855",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 3,
+      "question_text": "Anda menemukan ada celah di prosedur layanan yang berpotensi disalahgunakan oknum untuk meminta biaya tidak resmi dari warga. Belum ada kasus yang terungkap, tapi celahnya nyata. Apa tindakan Anda?",
+      "options": [
+        "Menyampaikan secara lisan kepada atasan agar prosedur diperbaiki tanpa menyertakan dokumen analisis tertulis pendukung",
+        "Mendokumentasikan celah, menganalisis skenario penyalahgunaannya, dan mengajukan usulan perbaikan tertulis dengan opsi mitigasi",
+        "Diam saja karena belum ada kasus dan tidak ingin mencurigai rekan kerja",
+        "Menjaga agar di hadapan Anda celah itu tidak terjadi tanpa melaporkan ke siapa pun",
+        "Membahas celah ini dengan rekan dekat sebagai pengingat agar berhati-hati"
+      ],
+      "option_scores": [
+        4,
+        5,
+        1,
+        2,
+        3
+      ],
+      "correct_answer": 1,
+      "explanation": "Skor 5 paling optimal karena mendokumentasikan celah secara analitis dan mengusulkan perbaikan sistem ke atasan via jalur resmi—pencegahan terbaik adalah menutup celah, bukan menunggu kasus. Skor 4 sudah benar mengusulkan tapi tanpa analisis tertulis, urgensinya kurang terasa. Pola: temuan potensi penyimpangan harus diformalkan tertulis dengan analisis sebelum kasus terjadi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "91c2fefe-f34f-41d2-b1af-4d6c3142197e",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Anda melihat antrean layanan selalu menumpuk di jam yang sama setiap hari. Apa yang Anda lakukan?",
+      "options": [
+        "Menganggap penumpukan antrean sebagai hal biasa karena banyak warga yang memang datang di jam yang sama",
+        "Mencatat pola antrean selama beberapa hari, menganalisis penyebab, lalu mengajukan usulan solusi ke atasan",
+        "Mengeluh ke rekan kerja bahwa sistem pelayanan yang berjalan memang sudah tidak teratur",
+        "Mengusulkan langsung ke atasan agar jam operasional layanan diperpanjang untuk mengatasi penumpukan",
+        "Membantu mempercepat proses layanan saat antrean menumpuk tanpa menyelidiki penyebabnya"
+      ],
+      "option_scores": [
+        1,
+        5,
+        2,
+        4,
+        3
+      ],
+      "correct_answer": 1,
+      "explanation": "Skor 5 paling optimal karena menggabungkan data konkret (pencatatan pola antrean) dengan usulan solusi melalui jalur resmi ke atasan. Skor 4 sudah proaktif mengusulkan, tetapi tanpa data pendukung usulan jadi lemah dan mudah ditolak. Pola umum: inisiatif perbaikan = data + analisis + usulan resmi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "7d02aff7-9af5-49f5-b48c-52b66642f905",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Banyak warga komplain formulir pendaftaran terlalu rumit. Apa sikap Anda?",
+      "options": [
+        "Mengabaikan komplain tersebut karena formulir sudah ditetapkan dari pusat dan tidak ada yang bisa dilakukan",
+        "Menyuruh warga membaca formulir dengan lebih teliti",
+        "Mengumpulkan masukan warga, menyusun catatan, dan mengajukan usulan penyederhanaan ke atasan",
+        "Meluangkan waktu untuk membantu warga mengisi formulir satu per satu setiap kali ada yang mengalami kesulitan",
+        "Mengimbau rekan kerja agar lebih sabar saat menjelaskan formulir, tanpa mengambil langkah perbaikan lain"
+      ],
+      "option_scores": [
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      "correct_answer": 2,
+      "explanation": "Skor 5 paling optimal karena mengumpulkan masukan warga sebagai data, lalu mengajukan usulan penyederhanaan ke atasan secara resmi. Skor 4 sudah benar arahnya membantu warga, tapi tidak menyelesaikan akar masalah formulir yang rumit. Pola: keluhan berulang = sinyal perlu perbaikan sistem, bukan sekadar bantuan kasus per kasus.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "eaac60b7-9ebe-4f23-b6cd-c6e20a55b80c",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Sistem antrean manual sering salah panggil. Apa tindakan Anda?",
+      "options": [
+        "Membiarkan saja karena warga pada akhirnya akan menyesuaikan diri dengan kondisi yang ada",
+        "Mendokumentasikan kesalahan yang terjadi dan mengajukan usulan sistem antrean digital ke atasan",
+        "Memperbaiki cara memanggil antrean dengan lebih teliti dan jelas sebagai solusi jangka pendek",
+        "Menyalahkan petugas yang memanggil karena dinilai tidak cukup fokus saat bertugas",
+        "Meminta warga untuk lebih sabar saat menunggu panggilan karena sistem memang belum sempurna"
+      ],
+      "option_scores": [
+        1,
+        5,
+        4,
+        2,
+        3
+      ],
+      "correct_answer": 1,
+      "explanation": "Skor 5 paling optimal karena mendokumentasikan masalah secara sistematis lalu mengajukan usulan sistem digital melalui jalur resmi. Skor 4 sudah benar membenahi cara kerja, tapi tidak mengatasi akar masalah sistemnya. Pola: kesalahan berulang akibat sistem = perlu perbaikan sistem, bukan hanya prosedur kerja.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "75505dba-46c2-4c42-8cb6-bb4ca2a15205",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Anda menyadari prosedur layanan di unit Anda lebih lambat dibanding instansi lain yang serupa. Apa yang Anda lakukan?",
+      "options": [
+        "Membandingkan SOP dengan instansi lain, menyusun usulan adaptasi, dan mengajukan ke atasan",
+        "Mempercepat kerja saya sendiri tanpa membahasnya dengan tim",
+        "Menerima saja karena setiap instansi memang berbeda kondisinya",
+        "Mengeluh kepada rekan bahwa unit kita memang ketinggalan",
+        "Berdiskusi dengan rekan tentang kemungkinan perbaikan tanpa menyusun usulan konkret"
+      ],
+      "option_scores": [
+        5,
+        4,
+        2,
+        1,
+        3
+      ],
+      "correct_answer": 0,
+      "explanation": "Skor 5 paling optimal karena melakukan benchmarking konkret lalu mengusulkan adaptasi melalui jalur resmi. Skor 4 menunjukkan inisiatif tapi belum membandingkan dengan praktik instansi lain yang sudah terbukti lebih baik. Pola: perbandingan dengan praktik baik instansi lain adalah dasar usulan perbaikan yang kuat.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9421e293-4928-431b-b6dd-8716328e091d",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Warga sering bertanya hal yang sama berulang-ulang karena informasi tidak jelas. Apa sikap Anda?",
+      "options": [
+        "Mengeluh kepada rekan bahwa warga dianggap tidak mau membaca informasi yang sudah tersedia",
+        "Menjawab pertanyaan warga dengan sabar setiap kali ditanya meski pertanyaan selalu sama",
+        "Menjawab seperlunya saja agar tidak mengganggu penyelesaian pekerjaan utama",
+        "Mencatat pertanyaan yang sering muncul lalu mengusulkan papan informasi atau FAQ ke atasan",
+        "Meminta rekan-rekan untuk bergantian menjawab pertanyaan rutin dari warga"
+      ],
+      "option_scores": [
+        1,
+        4,
+        2,
+        5,
+        3
+      ],
+      "correct_answer": 3,
+      "explanation": "Skor 5 paling optimal karena mengidentifikasi pola pertanyaan, lalu mengusulkan papan informasi atau FAQ resmi melalui atasan. Skor 4 membantu kasus per kasus tapi tidak mencegah pertanyaan yang sama terus terulang. Pola: pertanyaan berulang = sinyal informasi tidak tersedia, perlu solusi sistemik.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "1afc9c77-c14d-4dab-a4de-9003a203277b",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Berkas warga sering hilang di antara meja petugas. Apa tindakan Anda?",
+      "options": [
+        "Menganggap itu sebagai risiko yang wajar dan sudah umum terjadi dalam pelayanan administrasi sehari-hari",
+        "Mengingatkan rekan kerja secara berkala agar lebih teliti dan hati-hati dalam menyimpan serta meneruskan berkas",
+        "Membenahi penataan berkas di meja saya sendiri",
+        "Mendata kasus berkas hilang dan mengusulkan sistem tracking ke atasan",
+        "Mencari tahu siapa yang paling sering ceroboh lalu menegurnya secara langsung agar tidak terulang"
+      ],
+      "option_scores": [
+        1,
+        3,
+        4,
+        5,
+        2
+      ],
+      "correct_answer": 3,
+      "explanation": "Skor 5 paling optimal karena mendata kasus konkret lalu mengusulkan sistem pencatatan/tracking resmi melalui atasan. Skor 4 membenahi kebiasaan pribadi tapi tidak mengatasi risiko sistemik di unit. Pola: masalah lintas meja perlu solusi tracking, bukan hanya kerapian individu.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "b92074b4-b791-4376-8881-92719cb04d1d",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Anda menemukan ada langkah dalam SOP yang sudah tidak relevan dengan kondisi sekarang. Apa yang Anda lakukan?",
+      "options": [
+        "Menyusun analisis dan mengajukan usulan revisi SOP ke atasan secara resmi",
+        "Tetap menjalankan SOP karena memang sudah aturan",
+        "Melewatkan langkah itu diam-diam karena toh tidak relevan",
+        "Mendiskusikan dengan rekan tetapi tidak menindaklanjuti ke atasan",
+        "Mengikuti SOP sambil mengeluh kepada rekan kerja"
+      ],
+      "option_scores": [
+        5,
+        4,
+        1,
+        3,
+        2
+      ],
+      "correct_answer": 0,
+      "explanation": "Skor 5 paling optimal karena menyusun analisis dan usulan revisi resmi ke atasan—jalur yang tepat untuk mengubah SOP. Skor 4 sudah patuh tapi pasif, tidak membuka peluang perbaikan. Pola: SOP usang harus diusulkan revisinya, bukan diubah sendiri atau dibiarkan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "9765a5e6-e2e1-4d36-b89c-b490b86b49b9",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Layanan online di unit Anda sering down dan warga harus datang langsung. Apa sikap Anda?",
+      "options": [
+        "Melayani warga yang datang seperti biasa dan menganggap kondisi sistem online sebagai hal yang sudah lumrah",
+        "Mengeluh ke rekan bahwa sistem IT kantor memang buruk",
+        "Mendokumentasikan frekuensi gangguan dan melaporkan ke atasan untuk diteruskan ke unit IT",
+        "Membantu warga yang datang langsung dengan sebaik-baiknya tanpa memikirkan tindak lanjut ke pihak teknis",
+        "Meminta warga untuk kembali lagi di lain waktu ketika sistem sudah pulih kembali"
+      ],
+      "option_scores": [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      "correct_answer": 2,
+      "explanation": "Skor 5 paling optimal karena melaporkan masalah dengan data konkret ke atasan/unit IT melalui jalur resmi. Skor 4 membantu di lapangan tapi tidak menyelesaikan akar masalah teknis. Pola: masalah teknis harus dieskalasi ke pihak berwenang dengan data, bukan hanya ditambal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "a9309169-9e9b-4250-9a02-3a778255ccec",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Anda melihat petugas loket sering kewalahan karena harus menjelaskan persyaratan ke setiap warga. Apa tindakan Anda?",
+      "options": [
+        "Membiarkan karena memang itu tugas petugas loket",
+        "Mengusulkan pembuatan brosur atau papan informasi persyaratan kepada atasan",
+        "Membantu menjelaskan ke warga saat petugas loket sibuk",
+        "Menyarankan agar warga datang lebih siap dengan membawa daftar persyaratan",
+        "Berkomentar bahwa warga zaman sekarang tidak mau membaca"
+      ],
+      "option_scores": [
+        1,
+        5,
+        4,
+        3,
+        2
+      ],
+      "correct_answer": 1,
+      "explanation": "Skor 5 paling optimal karena mengusulkan brosur atau papan informasi resmi yang menjadi solusi sistemik. Skor 4 baik tapi hanya membantu sementara, tidak mengurangi beban berulang. Pola: penjelasan berulang yang sama = perlu media informasi standar.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "92353d23-b53a-479a-a9b3-2af677ab4f36",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 1,
+      "question_text": "Waktu pelayanan rata-rata di unit Anda lebih lama dari standar yang ditetapkan. Apa yang Anda lakukan?",
+      "options": [
+        "Menganggap standar tersebut tidak sesuai dengan kondisi dan kapasitas nyata di unit kami",
+        "Mengajak rekan-rekan agar bekerja lebih cepat meskipun belum ada analisis tentang penyebab keterlambatan yang sebenarnya",
+        "Menganalisis tahapan mana yang menjadi bottleneck dan mengajukan usulan perbaikan ke atasan",
+        "Tetap bekerja seperti biasa karena standar hanya formalitas",
+        "Berdiskusi santai dengan rekan-rekan tentang kendala yang dihadapi tanpa menyusun usulan perbaikan secara formal"
+      ],
+      "option_scores": [
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "correct_answer": 2,
+      "explanation": "Skor 5 paling optimal karena melakukan analisis bottleneck dengan data lalu mengajukan usulan perbaikan resmi. Skor 4 sudah berinisiatif tapi tanpa diagnosis yang tepat, intervensinya bisa salah sasaran. Pola: target tidak tercapai = perlu diagnosis penyebab sebelum solusi.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "2a18dcb8-0ce7-4920-ade0-3e0b036140f2",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 3,
+      "question_text": "Anda baru bertugas di unit pelayanan perizinan. Selama dua minggu pertama, Anda mencatat bahwa rata-rata satu permohonan harus melewati 9 meja yang berbeda padahal di instansi sejenis cukup 5 meja. Warga sering mengeluh dan beberapa pegawai senior mengatakan 'memang sudah dari dulu begini'. Apa tindakan Anda?",
+      "options": [
+        "Berdiskusi dengan pegawai senior soal kemungkinan penyederhanaan tanpa menyusun usulan formal",
+        "Mengikuti alur 9 meja sebagaimana adanya karena sebagai pegawai baru belum pantas mengusulkan perubahan apa pun",
+        "Menyusun analisis data dua minggu dan benchmark instansi sejenis, lalu mengajukan usulan penyederhanaan ke atasan",
+        "Menyusun catatan keluhan warga dan jumlah meja, lalu mengajukan usulan perbaikan ke atasan",
+        "Menyampaikan keluhan warga ke atasan tanpa data atau usulan konkret"
+      ],
+      "option_scores": [
+        3,
+        1,
+        5,
+        4,
+        2
+      ],
+      "correct_answer": 2,
+      "explanation": "Skor 5 paling optimal karena menggabungkan data dua minggu, benchmarking instansi lain, dan usulan resmi dengan analisis dampak—paket lengkap untuk meyakinkan pimpinan. Skor 4 sudah punya data dan usulan tapi belum dilengkapi benchmarking yang jadi argumen kuat untuk perubahan. Pola: usulan perbaikan yang berbasis data + perbandingan praktik baik lebih kuat dibanding usulan tanpa pembanding eksternal.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "1989ff88-f69f-4d01-8c74-ab3f6cd36ca3",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 3,
+      "question_text": "Sistem aplikasi pelayanan di kantor Anda sering error pada akhir bulan, padahal saat itu permohonan paling banyak. Anda sudah lapor lisan ke atasan dua kali tapi belum ada tindak lanjut. Apa langkah Anda?",
+      "options": [
+        "Berhenti melapor karena sudah dua kali tidak direspons dan fokus menyelesaikan pekerjaan sendiri saja",
+        "Menulis laporan resmi berisi data frekuensi error, dampak ke layanan, dan usulan solusi untuk atasan",
+        "Mengeluh ke rekan-rekan dengan harapan mereka kompak menyampaikannya ke atasan secara bersama-sama",
+        "Langsung melapor ke pimpinan di atas atasan langsung tanpa membuat dokumentasi tertulis terlebih dahulu",
+        "Mengingatkan atasan secara lisan untuk ketiga kalinya dengan nada lebih tegas tanpa catatan tertulis"
+      ],
+      "option_scores": [
+        1,
+        5,
+        2,
+        4,
+        3
+      ],
+      "correct_answer": 1,
+      "explanation": "Skor 5 paling optimal karena membuat dokumentasi tertulis yang formal dengan data konkret—sulit diabaikan dan menjadi dasar eskalasi yang sah. Skor 4 sudah eskalasi tapi loncat jalur tanpa dokumentasi tertulis terlebih dulu di jalur resmi. Pola: laporan lisan yang tidak ditindaklanjuti perlu diformalkan tertulis sebelum eskalasi ke atas.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "195fdb3f-fc66-40b8-99cf-9770042afcb8",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 3,
+      "question_text": "Anda menemukan bahwa formulir layanan yang digunakan unit Anda meminta data yang sebenarnya sudah ada di database internal kantor. Akibatnya warga sering mengisi data yang sama berulang kali. Apa yang Anda lakukan?",
+      "options": [
+        "Tetap meminta warga mengisi seluruh data karena formulir memang mengharuskan demikian sesuai prosedur yang berlaku saat ini",
+        "Membantu warga mengisi formulir lebih cepat apabila mereka mengalami kesulitan dalam mengisi data yang berulang tersebut",
+        "Memetakan data mana saja yang duplikatif, lalu mengajukan usulan integrasi formulir dengan database internal ke atasan",
+        "Mengusulkan kepada atasan agar formulir disederhanakan dengan mengurangi kolom data yang tidak relevan bagi layanan",
+        "Menyampaikan permasalahan ini di obrolan tim agar bisa dipertimbangkan dalam agenda rapat berikutnya secara bersama"
+      ],
+      "option_scores": [
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      "correct_answer": 2,
+      "explanation": "Skor 5 paling optimal karena memetakan duplikasi data secara komprehensif dan mengusulkan integrasi sistem—solusi struktural. Skor 4 sudah bagus tapi hanya menyederhanakan formulir tanpa memanfaatkan database yang sudah ada. Pola: jika sumber data tersedia, solusi terbaik adalah integrasi, bukan sekadar memangkas pertanyaan.",
+      "image_url": null,
+      "dummy_only": true
+    },
+    {
+      "source": "paramacpns.com/tryout/1",
+      "source_question_id": "4aeb05ca-9c3e-4b07-876e-2b3341386630",
+      "section": "TKP",
+      "topic": "Pelayanan Publik",
+      "subtopic": "Inisiatif Perbaikan Prosedur & Sistem Layanan",
+      "difficulty": 3,
+      "question_text": "Anda mengetahui ada SOP layanan yang menurut analisis Anda bertentangan dengan regulasi terbaru dari kementerian. Atasan langsung Anda mengatakan SOP itu masih dipakai sampai ada perintah resmi. Apa tindakan Anda?",
+      "options": [
+        "Mengikuti perintah atasan dan menjalankan SOP lama tanpa tindak lanjut apapun",
+        "Diam saja karena ini bukan wewenang Anda dan bisa membuat hubungan dengan atasan tegang",
+        "Menyusun analisis tertulis perbandingan SOP dengan regulasi terbaru disertai rujukan pasal, lalu mengajukan ke atasan",
+        "Mengingatkan atasan secara lisan tentang regulasi terbaru yang relevan tanpa menyusun dokumen analisis pendukung",
+        "Menerapkan regulasi terbaru di pekerjaan Anda sendiri tanpa memberi tahu atasan"
+      ],
+      "option_scores": [
+        2,
+        1,
+        5,
+        4,
+        3
+      ],
+      "correct_answer": 2,
+      "explanation": "Skor 5 paling optimal karena menyusun analisis perbandingan tertulis dengan rujukan regulasi—argumen yang sulit dibantah dan menggerakkan keputusan. Skor 4 sudah benar arahnya tapi hanya mengingatkan tanpa dokumen analisis yang konkret. Pola: ketika atasan menahan, dokumen analisis tertulis dengan rujukan resmi adalah cara terbaik mendorong tindak lanjut.",
+      "image_url": null,
+      "dummy_only": true
+    }
+  ]
+}

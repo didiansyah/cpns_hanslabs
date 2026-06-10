@@ -1,0 +1,24 @@
+{
+  "count": 110,
+  "sections": {
+    "TWK": 35,
+    "TIU": 30,
+    "TKP": 45
+  },
+  "bad_option_count": [],
+  "empty_question": [],
+  "duplicate_stems": [],
+  "missing_answers": 110,
+  "image_questions": [
+    37,
+    40,
+    42,
+    43,
+    46,
+    53,
+    55,
+    56
+  ],
+  "downloaded_images": 38,
+  "errors": []
+}
